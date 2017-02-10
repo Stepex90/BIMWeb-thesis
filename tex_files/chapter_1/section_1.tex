@@ -1,0 +1,43 @@
+\section{Building Information Modeling}
+\label{sec:chapter_1_section_1}
+\noindent
+A tendency to minimize the humanization of new territories and to push for reusing already  built accommodation or accommodation which has fallen into disuse has become a pressing need in advanced societies. We have to integrate the ``zero energy'' model (each building has to produce the same amount of energy that it consumes) with the ``zero waste'' model, i.e. a new design paradigm where the waste materials from demolition become resources for reconstruction~\cite{altamura:12}. Building, contract, and design processes need to be renewed to take account of environmental concerns.
+
+To reduce the impact of construction projects on the environment, the design needs to take the issue of building materials into consideration. Public administrations need suitable tools for the calculation and the control of reused or disposed materials. The new tools should handle the digital processing of materials throughout the project life cycle, supporting new project requirements such as: Design for Deconstruction, Design for Recycling and Design for Waste.
+
+In particular, a building life cycle, underpinned by a construction process which envisages cycles aligned to natural phenomena is the focus of this paper.
+
+In this work we propose solutions that serve to close the circle of the building life-cycle, moving away from a traditional linear response with excessively high consumption energy rates (cradle to grave) and towards the reuse of materials in deconstruction/reconstruction (cradle to cradle), supported by computer aided selective demolition process.
+
+All restructuring cycles of buildings should envisage de-construction and re-construction steps, targeted towards the replacement of materials in order to achieve greater efficiency. The handling of these materials requires appropriate encoding both for the disposal, according to EWC (European Waste Catalogue) codes, and for the planning and design of new buildings, following BIM (Building Information Modeling) methodology. For this purpose we need geo-referenced scenes of augmented reality based on fast, easily navigable and measurable 3D models.
+
+We already have excellent knowledge about construction costs (from scratch) but little is known about replacement rates (complete selective demolition). A modern selective demolition process requires human intervention, with high insurance costs due to the danger involved for those working in these activities. This latter point demands an alternative to human effort in these process. We suggest that automated robots could replace human effort; drones could operate in a semantically familiar context and give real-time updates as the reality contextually changes.
+
+We believe, therefore, that there is a big need for modern and easy-to-use modeling frameworks for building deconstruction in the AEC (Architecture, Engineering and Construction) industry, to enable an augmented reality through semantic recognition by computer vision and by photogrammetric precision up to centimetric definition. Such virtual/augmented reality tools require both fast 3D building modeling and augmentation with semantic content, in order to be controlled in almost real time: this real challenge is also required by the future development of the Internet of Things.
+
+In this section we have discussed the motivation of the project described in this paper. The remaining sections are organized as follows.
+deconstruction introduces a more technical viewpoint about the state of deconstruction topics in Europe and in Italy.
+application describes the client application and the proposed workflow for quantity surveyors.
+architecture illustrates the framework architecture.
+modeling shortly recalls the methodology, programming style and computational environment of our geometric programming approach to solid modeling.
+In the conclusion section we outline the work to be done and provide our forecast about possible developments.
+\newpage
+\subsection{Applicazioni Desktop}
+
+Autodesk Revit è un programma CAD e BIM per sistemi operativi Windows, creato dalla Revit Technologies Inc. e comprato nel 2002 dalla Autodesk per 133 milioni di dollari[1], che consente la progettazione con elementi di modellazione parametrica e di disegno.
+
+Revit negli ultimi sette anni ha subito profondi cambiamenti e miglioramenti. Prima di tutto, esso è stato modificato per poter supportare in maniera nativa i formati DWG, DXF e DWF. Inoltre, è stato migliorato in termini di velocità ed accuratezza di esecuzione dei rendering. A tal fine, nel 2008 il motore di rendering esistente, AccuRender, è stato sostituito con Mental Ray.
+
+Tramite la parametrizzazione e la tecnologia 3D nativa è possibile impostare la concettualizzazione di architetture e forme tridimensionali. Questo nuovo paradigma comporta una rivoluzione nella percezione progettuale, poiché questa si sostanzia in termini non più cartesiani ma spaziali, con i vantaggi che questa può apportare alla progettazione[2].
+
+Revit, come programma BIM,  (come si vede in Figura~\ref{fig:revit}) è da intendersi come un approccio più vicino alla realtà percepita dagli esseri umani.
+
+Uno dei punti di forza di Revit è quello di poter generare con estrema facilità viste prospettiche o assonometriche, che richiederebbero notevoli sforzi nel disegno manuale; un esempio è la creazione di spaccati prospettici ombreggiati. Altra caratteristica di estrema importanza è quello di costruire il modello utilizzando elementi costruttivi, mentre in altri software analoghi la creazione delle forme è svincolata dalla funzione costruttiva e strutturale. Elemento portante di Revit è lo sfruttamento della "quarta dimensione", cioè il tempo. Si possono infatti impostare le fasi temporali: ad esempio, Stato di Fatto e Stato di Progetto. Ogni elemento del modello può essere creato in una fase e demolito in un'altra, avendo poi la possibilità di creare viste di raffronto con le opportune evidenziazioni: "Gialli e Rossi". I punti deboli del programma sono rappresentati, invece, dall'interfaccia talvolta poco intuitiva e dalla qualità dei rendering, che, pur utilizzando il motore "radiosity", non è paragonabile a quella ottenibile con software di rendering dedicati.
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=1\linewidth]{images/revit}
+   \caption{Schermata Revit}
+   \label{fig:revit}
+   \end{figure}
+   \newpage

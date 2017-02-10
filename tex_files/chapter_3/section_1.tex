@@ -1,0 +1,11 @@
+\section{Definizione}
+\label{sec:chapter_3_section_1}
+
+\emph{plugin} is a software component that can be seamlessly integrated into the system in order to extends its capabilities.
+In \emph{Metior}, a plugin represents an architectural element that extends the Building Information Model design.
+Technically, a plugin represents a \emph{prototype} (namely a ``class'' in Object Oriented Programming) of a construction element that can be inserted (``instantiated'') into the \emph{canvas}, thus defining a new \emph{element}, i.e. a new component of the model.
+
+\paragraph{Plugin definition}
+
+\noindent
+A plugin is described by the following eight properties: (1) a unique name; (2) a description; (3) a set of metadata; (4) the \emph{occupation type} (one among \emph{linear}, \emph{area} or \emph{volume}); (5) the \emph{placement type} (\emph{inside} or \emph{over}); (6) a set of specific properties mapping the semantic to associate to the plugin; (7) a \emph{generating function} that returns the 2D representation of the element in SVG format, to be used in the \emph{2D-mode}; (8) a \emph{generating function} that returns the 3D representation of the element in OBJ format, to be used in the \emph{3D-mode}.
