@@ -1,0 +1,307 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{altamura:12}{thesis}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Altamura}{A.}%
+     {Paola}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AP1}
+  \strng{fullhash}{AP1}
+  \field{sortinit}{A}
+  \field{note}{(in Italian)}
+  \field{title}{Gestione eco-efficace dei materiali da costruzione nel ciclo di
+  vita del fabbricato}
+  \list{institution}{1}{%
+    {Sapienza Universit\`a di Roma}%
+  }
+  \field{type}{phdthesis}
+  \field{year}{2012}
+\endentry
+
+\entry{rfc6902}{report}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Bryan}{B.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nottingham}{N.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {{RFC Editor}}%
+  }
+  \strng{namehash}{BPNM1}
+  \strng{fullhash}{BPNM1}
+  \field{sortinit}{B}
+  \field{howpublished}{Internet Requests for Comments}
+  \field{issn}{2070-1721}
+  \field{number}{6902}
+  \field{pages}{1\bibrangedash 18}
+  \field{title}{{JavaScript Object Notation (JSON) Patch}}
+  \list{institution}{1}{%
+    {{RFC Editor}}%
+  }
+  \field{type}{techreport}
+  \field{year}{2013}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{uniflow}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Hos}{H.}%
+     {Thom}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HT1}
+  \strng{fullhash}{HT1}
+  \field{sortinit}{H}
+  \field{title}{{Reactivity, state and a unidirectional data flow}}
+  \verb{url}
+  \verb https://blog.deptagency.com/reactivity-state-and-a-unidirectional-data-
+  \verb flow-340e793ebf89
+  \endverb
+\endentry
+
+\entry{webgl}{report}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Jackson}{J.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{JD1}
+  \strng{fullhash}{JD1}
+  \field{sortinit}{J}
+  \field{note}{https://www.khronos.org/registry/webgl/specs/1.0.3/}
+  \field{title}{{WebGL Specification}}
+  \list{institution}{1}{%
+    {Khronos}%
+  }
+  \field{type}{{Khronos} Recommendation}
+  \field{month}{10}
+  \field{year}{2014}
+\endentry
+
+\entry{Jackson:11:SVG}{report}{}
+  \name{author}{10}{}{%
+    {{}%
+     {Jackson}{J.}%
+     {Dean}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dahlstr{\"o}m}{D.}%
+     {Erik}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ferraiolo}{F.}%
+     {Jon}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Grasso}{G.}%
+     {Anthony}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {McCormack}{M.}%
+     {Cameron}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dengler}{D.}%
+     {Patrick}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fujisawa}{F.}%
+     {Jun}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schepers}{S.}%
+     {Doug}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lilley}{L.}%
+     {Chris}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Watt}{W.}%
+     {Jonathan}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{JD+1}
+  \strng{fullhash}{JDDEFJGAMCDPFJSDLCWJ1}
+  \field{sortinit}{J}
+  \field{note}{http://www.w3.org/TR/2011/REC-SVG11-20110816/}
+  \field{title}{{Scalable Vector Graphics ({SVG}) {1.1} (Second Edition)}}
+  \list{institution}{1}{%
+    {W3C}%
+  }
+  \field{type}{{W3C} Recommendation}
+  \field{month}{08}
+  \field{year}{2011}
+\endentry
+
+\entry{immutability}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Long}{L.}%
+     {James}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LJ1}
+  \strng{fullhash}{LJ1}
+  \field{sortinit}{L}
+  \field{title}{{Immutable Data Structures and JavaScript}}
+  \verb{url}
+  \verb http://jlongster.com/Using-Immutable-Data-Structures-in-JavaScript
+  \endverb
+\endentry
+
+\entry{Munro:15:HCC}{report}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Munro}{M.}%
+     {Jay}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mann}{M.}%
+     {Jatinder}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hickson}{H.}%
+     {Ian}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wiltzius}{W.}%
+     {Tom}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cabanier}{C.}%
+     {Rik}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MJ+1}
+  \strng{fullhash}{MJMJHIWTCR1}
+  \field{sortinit}{M}
+  \field{note}{http://www.w3.org/TR/2015/REC-2dcontext-20151119/}
+  \field{title}{{{HTML} Canvas {2D} Context}}
+  \list{institution}{1}{%
+    {W3C}%
+  }
+  \field{type}{{W3C} Recommendation}
+  \field{month}{11}
+  \field{year}{2015}
+\endentry
+
+\entry{Roberts}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Roberts}{R.}%
+     {Mike}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RM1}
+  \strng{fullhash}{RM1}
+  \field{sortinit}{R}
+  \field{title}{{Serverless Architectures}}
+  \verb{url}
+  \verb http://martinfowler.com/articles/serverless.html
+  \endverb
+\endentry
+
+\entry{vdom}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Rotolo}{R.}%
+     {Jarrod}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RJ1}
+  \strng{fullhash}{RJ1}
+  \field{sortinit}{R}
+  \field{title}{{The Virtual DOM vs The DOM}}
+  \verb{url}
+  \verb http://revelry.co/the-virtual-dom
+  \endverb
+\endentry
+
+\entry{web_components}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Russell}{R.}%
+     {Alex}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RA1}
+  \strng{fullhash}{RA1}
+  \field{sortinit}{R}
+  \field{title}{{Web Components and Model Driven Views}}
+  \verb{url}
+  \verb https://fronteers.nl/congres/2011/sessions/web-components-and-model-dri
+  \verb ven-views-alex-russell
+  \endverb
+\endentry
+
+\entry{ncLab}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Solin}{S.}%
+     {Pavel}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SP1}
+  \strng{fullhash}{SP1}
+  \field{sortinit}{S}
+  \field{note}{Accessed: 2016-11-12}
+  \field{title}{\href{https://nclab.com/3d-gallery/}{Creative Computing
+  Platform: Learn Coding and 3D Modeling!}}
+  \field{year}{2016}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

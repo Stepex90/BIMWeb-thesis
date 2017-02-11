@@ -1,69 +1,161 @@
 \section{Stack Tecnologico}
 \label{sec:chapter_2_section_3}
 
-The UI has been developed following the \emph{Web Components pattern}~\cite{web_components}, supported by \emph{React.js}\footnote{https://github.com/facebook/react} framework. The main idea is to define the frontend application as a collection of independent components, each one referencing a specific subset of the centralized state and able to render itself according to the actual values of that portion of the state. Web Components spawn from for high level generic containers, like the toolbar or the catalog, to very fine grained ones, buttons for example. The most interesting are the viewers of the building model: the \emph{2D-viewer} and the \emph{3D-viewer}.
+La User Interface \'e stata sviluppata seguendo i \emph{Web Components pattern}~\cite{web_components},
+supportati dal framework \emph{React.js}\footnote{https://github.com/facebook/react}.
+L'idea principale \`e definire un applicazione frontend come una collezione di componenti indipendenti,
+ognuno dei quali si riferisce ad uno specifico sottoinsieme di stati centralizzati ed ingrado
+di fare il render in accordo con i valori effettivi di quella porzione dello stato.
+I Web Components sono la base per contenitori generici di alto livello, come la barra degli strumenti o il catalogo,
+a quelli a grana molto fine, i pulsanti per esempio. I più interessanti sono gli visualizzatori del
+modello di costruzione: il \emph{2D-viewer} e \emph{3D-viewer}.
 
+% The UI has been developed following the \emph{Web Components pattern}~\cite{web_components},
+% supported by \emph{React.js}\footnote{https://github.com/facebook/react} framework.
+%   The main idea is to define the frontend application as a collection of independent
+%    components, each one referencing a specific subset of the centralized state and able
+%     to render itself according to the actual values of that portion of the state.
+%     Web Components spawn from for high level generic containers, like the toolbar or the catalog,
+%      to very fine grained ones, buttons for example. The most interesting are the viewers of the
+%      building model: the \emph{2D-viewer} and the \emph{3D-viewer}.
+%
 \subsection{React}
-React (sometimes styled React.js or ReactJS) is an open-source JavaScript library for building user interfaces.
+React (a volte definito React.js or ReactJS) \`e una libreria open-source JavaScript per la costruzione di user interfaces.
+\`E sostenuto da Facebook, Instagram e una comunità di singoli sviluppatori e aziende.
+[2] [3] [4] Secondo il servizio di analisi JavaScript Libscore, React è attualmente utilizzato sui
+ siti web di Netflix, Imgur, Bleacher Report, Feedly, Airbnb, SeatGeek, HelloSign, Walmart, e altri. [5]
 
-It is maintained by Facebook, Instagram and a community of individual developers and corporations.[2][3][4] According to JavaScript analytics service Libscore, React is currently being used on the websites of Netflix, Imgur, Bleacher Report, Feedly, Airbnb, SeatGeek, HelloSign, Walmart, and others.[5]
+% React (sometimes style React.js or ReactJS) is an open-source JavaScript library for building user interfaces.
+% It is maintained by Facebook, Instagram and a community of individual developers and corporations.
+% [2][3][4] According to JavaScript analytics service Libscore, React is currently being used on the
+%  websites of Netflix, Imgur, Bleacher Report, Feedly, Airbnb, SeatGeek, HelloSign, Walmart, and others.[5]
 
 \subsubsection{history}
-React was created by Jordan Walke, a software engineer at Facebook. He was influenced by XHP, an HTML component framework for PHP.[6] It was first deployed on Facebook's newsfeed in 2011 and later on Instagram.com in 2012.[7] It was open-sourced at JSConf US in May 2013. React Native, which enables native iOS, Android and UWP development with React, was announced at Facebook's React.js Conf in February 2015 and open-sourced in March 2015.
+React \`e stato creato da Jordan Walke, un ingegnere del software di Facebook. \`E stato influenzato da XHP, un HTML
+framework di componenti per PHP. [6] \'E stato distribuito sulle newsfeed di Facebook nel 2011 e in seguito
+Instagram.com nel 2012. [7] \`E stato aperto-sourced a JSConf Stati Uniti nel maggio 2013. React Native, che consente
+ iOS native, lo sviluppo Android e UWP con React, è stato annunciato alla Facebook's React.js Conf  in
+ Febbraio 2015 e open-source da marzo 2015.
+
+% React was created by Jordan Walke, a software engineer at Facebook. He was influenced by XHP, an HTML
+% component framework for PHP.[6] It was first deployed on Facebook's newsfeed in 2011 and later on
+% Instagram.com in 2012.[7] It was open-sourced at JSConf US in May 2013. React Native, which enables
+%  native iOS, Android and UWP development with React, was announced at Facebook's React.js Conf in
+%  February 2015 and open-sourced in March 2015.
 
 \subsubsection{Notable features}
-One-way data flow[edit]
-Properties, a set of immutable values, are passed to a component's renderer as properties in its HTML tag. A component cannot directly modify any properties passed to it, but can be passed callback functions that do modify values. This mechanism's promise is expressed as "properties flow down; actions flow up".
+In un flusso di dati unidirezionale le propriet\`a, ed un insieme di valori immutabili, sono passati al
+componente di rendering come propriet\`a nel suo tag HTML.
+Un componente non pu\`o modificare direttamente le propriet\`a passate ad esso, ma pu\`o usare funzioni di
+callback passategli che fanno gli modificare i valori.
+Il meccanismo della promise \`e espresso come "proprietà di scorrimento verso il basso; azioni portate fino".
+% One-way data flow
+% Properties, a set of immutable values, are passed to a component's renderer as properties in its HTML tag.
+% A component cannot directly modify any properties passed to it, but can be passed callback functions that do
+%  modify values. This mechanism's promise is expressed as "properties flow down; actions flow up".
 
 \subsubsection{Virtual DOM}
-Another notable feature is the use of a "virtual Document Object Model," or "virtual DOM." React creates an in-memory data structure cache, computes the resulting differences, and then updates the browser's displayed DOM efficiently.[8] This allows the programmer to write code as if the entire page is rendered on each change while the React libraries only render subcomponents that actually change.
+Un'altra caratteristica degna di nota è l'utilizzo di un "virtual Document Object Model", o "virtual DOM".
+React crea una cache struttura di dati in memoria, calcola le differenze risultanti, e poi gli aggiornamenti
+del browser visualizzati efficientemente nel DOM [8] Questo permette al programmatore di scrivere codice come se
+l'intera pagina venisse cambia, mentre le librerie React fanno il render delle sole sottocomponenti che in realtà cambiano.
+% Another notable feature is the use of a "virtual Document Object Model," or "virtual DOM." React
+% creates an in-memory data structure cache, computes the resulting differences, and then updates
+% the browser's displayed DOM efficiently.[8] This allows the programmer to write code as if the
+% entire page is rendered on each change while the React libraries only render subcomponents that actually change.
 
 \subsubsection{JSX}
-React components are typically written in JSX, a JavaScript extension syntax allowing quoting of HTML and using HTML tag syntax to render subcomponents.[9] HTML syntax is processed into JavaScript calls of the React library. Developers may also write in pure JavaScript. JSX is similar to another extension syntax created by Facebook for PHP, XHP.
+I componenti React sono tipicamente scritti in JSX, una estensione della sintassi JavaScript che permette di citare
+HTML e utilizzando la sintassi tag HTML per fare  il render delle sottocomponenti.[9]
+La sintassi HTML è trasformata in chiamate JavaScript
+della libreria React. Gli sviluppatori possono anche scrivere in JavaScript puro. JSX è simile ad un altro
+estensione di sintassi creata da Facebook per PHP, XHP.
+% React components are typically written in JSX, a JavaScript extension syntax allowing quoting of
+%  HTML and using HTML tag syntax to render subcomponents.[9] HTML syntax is processed into JavaScript
+%   calls of the React library. Developers may also write in pure JavaScript. JSX is similar to another
+%    extension syntax created by Facebook for PHP, XHP.
 
 \subsubsection{Architecture beyond HTML}
-The basic architecture of React applies beyond rendering HTML in the browser. For example, Facebook has dynamic charts that render to <canvas> tags,[10] and Netflix and PayPal use isomorphic loading to render identical HTML on both the server and client.[11][12]
+L'architettura di base di React si applica al di là del rendering HTML nel browser. Ad esempio, Facebook
+da grafici dinamici che fanno il rendering di un <canvas> tags, [10] e Netflix e PayPal utilizzano carico isomorfo per
+il rendering HTML in modo identico sia sul server che sul client. [11] [12]
+% The basic architecture of React applies beyond rendering HTML in the browser. For example, Facebook
+% has dynamic charts that render to <canvas> tags,[10] and Netflix and PayPal use isomorphic loading to
+%  render identical HTML on both the server and client.[11][12]
 
-\subsubsection{React Native}
-See also: WinJS
-React Native libraries were announced by Facebook in 2015,[13] providing the React architecture to native iOS, Android and UWP[14] applications.
 
 \newpage
 \subsection{Threejs}
-Three.js is a cross-browser JavaScript library/API used to create and display animated 3D computer graphics in a web browser. Three.js uses WebGL. The source code is hosted in a repository on GitHub.
+Three.js \`e una libreria cross-browser JavaScript/API utilizzata per creare e visualizzare grafica animata in 3D
+in un browser web. Three.js utilizza WebGL. Il codice sorgente è ospitato in un repository su GitHub.
+% Three.js is a cross-browser JavaScript library/API used to create and display animated 3D computer graphics in a web browser.
+%  Three.js uses WebGL. The source code is hosted in a repository on GitHub.
 
 \subsubsection{Overview}
-Three.js allows the creation of GPU-accelerated 3D animations using the JavaScript language as part of a website without relying on proprietary browser plugins.[3][4] This is possible thanks to the advent of WebGL.[5]
+Three.js permette la creazione di animazioni 3D accelerate dalla GPU utilizzando il linguaggio JavaScript
+come parte di un sito web senza fare affidamento su plugin del browser di proprietà.[3][4]
+ Questo è possibile grazie all'avvento di WebGL.[5]
+% Three.js allows the creation of GPU-accelerated 3D animations using the JavaScript language as part of a website
+% without relying on proprietary browser plugins.[3][4] This is possible thanks to the advent of WebGL.[5]
 
-High-level libraries such as Three.js or GLGE, SceneJS, PhiloGL or a number of other libraries make it possible to author complex 3D computer animations that display in the browser without the effort required for a traditional standalone application or a plugin.[6]
+% High-level libraries such as Three.js or GLGE, SceneJS, PhiloGL or a number of other libraries make
+% it possible to author complex 3D computer animations that display in the browser without the effort
+% required for a traditional standalone application or a plugin.[6]
 
 \subsubsection{History}
-Three.js was first released by Ricardo Cabello to GitHub in April 2010.[2] The origins of the library can be traced back to his involvement with the demoscene in the early 2000s. The code was first developed in ActionScript, then in 2009 ported to JavaScript. In Cabello's mind, the two strong points for the transfer to JavaScript were not having to compile the code before each run and platform independence. With the advent of WebGL, Paul Brunt was able to add the renderer for this quite easily as Three.js was designed with the rendering code as a module rather than in the core itself.[7] Cabello's contributions include API design, CanvasRenderer, SVGRenderer and being responsible for merging the commits by the various contributors into the project.
+Three.js per la prima volta viene pubblicato da Ricardo Cabello su GitHub nel mese di aprile 2010.[2]
+Le origini della libreria pu\`o risalire al suo coinvolgimento con il demoscene nei primi anni 2000.
+Il codice \`e stato sviluppato in ActionScript, poi nel 2009 portato su JavaScript. Nella mente di Cabello,
+i due punti di forza per il trasferimento di JavaScript sono stati non essere costretti a compilare il codice prima
+ogni run e l' indipendenza dalla piattaforma. Con l'avvento di WebGL, Paul Brunt è stato in grado di aggiungere il renderer
+per questo abbastanza facilmente come Three.js creata con il codice di rendering come modulo anziché nel
+nucleo stesso.[7] I contributi di Cabello comprendono la progettazione API, CanvasRenderer, SVGRenderer e di essere
+responsabile per la fusione dei commit da parte dei vari collaboratori nel progetto.
+% Three.js was first released by Ricardo Cabello to GitHub in April 2010.[2] The origins of
+% the library can be traced back to his involvement with the demoscene in the early 2000s.
+% The code was first developed in ActionScript, then in 2009 ported to JavaScript. In Cabello's mind,
+%  the two strong points for the transfer to JavaScript were not having to compile the code before
+%  each run and platform independence. With the advent of WebGL, Paul Brunt was able to add the renderer
+%   for this quite easily as Three.js was designed with the rendering code as a module rather than in the
+%    core itself.[7] Cabello's contributions include API design, CanvasRenderer, SVGRenderer and being
+%    responsible for merging the commits by the various contributors into the project.
 
-The second contributor in terms of commits, Branislav Ulicny started with Three.js in 2010 after having posted a number of WebGL demos on his own site. He wanted WebGL renderer capabilities in Three.js to exceed those of CanvasRenderer or SVGRenderer.[7] His major contributions generally involve materials, shaders and post-processing.
 
-Soon after the introduction of WebGL on Firefox 4 in March 2011, Joshua Koo came on board. He built his first Three.js demo for 3D text in September 2011.[7] His contributions frequently relate to geometry generation.
+Il secondo contributo, in termini di commits, Branislav Ulicny iniziato con Three.js nel 2010 dopo aver
+pubblicato una serie di demo WebGL sul proprio sito. Voleva la capacit\`a di rendering di WebGL in Three.js
+fossero superiori a quelli di CanvasRenderer o SVGRenderer.[7]
+I suoi maggiori contributi comportano generalmente materiali, shaders e post-processing.
+% The second contributor in terms of commits, Branislav Ulicny started with Three.js in 2010 after having
+%  posted a number of WebGL demos on his own site. He wanted WebGL renderer capabilities in Three.js to
+%  exceed those of CanvasRenderer or SVGRenderer.[7] His major contributions generally involve materials,
+%   shaders and post-processing.
 
-There are over 650 contributors in total.[7]
+Subito dopo l'introduzione di WebGL su Firefox 4 nel marzo 2011, ha contribuito Joshua Koo. Ha costruito la sua
+primo demo Three.js per il testo 3D nel settembre 2011.[7] I suoi contributi spesso si riferiscono alla generazione geometrica.
+Ci sono oltre 650 collaboratori in totale.[7]
+% Soon after the introduction of WebGL on Firefox 4 in March 2011, Joshua Koo came on board. He built his
+%  first Three.js demo for 3D text in September 2011.[7] His contributions frequently relate to geometry generation.
+% There are over 650 contributors in total.[7]
 
 \subsubsection{Features}
-Three.js includes the following features:[8]
+Three.js include le seguenti caratteristiche:[8]
+\begin{itemize}
 
-Effects: Anaglyph, cross-eyed and parallax barrier.
-Scenes: add and remove objects at run-time; fog
-Cameras: perspective and orthographic; controllers: trackball, FPS, path and more
-Animation: armatures, forward kinematics, inverse kinematics, morph and keyframe
-Lights: ambient, direction, point and spot lights; shadows: cast and receive
-Materials: Lambert, Phong, smooth shading, textures and more
-Shaders: access to full OpenGL Shading Language (GLSL) capabilities: lens flare, depth pass and extensive post-processing library
-Objects: meshes, particles, sprites, lines, ribbons, bones and more - all with Level of detail
-Geometry: plane, cube, sphere, torus, 3D text and more; modifiers: lathe, extrude and tube
-Data loaders: binary, image, JSON and scene
-Utilities: full set of time and 3D math functions including frustum, matrix, quaternion, UVs and more
-Export and import: utilities to create Three.js-compatible JSON files from within: Blender, openCTM, FBX, Max, and OBJ
-Support: API documentation is under construction, public forum and wiki in full operation
-Examples: Over 150 files of coding examples plus fonts, models, textures, sounds and other support files
-Debugging: Stats.js,[9] WebGL Inspector,[10] Three.js Inspector[11]
-Three.js runs in all browsers supported by WebGL.
+\item Effects: Anaglyph, cross-eyed and parallax barrier.
+\item Scenes: add and remove objects at run-time; fog
+\item Cameras: perspective and orthographic; controllers: trackball, FPS, path and more
+\item Animation: armatures, forward kinematics, inverse kinematics, morph and keyframe
+\item Lights: ambient, direction, point and spot lights; shadows: cast and receive
+\item Materials: Lambert, Phong, smooth shading, textures and more
+\item Shaders: access to full OpenGL Shading Language (GLSL) capabilities: lens flare, depth pass and extensive post-processing library
+\item Objects: meshes, particles, sprites, lines, ribbons, bones and more - all with Level of detail
+\item Geometry: plane, cube, sphere, torus, 3D text and more; modifiers: lathe, extrude and tube
+\item Data loaders: binary, image, JSON and scene
+\item Utilities: full set of time and 3D math functions including frustum, matrix, quaternion, UVs and more
+\item Export and import: utilities to create Three.js-compatible JSON files from within: Blender, openCTM, FBX, Max, and OBJ
+\item Support: API documentation is under construction, public forum and wiki in full operation
+\item Examples: Over 150 files of coding examples plus fonts, models, textures, sounds and other support files
+\item Debugging: Stats.js,[9] WebGL Inspector,[10] Three.js Inspector[11]
+\end{itemize}
 
-Three.js is made available under the MIT license.[1]
+Three.js \`e eseguibile in tutti i browsers supportati da WebGL.

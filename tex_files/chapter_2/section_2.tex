@@ -1,63 +1,190 @@
+\newpage
 \section{Stato}
 \label{sec:chapter_2_section_2}
 
-The application state is modeled using the data structure shown in Listing~\ref{lst:structure}. It is essentially a collection of layers, each containing a collection of vertices, lines, areas and objects, each one of which is captured in a structure composed by: (i) information required by the object prototype; (ii) references mapping the relationship to other objects; (iii) metadata, namely the object customization entry point. Listings~\ref{lst:vertex} and \ref{lst:line} give examples of data structures adopted to model a vertex and a line, respectively.
+Lo stato dell'applicazione è modellato utilizzando la struttura dei dati mostrato nel listato %~\ref{lst:structure}.
+Si tratta essenzialmente di un insieme di layers, ciascuno contenente un insieme di vertici, linee, aree
+ed oggetti, ciascuno dei quali è racchiuso in una struttura composta da: (i) le informazioni necessarie
+dal prototipo dell'oggetto; (ii) i riferimenti mappatura della relazione con altri oggetti; (iii) i metadati,
+vale a dire il punto in cui personalizzare l'oggetto. %Listings~\ref{lst:vertice} e \ref{lst:linee}
+fornire esempi di strutture dati adottati per modellare un vertice e una linea rispettivamente.
+licenziamenti di informazione vengono sfruttati per ridurre i tempi di accesso. Collezioni di oggetti
+sono indicizzati da \texttt{id} permettendo così di ricerca in tempo costante, del
+campo \texttt{selected} di ogni layer, consente l'accesso diretto ad elementi selezionati senza cercare.
+Lo stato può essere caricato uno layer alla volta per sostenendo la frammentazione dello stato così,
+come pu\o' avvenire in un progetto di modellazione di un edificio molto grande.
 
-Information redundancies are exploited to decrease access times. Collections of objects are indexed by \texttt{id} thus allowing lookup in constant time, The \texttt{selected} field of each layer, grants direct access to selected elements without searching.
+% The application state is modeled using the data structure shown in Listing~\ref{lst:structure}.
+% It is essentially a collection of layers, each containing a collection of vertices, lines, areas
+%  and objects, each one of which is captured in a structure composed by: (i) information required
+%   by the object prototype; (ii) references mapping the relationship to other objects; (iii) metadata,
+%    namely the object customization entry point. Listings~\ref{lst:vertex} and \ref{lst:line}
+%    give examples of data structures adopted to model a vertex and a line, respectively.
+% Information redundancies are exploited to decrease access times. Collections of objects
+%  are indexed by \texttt{id} thus allowing lookup in constant time, The \texttt{selected}
+%   field of each layer, grants direct access to selected elements without searching.
+% The state can be loaded one layer at a time to support state fragmentation thus allowing
+%  to deal with very big building modeling project.
 
-The state can be loaded one layer at a time to support state fragmentation thus allowing to deal with very big building modeling project.
+\subsubsection*{Unidirectional data flow}
+\noindent
+La struttura dei dati descritta rappresenta lo stato centralizzato richiesto dal \emph{Unidirectional data flow pattern}
+~\cite{uniflow} sfruttato con l'applicazione tramite la libreria \emph{Redux.js}\footnote{\url{http://redux.js.org/}}.
+Il modello prevede che lo stato può essere modificato solo da attori specifici, chiamati \emph{reducers},
+le cui attivit\`a sono attivate da specifiche \emph{actions} che contengono tutte le informazioni necessarie per
+ogni reducer per realizzare il cambiamento di stato. Ogni caratteristica applicazione deve essere attuata di conseguenza
+come un paio di pezzi ben isolate di codice (\emph{action}/\emph{reducer}). Esperimenti preliminari
+\footnote{\url{https://github.com/cvdlab/walle}} su strumenti di disegno 2D, infatti,
+evidenziato la complessità di sviluppo di un'applicazione di questo tipo in termini di grande stato interno modificato
+da diversi interazioni con l'utente, che doveva essere ascoltato e applicata,
+che comporti un livello elevato accoppiamento tra logica dell'applicazione e l'interfaccia utente.
+Nella nostra messa a punto, invece abbiamo definito un \emph{state engine}, che rappresenta la logica dell'applicazione,
+che comprende actions e reducers e ne incapsula lo stato centralizzato.
+Su questo strato può contare in modo trasparente interfacce differenti.
 
-\subsubsection*{Unidirectional data flow} The described data structure represents the centralized state required by the \emph{unidirectional data flow pattern}~\cite{uniflow} exploited by the application via \emph{Redux.js}\footnote{\url{http://redux.js.org/}} library. The pattern prescribes that the state may be modified only by specific actors, called \emph{reducers}, whose activities are triggered by specific \emph{actions} which contain all the information needed by each reducer to accomplish the state change. Each application feature has to be implemented therefore as a couple of well isolated pieces of code (\emph{action} / \emph{reducer}). Preliminary experiments\footnote{\url{https://github.com/cvdlab/walle}} on 2D drawing tools, in fact, highlighted the development complexity of an application of this kind in terms of large internal state modified by several user interactions, which was to be listened to and applied, resulting in a high coupling level between application logic and user interface. In our setup instead we defined a \emph{state engine}, which represents the application logic, comprising actions and reducers, and encapsulates the centralized state. On this layer can transparently rely different interfaces.
+% The described data structure represents the centralized state required by the \emph{unidirectional data flow pattern}
+% ~\cite{uniflow} exploited by the application via \emph{Redux.js}\footnote{\url{http://redux.js.org/}} library.
+% The pattern prescribes that the state may be modified only by specific actors, called \emph{reducers},
+%  whose activities are triggered by specific \emph{actions} which contain all the information needed by
+%   each reducer to accomplish the state change. Each application feature has to be implemented therefore
+%    as a couple of well isolated pieces of code (\emph{action} / \emph{reducer}). Preliminary experiments
+%    \footnote{\url{https://github.com/cvdlab/walle}} on 2D drawing tools, in fact,
+%    highlighted the development complexity of an application of this kind in terms
+%    of large internal state modified by several user interactions, which was to be
+%    listened to and applied, resulting in a high coupling level between application logic and user interface.
+%     In our setup instead we defined a \emph{state engine}, which represents the application logic, comprising
+%      actions and reducers, and encapsulates the centralized state. On this layer can transparently rely different interfaces.
+
 \newpage
-\begin{lstlisting}[
-  language=javascript,
-  basicstyle=\tiny %or \small or \footnotesize etc.
-  ]
-    "width": 3000, // canvas width
-    "height": 2000, // canvas height
-    "unit": "cm",  // unit of measurement
-    "selectedLayer": "layer-1", // current layer
-    "layers": {
-      "layer-1": {
-        "name": "default",
-        "id": "layer-1",
-        "altitude": 0,
-        "opacity": 1,
-        "visible": true,
-        "vertices": {
-          "HJAe59YF8Ux": {...}
-          // ...
-        },
-        "lines": {
-          "Hype99FK88x": {...}
-          // ...
-        },
-        "openings": {
-          "r1jaKYUIg": {...}
-          // ...
-        },
-        "areas": {
-          "Byg1oFKUIe": {...}
-          // ...
-        },
-        "objects": {
-          "rkKU89U8e": {...}
-          // ...
-        },
-       //selected element
-        "selected": {
-          "vertices": [],
-          "lines": [],
-          "openings": [],
-          "areas": [],
-          "objects": ["rkKU89U8e"]
-        }
-      }
-    }
-  }
-\end{lstlisting}
+% \begin{listing}
+% \begin{minted}[
+%                baselinestretch=1,
+%                fontsize=\footnotesize,
+%                frame=single,
+%                framesep=1mm,
+%                linenos=true,
+%                xleftmargin=16pt,
+%                tabsize=2]{js}
+% {
+%   "width": 3000, // canvas width
+%   "height": 2000, // canvas height
+%   "unit": "cm",  // unit of measurement
+%   "selectedLayer": "layer-1", // current layer
+%   "layers": {
+%     "layer-1": {
+%       "name": "default",
+%       "id": "layer-1",
+%       "altitude": 0,
+%       "opacity": 1,
+%       "visible": true,
+%       "vertices": {
+%         "HJAe59YF8Ux": {...}
+%         // ...
+%       },
+%       "lines": {
+%         "Hype99FK88x": {...}
+%         // ...
+%       },
+%       "openings": {
+%         "r1jaKYUIg": {...}
+%         // ...
+%       },
+%       "areas": {
+%         "Byg1oFKUIe": {...}
+%         // ...
+%       },
+%       "objects": {
+%         "rkKU89U8e": {...}
+%         // ...
+%       },
+%      //selected element
+%       "selected": {
+%         "vertices": [],
+%         "lines": [],
+%         "openings": [],
+%         "areas": [],
+%         "objects": ["rkKU89U8e"]
+%       }
+%     }
+%   }
+% }
+% \end{minted}
+% \caption{JSON serialized state, overall structure}
+% \label{lst:structure}
+% \end{listing}
+%
+% \begin{listing}
+% \begin{minted}[
+%                baselinestretch=1,
+%                fontsize=\footnotesize,
+%                frame=single,
+%                framesep=1mm,
+%                linenos=true,
+%                xleftmargin=16pt,
+%                tabsize=2]{js}
+% {
+%   "id": "HJAe59YF8Ux",
+%   "x": 201,
+%   "y": 891,
+%   "prototype": "vertices",
+%   "selected": false,
+%   "lines": ["Hype99FK88x", "S1w-hqKKL8e"],
+%   "areas": ["Byg1oFKUIe"]
+% }
+% \end{minted}
+% \caption{JSON serialized state, {\tt vertex} structure}
+% \label{lst:vertex}
+% \end{listing}
+%
+% \begin{listing}
+% \begin{minted}[
+%                baselinestretch=1,
+%                fontsize=\footnotesize,
+%                frame=single,
+%                framesep=1mm,
+%                linenos=true,
+%                xleftmargin=16pt,
+%                tabsize=2]{js}
+% {
+%   "id": "Hype99FK88x",
+%   "type": "linear",
+%   "prototype": "lines",
+%   "vertices": ["HJAe59YF8Ux", "r11Z59tKIUg"],
+%   "openings": ["r1jaKYUIg", "BJVZ2M9FIIx"],
+%   "selected": false,
+%   "properties": {
+%     "height": 300,
+%     "thickness": 20,
+%     "coverA": "bricks",
+%     "coverB": "bricks"
+%  }
+% \end{minted}
+% \caption{JSON serialized state, {\tt line} structure}
+% \label{lst:line}
+% \end{listing}
 
-\subsubsection*{Immutability pattern} \emph{Immutability pattern}~\cite{immutability} is also applied, to avoid side effects on state changes performed by reducers. The state can be seen as an immutable tree structure whose changes are applied as follows: (i) clone the previous state \texttt{s} obtaining a new state \texttt{s'}; (ii) apply changes on the cloned state \texttt{s'}; (iii) Update reference from \texttt{s} to \texttt{s'}. It is worth noting that this approach provides out-of-the-box support for undo/redo operations: an older/newer state can be restored by means of a replacement of the current state with the previous/next one.
 
+\subsubsection*{Immutability pattern}
 
-Despite its simplicity, this pattern can nevertheless lead to memory waste, due to the several copies of the state that must be held in memory. We addressed this issue using \emph{Immutable.js}\footnote{\url{https://facebook.github.io/immutable-js/}}, a library which exploits structural sharing via hash maps tries and vector tries, thus minimizing the need to copy or cache data.
+\emph{Immutability pattern}~\cite{immutability} si applica anche, per evitare effetti collaterali sui cambiamenti di stato
+eseguiti dai reducers.
+Lo stato può essere visto come una struttura immutabile ad albero le cui modifiche vengono applicate come segue:
+(i) clonare lo stato precedente \texttt{s} per ottenere un nuovo stato \texttt{s '};
+(ii) applicare le modifiche sullo stato clonato \texttt{s '};
+(iii) di riferimento Aggiornamento da \texttt{s} a \texttt{s '}. Vale la pena notare che questo approccio fornisce
+il supporto per operazioni out-of-the-box come undo/redo: un stato vecchio/recente possono essere ripristinati mediante sostituzione
+dello stato attuale con Il precedente/successivo.
+Nonostante la sua semplicità, questo modello può tuttavia comportare sprechi di memoria, a causa delle diverse copie dello
+stato che deve che si terrà in memoria. Abbiamo affrontato questo problema utilizzando \emph{Immutable.js}
+\footnote{\url{https://facebook.github.io/immutable-js/}}, una libreria che sfrutta la condivisione strutturale tramite
+mappe hash tentativi e tentativi vettoriali, riducendo al minimo la necessità di copiare o mettere i dati nella cache.
+
+% \emph{Immutability pattern}~\cite{immutability} is also applied, to avoid side effects on state changes performed by reducers.
+%  The state can be seen as an immutable tree structure whose changes are applied as follows: (i) clone the previous state
+%  \texttt{s} obtaining a new state \texttt{s'}; (ii) apply changes on the cloned state \texttt{s'}; (iii) Update reference
+%   from \texttt{s} to \texttt{s'}. It is worth noting that this approach provides out-of-the-box support for undo/redo
+%   operations: an older/newer state can be restored by means of a replacement of the current state with the previous/next one.
+% Despite its simplicity, this pattern can nevertheless lead to memory waste, due to the several copies of the state that must
+% be held in memory. We addressed this issue using \emph{Immutable.js}\footnote{\url{https://facebook.github.io/immutable-js/}},
+%  a library which exploits structural sharing via hash maps tries and vector tries, thus minimizing the need to copy or cache
+%  data.
