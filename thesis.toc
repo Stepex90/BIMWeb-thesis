@@ -4,9 +4,9 @@
 \defcounter {refsection}{0}\relax 
 \select@language {italian}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Ringraziamenti}{v}{chapter*.4}
+\contentsline {chapter}{Ringraziamenti}{iii}{chapter*.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Introduzione}{vi}{chapter*.5}
+\contentsline {chapter}{Introduzione}{iv}{chapter*.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}BIM e Web}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
@@ -60,9 +60,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Tassonomia}{21}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Propriet\'a Specifiche}{22}{section.3.3}
+\contentsline {section}{\numberline {3.3}Propriet\`a Specifiche}{22}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Plugin Catalog}{22}{section.3.4}
+\contentsline {section}{\numberline {3.4}Plugin Catalog}{23}{section.3.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.5}Server-side models generation}{23}{section.3.5}
 \defcounter {refsection}{0}\relax 

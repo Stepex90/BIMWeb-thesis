@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.2.9)  11 FEB 2017 19:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.2.13)  13 FEB 2017 11:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -898,11 +898,7 @@ Package biblatex Info: ... file 'italian.lbx' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
 File: italian.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
 )
-(./thesis.aux
-
-LaTeX Warning: Label `sec:chapter_4_section_2' multiply defined.
-
-)
+(./thesis.aux)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 1.
@@ -921,7 +917,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
 LaTeX Info: Redefining \it@ocap on input line 1.
 LaTeX Info: Redefining \it@ccap on input line 1.
- (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -1003,10 +1000,9 @@ Package biblatex Warning: BibTeX reported the following issues
 Package biblatex Info: Reference section=0 on input line 1.
 Package biblatex Info: Reference segment=0 on input line 1.
  (./tex_files/frontispiece/index.tex
-<images/logo/logo.png, id=127, 501.875pt x 256.96pt>
+<images/logo/logo.png, id=96, 501.875pt x 256.96pt>
 File: images/logo/logo.png Graphic file (type png)
-
-<use images/logo/logo.png>
+ <use images/logo/logo.png>
 Package pdftex.def Info: images/logo/logo.png used on input line 6.
 (pdftex.def)             Requested size: 142.26378pt x 72.83835pt.
 
@@ -1015,22 +1011,23 @@ Package pdftex.def Info: images/logo/logo.png used on input line 6.
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd)) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/logo/logo.png>]
-(./tex_files/dedication/index.tex [2]) [3] (./thesis.toc [1
-
-
-])
+(./tex_files/dedication/index.tex [2]) [3] (./thesis.toc)
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
- [2] (./thesis.lof [3
+ [1
 
-])
+
+] (./thesis.lof)
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
- (./tex_files/acknowledgements/index.tex [4])
+
+(./tex_files/acknowledgements/index.tex [2
+
+])
 (./tex_files/introduction/index.tex (./tex_files/introduction/title.tex
-[5
+[3
 
 ]) (./tex_files/introduction/introduction.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 21--4
@@ -1039,7 +1036,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--4
 
 (./tex_files/introduction/section_1.tex)
 (./tex_files/introduction/section_2.tex)
-(./tex_files/introduction/conclusions.tex)) [6
+(./tex_files/introduction/conclusions.tex)) [4
 
 ]
 (./tex_files/chapter_1/index.tex (./tex_files/chapter_1/title.tex
@@ -1063,7 +1060,7 @@ l.42
 <to be read again> 
                    \relax 
 l.91 \newpage
-              [3] <images/revit.png, id=278, 1445.4pt x 813.0375pt>
+              [3] <images/revit.png, id=154, 1445.4pt x 813.0375pt>
 File: images/revit.png Graphic file (type png)
 
 <use images/revit.png>
@@ -1098,7 +1095,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--13
 
  []
 
-<images/2d.png, id=379, 872.25874pt x 385.44pt>
+<images/2d.png, id=256, 872.25874pt x 385.44pt>
 File: images/2d.png Graphic file (type png)
  <use images/2d.png>
 Package pdftex.def Info: images/2d.png used on input line 22.
@@ -1108,7 +1105,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--42
 
  []
 
-<images/3d.png, id=389, 876.27374pt x 394.47375pt>
+<images/3d.png, id=267, 876.27374pt x 394.47375pt>
 File: images/3d.png Graphic file (type png)
  <use images/3d.png>
 Package pdftex.def Info: images/3d.png used on input line 45.
@@ -1121,203 +1118,268 @@ LaTeX Warning: Reference `fig3D-school' on page 19 undefined on input line 23.
 (./tex_files/chapter_3/title.tex [19]
 Capitolo 3.
 ) (./tex_files/chapter_3/introduction.tex) (./tex_files/chapter_3/section_1.tex
-) [20
+[20
 
-] (./tex_files/chapter_3/section_2.tex [21])
+]) (./tex_files/chapter_3/section_2.tex) [21]
 (./tex_files/chapter_3/section_3.tex) (./tex_files/chapter_3/section_4.tex
-
-LaTeX Warning: Reference `tab:plugins-example' on page 22 undefined on input li
-ne 6.
-
-
-LaTeX Warning: Reference `ssec:taxonomy' on page 22 undefined on input line 6.
-
-[22] <images/figcatalog.png, id=416, 1371.1225pt x 746.79pt>
+<images/figcatalog.png, id=290, 1371.1225pt x 746.79pt>
 File: images/figcatalog.png Graphic file (type png)
 
 <use images/figcatalog.png>
-Package pdftex.def Info: images/figcatalog.png used on input line 10.
+Package pdftex.def Info: images/figcatalog.png used on input line 13.
 (pdftex.def)             Requested size: 360.0pt x 196.07518pt.
-) (./tex_files/chapter_3/section_5.tex
-
-LaTeX Warning: Reference `fig:c-s-arch' on page 23 undefined on input line 5.
-
-
-LaTeX Warning: Reference `fig:c-s-arch' on page 23 undefined on input line 5.
-
-) (./tex_files/chapter_3/section_6.tex
-
-LaTeX Warning: Reference `sec:architecture' on page 23 undefined on input line 
-5.
-
-
-LaTeX Warning: Reference `sec:application' on page 23 undefined on input line 5
-.
-
-[23 <./images/figcatalog.png>]
-
-LaTeX Warning: Reference `spiralstair' on page 24 undefined on input line 7.
-
-) [24] (./tex_files/chapter_3/conclusions.tex))
-(./tex_files/chapter_4/index.tex (./tex_files/chapter_4/title.tex [25]
+ [22]) (./tex_files/chapter_3/section_5.tex)
+(./tex_files/chapter_3/section_6.tex [23 <./images/figcatalog.png>] [24])
+(./tex_files/chapter_3/conclusions.tex)) (./tex_files/chapter_4/index.tex
+(./tex_files/chapter_4/title.tex [25]
 Capitolo 4.
 ) (./tex_files/chapter_4/introduction.tex) (./tex_files/chapter_4/section_1.tex
-<images/hanger.png, id=433, 401.5pt x 260.975pt>
+<images/hanger.png, id=313, 401.5pt x 260.975pt>
 File: images/hanger.png Graphic file (type png)
  <use images/hanger.png>
 Package pdftex.def Info: images/hanger.png used on input line 8.
 (pdftex.def)             Requested size: 180.0pt x 117.0036pt.
 
+
+LaTeX Warning: Reference `fig:appendiabiti' on page 26 undefined on input line 
+12.
+
 [26
 
  <./images/hanger.png (PNG copy)>]
-<images/wardrobe.png, id=440, 401.5pt x 260.975pt>
+<images/wardrobe.png, id=322, 401.5pt x 260.975pt>
 File: images/wardrobe.png Graphic file (type png)
  <use images/wardrobe.png>
 Package pdftex.def Info: images/wardrobe.png used on input line 18.
 (pdftex.def)             Requested size: 180.0pt x 117.0036pt.
 
+
+LaTeX Warning: Reference `fig:armadietto' on page 27 undefined on input line 22
+.
+
 [27 <./images/wardrobe.png>]
-<images/attaccapanni2.png, id=448, 532.99126pt x 532.99126pt>
+<images/attaccapanni2.png, id=329, 532.99126pt x 532.99126pt>
 File: images/attaccapanni2.png Graphic file (type png)
 
 <use images/attaccapanni2.png>
 Package pdftex.def Info: images/attaccapanni2.png used on input line 28.
 (pdftex.def)             Requested size: 180.0pt x 179.9947pt.
- [28 <./images/attaccapanni2.png>]
-<images/banco2.png, id=456, 401.5pt x 260.975pt>
+
+
+LaTeX Warning: Reference `fig:attaccapanni' on page 28 undefined on input line 
+32.
+
+[28 <./images/attaccapanni2.png>]
+<images/banco2.png, id=336, 401.5pt x 260.975pt>
 File: images/banco2.png Graphic file (type png)
  <use images/banco2.png>
 Package pdftex.def Info: images/banco2.png used on input line 38.
 (pdftex.def)             Requested size: 180.0pt x 117.0036pt.
 
+
+LaTeX Warning: Reference `fig:banco' on page 29 undefined on input line 42.
+
 [29 <./images/banco2.png>]
-<images/cattedra2.png, id=463, 472.76625pt x 472.76625pt>
+<images/cattedra2.png, id=343, 472.76625pt x 472.76625pt>
 File: images/cattedra2.png Graphic file (type png)
 
 <use images/cattedra2.png>
 Package pdftex.def Info: images/cattedra2.png used on input line 48.
 (pdftex.def)             Requested size: 180.0pt x 179.9993pt.
- [30 <./images/cattedra2.png>]
-<images/cestino.png, id=470, 471.7625pt x 471.7625pt>
+
+
+LaTeX Warning: Reference `fig:cattedra' on page 30 undefined on input line 52.
+
+[30 <./images/cattedra2.png>]
+<images/cestino.png, id=351, 471.7625pt x 471.7625pt>
 File: images/cestino.png Graphic file (type png)
  <use images/cestino.png>
 Package pdftex.def Info: images/cestino.png used on input line 58.
 (pdftex.def)             Requested size: 180.0pt x 179.99866pt.
 
+
+LaTeX Warning: Reference `fig:cestino' on page 31 undefined on input line 62.
+
 [31 <./images/cestino.png (PNG copy)>]
-<images/condizionatore.png, id=477, 571.13374pt x 629.35126pt>
+<images/condizionatore.png, id=358, 571.13374pt x 629.35126pt>
 File: images/condizionatore.png Graphic file (type png)
 
 <use images/condizionatore.png>
 Package pdftex.def Info: images/condizionatore.png used on input line 68.
 (pdftex.def)             Requested size: 180.0pt x 198.34273pt.
- [32 <./images/condizionatore.png (PNG copy)>]
-<images/lavagna.png, id=484, 401.5pt x 260.975pt>
+
+
+LaTeX Warning: Reference `fig:condizionatore' on page 32 undefined on input lin
+e 72.
+
+[32 <./images/condizionatore.png (PNG copy)>]
+<images/lavagna.png, id=365, 401.5pt x 260.975pt>
 File: images/lavagna.png Graphic file (type png)
  <use images/lavagna.png>
 Package pdftex.def Info: images/lavagna.png used on input line 78.
 (pdftex.def)             Requested size: 180.0pt x 117.0036pt.
 
+
+LaTeX Warning: Reference `fig:lavagna' on page 33 undefined on input line 82.
+
 [33 <./images/lavagna.png (PNG copy)>]
-<images/bookcase.png, id=491, 401.5pt x 260.975pt>
+<images/bookcase.png, id=372, 401.5pt x 260.975pt>
 File: images/bookcase.png Graphic file (type png)
  <use images/bookcase.png>
 Package pdftex.def Info: images/bookcase.png used on input line 88.
 (pdftex.def)             Requested size: 180.0pt x 117.0036pt.
 
+
+LaTeX Warning: Reference `fig:libreria' on page 34 undefined on input line 92.
+
 [34 <./images/bookcase.png (PNG copy)>]
-<images/lim.png, id=499, 571.13374pt x 571.13374pt>
+<images/lim.png, id=379, 571.13374pt x 571.13374pt>
 File: images/lim.png Graphic file (type png)
  <use images/lim.png>
 Package pdftex.def Info: images/lim.png used on input line 98.
 (pdftex.def)             Requested size: 180.0pt x 179.99522pt.
 
+
+LaTeX Warning: Reference `fig:lim' on page 35 undefined on input line 102.
+
 [35 <./images/lim.png (PNG copy)>]
-<images/portaombrelli.png, id=506, 401.5pt x 260.975pt>
+<images/portaombrelli.png, id=386, 401.5pt x 260.975pt>
 File: images/portaombrelli.png Graphic file (type png)
 
 <use images/portaombrelli.png>
 Package pdftex.def Info: images/portaombrelli.png used on input line 108.
 (pdftex.def)             Requested size: 180.0pt x 117.0036pt.
- [36 <./images/portaombrelli.png (PNG copy)>]
-<images/recycling-bins.png, id=513, 401.5pt x 260.975pt>
+
+
+LaTeX Warning: Reference `fig:portaombrelli' on page 36 undefined on input line
+ 112.
+
+[36 <./images/portaombrelli.png (PNG copy)>]
+<images/recycling-bins.png, id=394, 401.5pt x 260.975pt>
 File: images/recycling-bins.png Graphic file (type png)
 
 <use images/recycling-bins.png>
 Package pdftex.def Info: images/recycling-bins.png used on input line 118.
 (pdftex.def)             Requested size: 180.0pt x 117.0036pt.
- [37 <./images/recycling-bins.png>]
-<images/termosifone.png, id=521, 581.17125pt x 581.17125pt>
+
+
+LaTeX Warning: Reference `fig:differenziata' on page 37 undefined on input line
+ 122.
+
+[37 <./images/recycling-bins.png>]
+<images/termosifone.png, id=402, 581.17125pt x 581.17125pt>
 File: images/termosifone.png Graphic file (type png)
 
 <use images/termosifone.png>
 Package pdftex.def Info: images/termosifone.png used on input line 128.
 (pdftex.def)             Requested size: 180.0pt x 180.0016pt.
- [38 <./images/termosifone.png (PNG copy)>]
-<images/veneziana.png, id=528, 538.01pt x 538.01pt>
+
+
+LaTeX Warning: Reference `fig:termosifone' on page 38 undefined on input line 1
+32.
+
+[38 <./images/termosifone.png (PNG copy)>]
+<images/veneziana.png, id=409, 538.01pt x 538.01pt>
 File: images/veneziana.png Graphic file (type png)
  <use images/veneziana.png>
 Package pdftex.def Info: images/veneziana.png used on input line 138.
 (pdftex.def)             Requested size: 180.0pt x 179.99844pt.
 
+
+LaTeX Warning: Reference `fig:veneziana' on page 39 undefined on input line 142
+.
+
 [39 <./images/veneziana.png (PNG copy)>]
-<images/tenda.png, id=535, 542.025pt x 542.025pt>
+<images/tenda.png, id=416, 542.025pt x 542.025pt>
 File: images/tenda.png Graphic file (type png)
  <use images/tenda.png>
 Package pdftex.def Info: images/tenda.png used on input line 148.
 (pdftex.def)             Requested size: 180.0pt x 180.00188pt.
 
+
+LaTeX Warning: Reference `fig:tenda' on page 40 undefined on input line 152.
+
 [40 <./images/tenda.png (PNG copy)>]) (./tex_files/chapter_4/section_2.tex)
 (./tex_files/chapter_4/section_3.tex
-<images/estintore.png, id=543, 459.7175pt x 460.72125pt>
+<images/estintore.png, id=423, 459.7175pt x 460.72125pt>
 File: images/estintore.png Graphic file (type png)
 
 <use images/estintore.png>
 Package pdftex.def Info: images/estintore.png used on input line 8.
 (pdftex.def)             Requested size: 180.0pt x 180.39763pt.
- [41 <./images/estintore.png (PNG copy)>]
-<images/naspo.png, id=550, 355.3275pt x 354.32375pt>
+
+
+LaTeX Warning: Reference `fig:estintore' on page 41 undefined on input line 12.
+
+
+[41 <./images/estintore.png (PNG copy)>]
+<images/naspo.png, id=432, 355.3275pt x 354.32375pt>
 File: images/naspo.png Graphic file (type png)
  <use images/naspo.png>
 Package pdftex.def Info: images/naspo.png used on input line 18.
 (pdftex.def)             Requested size: 180.0pt x 179.49706pt.
 
+
+LaTeX Warning: Reference `fig:naspo' on page 42 undefined on input line 22.
+
 [42 <./images/naspo.png (PNG copy)>]
-<images/panicDoorDouble.png, id=557, 401.5pt x 260.975pt>
+<images/panicDoorDouble.png, id=440, 401.5pt x 260.975pt>
 File: images/panicDoorDouble.png Graphic file (type png)
 
 <use images/panicDoorDouble.png>
 Package pdftex.def Info: images/panicDoorDouble.png used on input line 28.
 (pdftex.def)             Requested size: 180.0pt x 117.0036pt.
- [43 <./images/panicDoorDouble.png>]
-<images/rack.png, id=566, 574.145pt x 570.13pt>
+
+
+LaTeX Warning: Reference `fig:panicdoor' on page 43 undefined on input line 32.
+
+
+[43 <./images/panicDoorDouble.png>]
+<images/rack.png, id=449, 574.145pt x 570.13pt>
 File: images/rack.png Graphic file (type png)
  <use images/rack.png>
 Package pdftex.def Info: images/rack.png used on input line 38.
 (pdftex.def)             Requested size: 180.0pt x 178.73935pt.
- [44 <./images/rack.png (PNG copy)>]
-<images/rilevatore.png, id=573, 421.575pt x 421.575pt>
+
+
+LaTeX Warning: Reference `fig:rack' on page 44 undefined on input line 42.
+
+[44 <./images/rack.png (PNG copy)>]
+<images/rilevatore.png, id=456, 421.575pt x 421.575pt>
 File: images/rilevatore.png Graphic file (type png)
 
 <use images/rilevatore.png>
 Package pdftex.def Info: images/rilevatore.png used on input line 48.
 (pdftex.def)             Requested size: 180.0pt x 180.00003pt.
- [45 <./images/rilevatore.png (PNG copy)>]
-<images/routerWifi.png, id=580, 355.3275pt x 359.3425pt>
+
+
+LaTeX Warning: Reference `fig:rilevatore' on page 45 undefined on input line 52
+.
+
+[45 <./images/rilevatore.png (PNG copy)>]
+<images/routerWifi.png, id=463, 355.3275pt x 359.3425pt>
 File: images/routerWifi.png Graphic file (type png)
 
 <use images/routerWifi.png>
 Package pdftex.def Info: images/routerWifi.png used on input line 58.
 (pdftex.def)             Requested size: 180.0pt x 182.0395pt.
- [46 <./images/routerWifi.png (PNG copy)>]
-<images/telecamera.png, id=588, 355.3275pt x 355.3275pt>
+
+
+LaTeX Warning: Reference `fig:wifi' on page 46 undefined on input line 62.
+
+[46 <./images/routerWifi.png (PNG copy)>]
+<images/telecamera.png, id=470, 355.3275pt x 355.3275pt>
 File: images/telecamera.png Graphic file (type png)
 
 <use images/telecamera.png>
 Package pdftex.def Info: images/telecamera.png used on input line 68.
 (pdftex.def)             Requested size: 180.0pt x 180.00554pt.
- [47 <./images/telecamera.png (PNG copy)>])
+
+
+LaTeX Warning: Reference `fig:telecamera' on page 47 undefined on input line 72
+.
+
+[47 <./images/telecamera.png (PNG copy)>])
 (./tex_files/chapter_4/conclusions.tex)) [48]
 (./tex_files/conclusions/index.tex (./tex_files/conclusions/title.tex
 Capitolo 5.
@@ -1380,27 +1442,33 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8D4A8FCE5643D1FE73FB2F4AB735EAB8;1823.
 
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: 4AA0F924CF260E9FE59AD3844C17FE12;1382
+(rerunfilecheck)             After:  A4E9BBD278381816DA48AAAEEB943950;1823.
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 15899 strings out of 493304
- 245836 string characters out of 6139872
+ 15884 strings out of 493304
+ 245638 string characters out of 6139871
  423993 words of memory out of 5000000
- 18771 multiletter control sequences out of 15000+600000
+ 18758 multiletter control sequences out of 15000+600000
  27503 words of font info for 75 fonts, out of 8000000 for 9000
  960 hyphenation exceptions out of 8191
- 40i,8n,49p,1210b,1381s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,8n,49p,1210b,1188s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texl
 ive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-su
@@ -1417,10 +1485,10 @@ ype1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super
 share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/ty
 pe1/public/cm-super/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /courier/ucrr8a.pfb>
-Output written on thesis.pdf (61 pages, 3153565 bytes).
+Output written on thesis.pdf (59 pages, 3145746 bytes).
 PDF statistics:
- 733 PDF objects out of 1000 (max. 8388607)
- 611 compressed objects within 7 object streams
- 169 named destinations out of 1000 (max. 500000)
- 384 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 616 PDF objects out of 1000 (max. 8388607)
+ 498 compressed objects within 5 object streams
+ 167 named destinations out of 1000 (max. 500000)
+ 320 words of extra memory for PDF output out of 10000 (max. 10000000)
 

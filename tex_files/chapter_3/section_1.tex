@@ -1,11 +1,28 @@
 \section{Definizione}
 \label{sec:chapter_3_section_1}
 
-\emph{plugin} is a software component that can be seamlessly integrated into the system in order to extends its capabilities.
-In \emph{Metior}, a plugin represents an architectural element that extends the Building Information Model design.
-Technically, a plugin represents a \emph{prototype} (namely a ``class'' in Object Oriented Programming) of a construction element that can be inserted (``instantiated'') into the \emph{canvas}, thus defining a new \emph{element}, i.e. a new component of the model.
+\emph{plugin} \`e un componente software che pu\`o può essere perfettamente integrato nel sistema, al fine di estenderne le sue capacit\`a.
+In \emph{Metior}, un plugin rappresenta un elemento architetturale che estende le Building Information Model progettate.
+Tecnicamente, un plugin rappresenta un \emph{prototype} (cio\'e una ``class'' in un Object Oriented Programming) di un elemento di
+costruzione che pu\'o essere inserito (``instanziato'') nel \emph{canvas}, definendo cos\`i un nuovo \emph{element}, in altre parole
+un nuovo componente del modello.
+
+% \emph{plugin} is a software component that can be seamlessly integrated into the system in order to extends its capabilities.
+% In \emph{Metior}, a plugin represents an architectural element that extends the Building Information Model design.
+% Technically, a plugin represents a \emph{prototype} (namely a ``class'' in Object Oriented Programming) of a construction element
+% that can be inserted (``instantiated'') into the \emph{canvas}, thus defining a new \emph{element}, i.e. a new component of the model.
 
 \paragraph{Plugin definition}
 
 \noindent
-A plugin is described by the following eight properties: (1) a unique name; (2) a description; (3) a set of metadata; (4) the \emph{occupation type} (one among \emph{linear}, \emph{area} or \emph{volume}); (5) the \emph{placement type} (\emph{inside} or \emph{over}); (6) a set of specific properties mapping the semantic to associate to the plugin; (7) a \emph{generating function} that returns the 2D representation of the element in SVG format, to be used in the \emph{2D-mode}; (8) a \emph{generating function} that returns the 3D representation of the element in OBJ format, to be used in the \emph{3D-mode}.
+Un plugin \`e descritto dalle seguenti otto propriet\`a: (1) un nome unico; (2) una descrizione; (3) un insieme di metadati;
+(4) l'\emph{occupation type} (uno tra \emph{linear}, \emph{area} or \emph{volume}); (5) il \emph{placement type} (\emph{inside} or \emph{over});
+(6) un insieme di propriet\'a specifiche mappano la semantica da associare al plugin;
+(7) una \emph{generating function} che restituisce la rappresentazione 2D dell'elemento in formato SVG, da usare nel \emph{2D-mode};
+(8) a \emph{generating function} che restituisce la rappresentazione 3D dell'elemento in formato OBJ, da usare nel  \emph{3D-mode}.
+
+% A plugin is described by the following eight properties: (1) a unique name; (2) a description; (3) a set of metadata;
+% (4) the \emph{occupation type} (one among \emph{linear}, \emph{area} or \emph{volume}); (5) the \emph{placement type} (\emph{inside} or \emph{over});
+% (6) a set of specific properties mapping the semantic to associate to the plugin;
+% (7) a \emph{generating function} that returns the 2D representation of the element in SVG format,to be used in the \emph{2D-mode};
+% (8) a \emph{generating function} that returns the 3D representation of the element in OBJ format, to be used in the \emph{3D-mode}.
