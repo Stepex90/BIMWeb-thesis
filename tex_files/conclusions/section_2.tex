@@ -2,16 +2,74 @@
 \label{sec:conclusions_section_2}
 
 I possibili sviluppi e campi di utilizzo del framework implementato possono essere tanti.
-Pensando al contesto Io-T si può pensare all'inserimento di meta dati all'interno dei plugin implementati,
+Si \`e deciso di seguire principalmente tre strade di sviluppo:
+\begin{itemize}
+\item Integrazione IoT
+\item Collaborative
+\item Fotorealismo
+\end{itemize}
+\newpage
+
+\subsection{IoT}
+Pensando al contesto IoT (Internet of Things) e all'estensione di Internet nel mondo degli oggetti e luoghi reali,
+si può pensare all'inserimento di meta dati all'interno dei plugin implementati,
 consentendo all'utente un interazione realtime con i plugin consentendo la fruizione di informazioni
 intriseche al modello...
 
 %inserire foto di un plugin con sprite
+\newpage
 
-Un altro possibile sviluppo del framework \'e renderlo collaborativo, consentendo a più utenti
+\subsection{Collaborative}
+
+Un altro possibile sviluppo del framework \'e renderlo \emph{Collaborative}, consentendo a più utenti
 di collaborare su uno stesso progetto, ottimizando i tempi di lavoro. Si fa riferimento
-all'utilizzo all'interno di uno studio di geometri...
+all'utilizzo all'interno di uno studio di geometri. Lo stack tecnologico scelto per questo sviluppo sono
+Firebase ed jsondiff. Il primo \'e necessario, per consentire in un possibile sistema di autenticazione degli utenti,
+fare un controllo degli accessi e dei permessi al progetto.
+Il secondo modulo presente in npm, consente di confrontare nel contesto collaborativo i file JSON su cui lavorono
+gli utenti per trovare le modifiche apportate.
+\newpage
 
+\subsection{Fotorealismo}
+Con fotorealismo si intende semplicemente che una scena simulata \`e indistinguibile da una fotografia, o per estensione
+dalla vita di tutti i giorni. Questo \'e possibile attraverso la \emph{rasterizzazione}, che consiste in un algoritmo che
+permette di convertire un'immagine a due dimensioni in una formata da pixel per avere fotogrammi proiettabili sugli schermi.
 
-Un altro possibile sviluppo \'e nell'ambito mobile nella reazione di un sistema di
-Indoor Navigation all'interno di edifici...
+% \subsubsection{Baking Service}
+Il servizio \emph{Baking} \`e un servizio remoto che prende una rappresentazione della scena in JSON come input,
+calcola le texture lightmapped, le Mappe Ambientali per riflessione e rifrazione e memorizza le informazioni grafiche
+in un formato che \`e compatibile con quello d'ingresso, in modo da permettere l'anello di retroazione di authoring.
+
+% The Baking Service is a remote web service that takes a JSON scene representation as its input,
+% computes the lightmapped textures, the envmaps for reflections and refractions and stores the enhanced graphic information
+%  in a format that is compliant with the input, so enabling the feedback authoring loop.
+
+Lo scopo principale \`e semplificare il workflow del visual 3D per fornire una user-experience ad alto livello
+sul cliente web (desktop, tablet e mobile, wearables come Google Carboard ).
+Compattare le strutture dati 3D prodotte dall'editor sul browser, trasmetterle ad un servizio di bakin web remoto,
+e restituire una piacevole esperienza VR in real-time con alto realismo e frame rate.
+Attualmente stiamo fornendo diverse ottimizzazioni, tra cui una soluzione per far fronte a scene di memoria basata
+ su portali e frammentazione del ambienti caricando su richiesta solo una parte degli interi dati generati.
+Il progetto discusso fa parte di un programma di grande che fornisce Indoor mapping e indoor/outdoor 3D di modelli realistici
+partendo da (a) documenti catastali e/o disegni di costruzione, e (b) outdoor/indoor voli con drone che restituiscono
+un set di fotografie e di nuvole di punti generati.
+Il possibile range di applicazioni in cui utilizzare il framework spazia dalla sicurezza all'interno di piccole aree o edifici pubblici, a e-commerce,
+accesso virtuale al patrimonio culturale, ai videogames, e molto altro ancora.
+
+% In this paper we have discussed a simplified visual 3D workflow to provide a high-level user-experience
+%  on web clients (desktop, tablet and mobile, reaching wearables like Google Cardboard).
+%  Compact 3D data structures are produced by the editor on the browser, transmitted to a remote web baking service,
+%   and given back as a real-time enjoyable VR experience with high realism and frame rate. We are currently providing
+%   several optimizations including a solution to cope with out of memory scenes based on portals and fragmentation of
+%   the environments, thus loading on demand only a portion of the whole generated data.
+
+ % We are also working to automatize the generation of built environments using the novel LAR (Linear Algebraic Representation)
+ %   data structure~\cite{Dicarlo:2014:TNL:2543138.2543294}.
+
+% The project discussed here is actually a component of a much larger programme to provide indoor mapping and indoor/outdoor 3D
+%  realistic models starting from (a) cadaster documents and/or building drawings, and (b)  outdoor/indoor drone flights and their
+%   returned set of photographs and generated point clouds.
+% The possible applications range from security enforcing inside small areas and public buildings, to e-commerce, to virtual access
+%  to cultural heritage, to serious games, and much more.
+
+\newpage

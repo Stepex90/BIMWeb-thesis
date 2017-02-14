@@ -4,9 +4,9 @@
 \defcounter {refsection}{0}\relax 
 \select@language {italian}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Ringraziamenti}{iii}{chapter*.4}
+\contentsline {chapter}{Ringraziamenti}{iv}{chapter*.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Introduzione}{iv}{chapter*.5}
+\contentsline {chapter}{Introduzione}{v}{chapter*.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}BIM e Web}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
@@ -22,64 +22,70 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Stato}{9}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Stack Tecnologico}{11}{section.2.3}
+\contentsline {section}{\numberline {2.3}Stack Tecnologico}{12}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}React}{12}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.1}React}{13}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{history}{12}{section*.9}
+\contentsline {subsubsection}{Storia}{13}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Notable features}{12}{section*.10}
+\contentsline {subsubsection}{Caratteristiche}{13}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Virtual DOM}{12}{section*.11}
+\contentsline {subsubsection}{Virtual DOM}{13}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{JSX}{13}{section*.12}
+\contentsline {subsubsection}{JSX}{14}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Architecture beyond HTML}{13}{section*.13}
+\contentsline {subsubsection}{Architettura dietro HTML}{14}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Threejs}{14}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}Threejs}{15}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Overview}{14}{section*.14}
+\contentsline {subsubsection}{Overview}{15}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{History}{14}{section*.15}
+\contentsline {subsubsection}{Storia}{15}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Features}{15}{section*.16}
+\contentsline {subsubsection}{Caratteristiche}{16}{section*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}User Interface}{17}{section.2.4}
+\contentsline {section}{\numberline {2.4}User Interface}{18}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Viewer 2D}{17}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.1}Viewer 2D}{19}{subsection.2.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Viewer 3D}{18}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.2}Viewer 3D}{20}{subsection.2.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}User Experience}{19}{section.2.5}
+\contentsline {section}{\numberline {2.5}User Experience}{21}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Metior Plugins}{20}{chapter.3}
+\contentsline {chapter}{\numberline {3}Metior Plugins}{23}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Definizione}{20}{section.3.1}
+\contentsline {section}{\numberline {3.1}Definizione}{23}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Plugin definition}{20}{section*.19}
+\contentsline {paragraph}{Plugin definition}{23}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Tassonomia}{21}{section.3.2}
+\contentsline {section}{\numberline {3.2}Tassonomia}{24}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Propriet\`a Specifiche}{22}{section.3.3}
+\contentsline {section}{\numberline {3.3}Propriet\`a Specifiche}{25}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Plugin Catalog}{23}{section.3.4}
+\contentsline {section}{\numberline {3.4}Plugin Catalog}{26}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Server-side models generation}{23}{section.3.5}
+\contentsline {section}{\numberline {3.5}Server-side models generation}{27}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Server Framework API}{24}{section.3.6}
+\contentsline {section}{\numberline {3.6}Server Framework API}{27}{section.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Casi d'uso}{26}{chapter.4}
+\contentsline {chapter}{\numberline {4}Casi d'uso}{29}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}BAM}{26}{section.4.1}
+\contentsline {section}{\numberline {4.1}BAM}{29}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Deconstuction}{41}{section.4.2}
+\contentsline {section}{\numberline {4.2}Deconstuction}{34}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}CED}{41}{section.4.3}
+\contentsline {section}{\numberline {4.3}CED}{35}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusioni e sviluppi futuri}{49}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusioni e sviluppi futuri}{37}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Conclusioni}{49}{section.5.1}
+\contentsline {section}{\numberline {5.1}Conclusioni}{37}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Sviluppi futuri}{50}{section.5.2}
+\contentsline {section}{\numberline {5.2}Sviluppi futuri}{38}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{51}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}IoT}{39}{subsection.5.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.2}Collaborative}{40}{subsection.5.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.3}Fotorealismo}{41}{subsection.5.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{42}{subsection.5.2.3}

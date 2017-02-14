@@ -2,7 +2,19 @@
 \section{User Interface}
 \label{sec:chapter_2_section_4}
 
-Qui si fa una descrizione della User Interface...
+L'applicazione web si presenta come un software CAD semplificsto, dove la user interface comprende una user interface:
+2D canvas (come si evince dalla Figura~\ref{fig:view2D}) e 3D canvas (come si evince dalla Figura~\ref{fig:viewer3D}).
+Dalla toolbar lo uset pu\`o accedere alle funzionalit\`a relative a: ciclo di vita del progetto (new, save, load);
+view/interaction mode switching (2D, 3D); interaction mode changing (selecting, pan, zoom).
+Il canvas \`e un area nella quale lo user pu\`o interagire con il data modello attuale. Nella modalit\`a 2D
+il modello \`e visualizzato come una proiezione 2D dall'alto, e l'interazione consiste nell'inserimento, selezione e modifica
+dell'elemento (in accordo con le specifiche interattive del prototipo). Nella modalit\'a 3D un modello 3D pu\`o essere
+inspezionato e navigato, rispettivamente attraverso il trackball o l'interazione in prima persona, mentre gli oggetti
+possono essere scelti consentendo la selezione dell'elemento.
+La sidebar visualizza le propriet\`a dell'elemento correntemente selezionato. Nel pannello delle propriet\`a \`e possibile
+vedere la descrizione dell'elemento, aggiungere/rimuovere metadata, e modificare qualsiasi propriet\`a.
+Quest'ultima modalit\'a di interazione consente allo user di associare annotazioni semantiche su ogni parte del modello.
+\newpage
 
 \subsection{Viewer 2D}
 Il \emph{2D-viewer} invoca il  \emph{2Dgf} degli elementi costruiti e aggiunti al modello e genera un suo output usando gli elementi SVG

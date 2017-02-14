@@ -55,114 +55,123 @@ Su questo strato può contare in modo trasparente interfacce differenti.
 %     In our setup instead we defined a \emph{state engine}, which represents the application logic, comprising
 %      actions and reducers, and encapsulates the centralized state. On this layer can transparently rely different interfaces.
 
-\newpage
-% \begin{listing}
-% \begin{minted}[
-%                baselinestretch=1,
-%                fontsize=\footnotesize,
-%                frame=single,
-%                framesep=1mm,
-%                linenos=true,
-%                xleftmargin=16pt,
-%                tabsize=2]{js}
-% {
-%   "width": 3000, // canvas width
-%   "height": 2000, // canvas height
-%   "unit": "cm",  // unit of measurement
-%   "selectedLayer": "layer-1", // current layer
-%   "layers": {
-%     "layer-1": {
-%       "name": "default",
-%       "id": "layer-1",
-%       "altitude": 0,
-%       "opacity": 1,
-%       "visible": true,
-%       "vertices": {
-%         "HJAe59YF8Ux": {...}
-%         // ...
-%       },
-%       "lines": {
-%         "Hype99FK88x": {...}
-%         // ...
-%       },
-%       "openings": {
-%         "r1jaKYUIg": {...}
-%         // ...
-%       },
-%       "areas": {
-%         "Byg1oFKUIe": {...}
-%         // ...
-%       },
-%       "objects": {
-%         "rkKU89U8e": {...}
-%         // ...
-%       },
-%      //selected element
-%       "selected": {
-%         "vertices": [],
-%         "lines": [],
-%         "openings": [],
-%         "areas": [],
-%         "objects": ["rkKU89U8e"]
-%       }
-%     }
-%   }
-% }
-% \end{minted}
-% \caption{JSON serialized state, overall structure}
-% \label{lst:structure}
-% \end{listing}
-%
-% \begin{listing}
-% \begin{minted}[
-%                baselinestretch=1,
-%                fontsize=\footnotesize,
-%                frame=single,
-%                framesep=1mm,
-%                linenos=true,
-%                xleftmargin=16pt,
-%                tabsize=2]{js}
-% {
-%   "id": "HJAe59YF8Ux",
-%   "x": 201,
-%   "y": 891,
-%   "prototype": "vertices",
-%   "selected": false,
-%   "lines": ["Hype99FK88x", "S1w-hqKKL8e"],
-%   "areas": ["Byg1oFKUIe"]
-% }
-% \end{minted}
-% \caption{JSON serialized state, {\tt vertex} structure}
-% \label{lst:vertex}
-% \end{listing}
-%
-% \begin{listing}
-% \begin{minted}[
-%                baselinestretch=1,
-%                fontsize=\footnotesize,
-%                frame=single,
-%                framesep=1mm,
-%                linenos=true,
-%                xleftmargin=16pt,
-%                tabsize=2]{js}
-% {
-%   "id": "Hype99FK88x",
-%   "type": "linear",
-%   "prototype": "lines",
-%   "vertices": ["HJAe59YF8Ux", "r11Z59tKIUg"],
-%   "openings": ["r1jaKYUIg", "BJVZ2M9FIIx"],
-%   "selected": false,
-%   "properties": {
-%     "height": 300,
-%     "thickness": 20,
-%     "coverA": "bricks",
-%     "coverB": "bricks"
-%  }
-% \end{minted}
-% \caption{JSON serialized state, {\tt line} structure}
-% \label{lst:line}
-% \end{listing}
+ \newpage
 
+\noindent
+% \begin{minipage}{.45\textwidth}
+% \begin{lstlisting}[
+%                    numbers=left,
+%                    frame=trBL,
+%                    basicstyle=\tiny,
+%                    caption={JSON serialized state, {\tt vertex} structure},
+%                    label=struttura]
+%   {
+%     "id": "HJAe59YF8Ux",
+%     "x": 201,
+%     "y": 891,
+%     "prototype": "vertices",
+%     "selected": false,
+%     "lines": ["Hype99FK88x", "S1w-hqKKL8e"],
+%     "areas": ["Byg1oFKUIe"]
+%   }
+% \end{lstlisting}
+% \end{minipage}\hfill
+% \begin{minipage}{.45\textwidth}
+% \begin{lstlisting}[
+%                    numbers=left,
+%                    frame=trBL,
+%                    basicstyle=\tiny,
+%                    caption={JSON serialized state, {\tt line} structure},
+%                    label=struttura]
+%   {
+%     "id": "Hype99FK88x",
+%     "type": "linear",
+%     "prototype": "lines",
+%     "vertices": ["HJAe59YF8Ux", "r11Z59tKIUg"],
+%     "openings": ["r1jaKYUIg", "BJVZ2M9FIIx"],
+%     "selected": false,
+%     "properties": {
+%       "height": 300,
+%       "thickness": 20,
+%       "coverA": "bricks",
+%       "coverB": "bricks"
+%    }
+% \end{lstlisting}
+% \end{minipage}
+
+\lstset{
+    basicstyle=\fontfamily{pcr}\selectfont\footnotesize\color{black},
+    numbers=none, % where to put the line-numbers
+    numberstyle=\tiny, % the size of the fonts that are used for the line-numbers
+    backgroundcolor=\color{white},
+    showspaces=false, % show spaces adding particular underscores
+    showstringspaces=false, % underline spaces within strings
+    showtabs=false, % show tabs within strings adding particular underscores
+    frame=single, % adds a frame around the code
+    tabsize=2, % sets default tabsize to 2 spaces
+    captionpos=b, % sets the caption-position to bottom
+    breaklines=true, % sets automatic line breaking
+    breakatwhitespace=false,
+    xleftmargin=17pt,
+    framexleftmargin=17pt,
+    framexrightmargin=17pt,
+    framexbottommargin=5pt,
+    framextopmargin=5pt
+}
+
+
+
+\begin{lstlisting}[
+                   numbers=left,
+                   frame=trBL,
+                   basicstyle=\tiny,
+                   caption={stato serializzato in JSON , struttura complessiva},
+                   label=struttura]
+{
+  "width": 3000, // canvas width
+  "height": 2000, // canvas height
+  "unit": "cm",  // unit of measurement
+  "selectedLayer": "layer-1", // current layer
+  "layers": {
+    "layer-1": {
+      "name": "default",
+      "id": "layer-1",
+      "altitude": 0,
+      "opacity": 1,
+      "visible": true,
+      "vertices": {
+        "HJAe59YF8Ux": {...}
+        // ...
+      },
+      "lines": {
+        "Hype99FK88x": {...}
+        // ...
+      },
+      "openings": {
+        "r1jaKYUIg": {...}
+        // ...
+      },
+      "areas": {
+        "Byg1oFKUIe": {...}
+        // ...
+      },
+      "objects": {
+        "rkKU89U8e": {...}
+        // ...
+      },
+     //selected element
+      "selected": {
+        "vertices": [],
+        "lines": [],
+        "openings": [],
+        "areas": [],
+        "objects": ["rkKU89U8e"]
+      }
+    }
+  }
+}
+\end{lstlisting}
+\newpage
 
 \subsubsection*{Immutability pattern}
 
