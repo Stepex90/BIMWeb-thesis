@@ -1,0 +1,65 @@
+
+\section{Applicazioni BIM nel Web}
+\label{sec:chapter_1_section_3}
+
+Oggigiorno stiamo assistendo ad una migrazione inarrestabile di prodotti software verso i servizi accessibili
+attraverso il mezzo web. Ciò è dovuto principalmente ai benefici innegabili in termini di accessibilità, usabilità,
+manutenibilità e spalmabilità concesso dal mezzo Web stesso.
+Tuttavia questi benefici non arrivano senza un costo: le prestazioni e lo sviluppo della complessità diventano
+maggiori preoccupazioni nell'ambiente Web.
+In particolare, a causa dell'introduzione di diversi livelli di astrazione non è sempre possibile "porta" desktop
+applicazione nel regno Web, un aspetto da prendere in considerazione anche per le differenze rilevanti tra hardware
+tutti i dispositivi dotati di un browser Web.
+Può essere ancora più arduo di affrontare un' architettura di software distribuito(un client / server almeno uno)
+indotta dalla piattaforma Web. Tuttavia sono sempre più ricche e complesse le applicazioni Web che sono apparite,
+sostenute dalle API arricchite HTML5, che grazie al WebGL~\cite{webgl}
+(Che consente l'accesso diretto alla GPU), Canvas~\cite{Munro:15:HCC} (API raster 2D) e SVG~\cite{Jackson:11:SVG}
+(API di disegno vettoriale), ha aperto la strada per l'ingresso di applicazioni Web Graphic.
+In questo lavoro riportiamo il nostro impegno verso la definizione di uno strumento di modellazione edifici basato sul Web
+che supera le suddette difficoltà prestazionali e di sviluppo basandosi su un modello di progettazione del flusso di dati
+unidirezionale e su un'architettura serverless rispettivamente.
+Un'architettura serverless, al contrario di ciò che il nome può suggerire, in realtà si avvale di molti server specifici
+diversi, funzionamento e la manutenzione di cui non le fanno onere per lo sviluppatore del progetto.
+Questi diversi server possono essere visti come servizi di terze parti (tipicamente cloud-based) o funzioni eseguite
+in contenitori effimeri (può durare solo per una invocazione) per gestire lo stato interno e la logica server-side.
+L'interazione in realtime tra gli utenti che lavorano congiuntamente sullo stesso progetto di modellazione,
+è ad esempio ottenuto tramite un terzo API parti per la collaborazione gli utenti remoti.
+L'interfaccia utente strumento, interamente basata sul modello componenti Web, è stato mantenuto il più semplice possibile: è richiesto all'utente
+ interagire principalmente con bidimensionali segnaposto simbolici rappresentano parti dell'edificio, evitando così complesso 3D
+  interazioni.
+La complessità del modello è quindi spostato dal modellatore per lo sviluppatore, che compila un estensibile \emph{catalog} di
+\emph{bulding elements} personalizzabili. Il modellatore deve solo selezionare l'elemento richiesto, il luogo e parametrizzare
+esso a seconda delle esigenze. È ovvio che un gran numero di elementi costruttivi deve essere fornito per garantire
+l'adempimento delle maggior parte delle esigenze di modellazione.
+
+% Nowadays we are seeing a relentless migration of software products toward services accessible via the Web medium.
+% This is mainly due to the undeniable benefits in terms of accessibility, usability, maintainability and spreadability
+% granted by the Web medium itself.
+% Nevertheless these benefits don't come without a cost: performance  and development complexity become major concerns
+% in the Web environment.
+% In particular, due to the introduction of several abstraction layers it is not always feasible to "port" a desktop
+% application into the Web realm, an aspect to be taken into account even for the relevant hardware differences among
+%  all the devices equipped with a Web Browser.
+% It can be even more arduous to tackle the inherent distributed software
+%  architecture (a client/server one at least) induced by the Web platform. Nevertheless increasingly rich and complex
+%   Web applications began to appear, supported by the enriched HTML5 APIs, which thanks to the WebGL~\cite{webgl}
+%   (which enables direct access to GPU), Canvas~\cite{Munro:15:HCC} (2D raster APIs) and SVG~\cite{Jackson:11:SVG}
+%    (vectorial drawing APIs), has paved the way for the entrance of Web Graphic Applications.
+% In this work we report about our endeavor toward the definition of a Web based buildings modeling tool which overcomes
+%  the aforementioned performance and development difficulties relying on a unidirectional data flow design pattern and
+%  on a serverless architecture, respectively.
+% A serverless architecture, on the contrary of what the name may suggest, actually employs many different specific servers,
+%  whose operation and maintenance don't burden on the project developer(s). These several servers can be seen as third party
+%   services (typically cloud-based) or functions executed into ephemeral containers (may only last for one invocation) to manage
+%    the internal state and server-side logic. Realtime interaction among users jointly working on the same modeling project,
+%    is for example achieved via a third party APIs for remote users collaboration.
+% The tool user interface, entirely based on web components pattern,  has been kept as simple as possible: the user is required
+%  to interact mainly with two-dimensional symbolic placeholders representing parts of the building, thus avoiding complex 3D
+%   interactions.
+% The modeling complexity is thus moved from the modeler to the developer which fills out an extendible \emph{catalog} of
+% customizable \emph{building elements}. The modeler has only to select the required element, place and parametrize it
+% according to the requirements. It is obvious that a large number of building elements has to be provided to ensure
+% the fulfillment of the most modeling requirements.
+% The remainder of this document is organized as follows. Section~\ref{sec:related_work} provides an overview of related work.
+%  Section~\ref{sec:application} reports about the application user experience. Section~\ref{sec:architecture} presents adopted
+%   architectural solutions. Finally, Section ~\ref{sec:conclusions} contains some conclusive remarks.

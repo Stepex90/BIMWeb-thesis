@@ -12,37 +12,37 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Building Information Modeling}{1}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.1}Applicazioni Desktop}{4}{subsection.1.1.1}
+\contentsline {section}{\numberline {1.2}Applicazioni BIM su Desktop}{4}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Applicazioni BIM nel Web}{6}{section.1.2}
+\contentsline {section}{\numberline {1.3}Applicazioni BIM nel Web}{6}{section.1.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Metior}{8}{chapter.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Architettura}{8}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Stato}{9}{section.2.2}
+\contentsline {section}{\numberline {2.2}Stato di memoria}{9}{section.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Stack Tecnologico}{12}{section.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}React}{13}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Storia}{13}{section*.9}
+\contentsline {subsubsection}{Storia}{13}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Caratteristiche}{13}{section*.10}
+\contentsline {subsubsection}{Caratteristiche}{13}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Virtual DOM}{13}{section*.11}
+\contentsline {subsubsection}{Virtual DOM}{13}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{JSX}{14}{section*.12}
+\contentsline {subsubsection}{JSX}{14}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Architettura dietro HTML}{14}{section*.13}
+\contentsline {subsubsection}{Architettura dietro HTML}{14}{section*.14}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}Threejs}{15}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Overview}{15}{section*.14}
+\contentsline {subsubsection}{Overview}{15}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Storia}{15}{section*.15}
+\contentsline {subsubsection}{Storia}{15}{section*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Caratteristiche}{16}{section*.16}
+\contentsline {subsubsection}{Caratteristiche}{16}{section*.17}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}User Interface}{18}{section.2.4}
 \defcounter {refsection}{0}\relax 
@@ -56,8 +56,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Definizione}{23}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Plugin definition}{23}{section*.20}
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Tassonomia}{24}{section.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Propriet\`a Specifiche}{25}{section.3.3}
@@ -70,22 +68,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Casi d'uso}{29}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}BAM}{29}{section.4.1}
+\contentsline {section}{\numberline {4.1}BaM}{29}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Deconstuction}{34}{section.4.2}
+\contentsline {section}{\numberline {4.2}Deconstruction}{35}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}CED}{35}{section.4.3}
+\contentsline {section}{\numberline {4.3}CED}{36}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusioni e sviluppi futuri}{37}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusioni e sviluppi futuri}{38}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Conclusioni}{37}{section.5.1}
+\contentsline {section}{\numberline {5.1}Conclusioni}{38}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Sviluppi futuri}{38}{section.5.2}
+\contentsline {section}{\numberline {5.2}Sviluppi futuri}{39}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}IoT}{39}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.1}IoT}{40}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Collaborative}{40}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Collaborativit\IeC {\`a}}{41}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Fotorealismo}{41}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.3}Fotorealismo}{42}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{42}{subsection.5.2.3}
+\contentsline {chapter}{Bibliografia}{43}{subsection.5.2.3}

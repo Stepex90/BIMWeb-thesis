@@ -69,49 +69,6 @@
   \warn{\item Invalid format of field 'month'}
 \endentry
 
-\entry{Dicarlo:2014:TNL:2543138.2543294}{article}{}
-  \name{author}{3}{}{%
-    {{}%
-     {DiCarlo}{D.}%
-     {A.}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Paoluzzi}{P.}%
-     {A.}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Shapiro}{S.}%
-     {V.}{V.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Butterworth-Heinemann}%
-  }
-  \keyw{Chain complex, Representation scheme, Solid modeling, Sparse matrix}
-  \strng{namehash}{DAPASV1}
-  \strng{fullhash}{DAPASV1}
-  \field{sortinit}{D}
-  \verb{doi}
-  \verb 10.1016/j.cad.2013.08.044
-  \endverb
-  \field{issn}{0010-4485}
-  \field{pages}{269\bibrangedash 274}
-  \field{title}{Linear Algebraic Representation for Topological Structures}
-  \verb{url}
-  \verb http://dx.doi.org/10.1016/j.cad.2013.08.044
-  \endverb
-  \field{volume}{46}
-  \list{location}{1}{%
-    {Newton, MA, {USA}}%
-  }
-  \field{journaltitle}{Comput. Aided Des.}
-  \field{month}{01}
-  \field{year}{2014}
-\endentry
-
 \entry{uniflow}{misc}{}
   \name{author}{1}{}{%
     {{}%
@@ -141,7 +98,7 @@
   \strng{namehash}{JD1}
   \strng{fullhash}{JD1}
   \field{sortinit}{J}
-  \field{note}{https://www.khronos.org/registry/webgl/specs/1.0.3/}
+  \field{note}{\url{"https://www.khronos.org/registry/webgl/specs/1.0.3/"}}
   \field{title}{{WebGL Specification}}
   \list{institution}{1}{%
     {Khronos}%
@@ -207,7 +164,7 @@
   \strng{namehash}{JD+1}
   \strng{fullhash}{JDDEFJGAMCDPFJSDLCWJ1}
   \field{sortinit}{J}
-  \field{note}{http://www.w3.org/TR/2011/REC-SVG11-20110816/}
+  \field{note}{\url{"http://www.w3.org/TR/2011/REC-SVG11-20110816/"}}
   \field{title}{{Scalable Vector Graphics ({SVG}) {1.1} (Second Edition)}}
   \list{institution}{1}{%
     {W3C}%
@@ -325,6 +282,22 @@
   \verb https://fronteers.nl/congres/2011/sessions/web-components-and-model-dri
   \verb ven-views-alex-russell
   \endverb
+\endentry
+
+\entry{BIMrevolution}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Serra}{S.}%
+     {Paolo~Emilio}{P.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SPE1}
+  \strng{fullhash}{SPE1}
+  \field{sortinit}{S}
+  \field{howpublished}{\url{http://puntorevit.blogspot.it/2007/11/cominciare-editare-le-famiglie.html}}
+  \field{title}{Cominciare a editare le famiglie}
+  \field{year}{2007}
 \endentry
 
 \entry{ncLab}{misc}{}

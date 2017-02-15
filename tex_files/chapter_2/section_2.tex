@@ -1,5 +1,5 @@
 \newpage
-\section{Stato}
+\section{Stato di memoria}
 \label{sec:chapter_2_section_2}
 
 Lo stato dell'applicazione è modellato utilizzando la struttura dei dati mostrato nel listato %~\ref{lst:structure}.
@@ -12,7 +12,7 @@ licenziamenti di informazione vengono sfruttati per ridurre i tempi di accesso. 
 sono indicizzati da \texttt{id} permettendo così di ricerca in tempo costante, del
 campo \texttt{selected} di ogni layer, consente l'accesso diretto ad elementi selezionati senza cercare.
 Lo stato può essere caricato uno layer alla volta per sostenendo la frammentazione dello stato così,
-come pu\o' avvenire in un progetto di modellazione di un edificio molto grande.
+come può avvenire in un progetto di modellazione di un edificio molto grande.
 
 % The application state is modeled using the data structure shown in Listing~\ref{lst:structure}.
 % It is essentially a collection of layers, each containing a collection of vertices, lines, areas
@@ -100,7 +100,7 @@ Su questo strato può contare in modo trasparente interfacce differenti.
 % \end{minipage}
 
 \lstset{
-    basicstyle=\fontfamily{pcr}\selectfont\footnotesize\color{black},
+    basicstyle=\fontfamily{cr}\selectfont\footnotesize\color{black},
     numbers=none, % where to put the line-numbers
     numberstyle=\tiny, % the size of the fonts that are used for the line-numbers
     backgroundcolor=\color{white},
@@ -125,7 +125,7 @@ Su questo strato può contare in modo trasparente interfacce differenti.
                    numbers=left,
                    frame=trBL,
                    basicstyle=\tiny,
-                   caption={stato serializzato in JSON , struttura complessiva},
+                   caption={stato serializzato in JSON, struttura complessiva},
                    label=struttura]
 {
   "width": 3000, // canvas width
