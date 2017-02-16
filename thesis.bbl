@@ -16,6 +16,87 @@
   {}
 \endgroup
 
+\entry{infoworld}{misc}{}
+  \field{howpublished}{\url{http://www.infoworld.com/article/2608181/javascript/react--making-faster--smoother-uis-for-data-driven-web-apps.html}}
+\endentry
+
+\entry{facebookreact}{misc}{}
+  \field{howpublished}{\url{https://www.infoq.com/news/2013/06/facebook-react}}
+\endentry
+
+\entry{reactjs}{misc}{}
+  \field{howpublished}{\url{https://thenewstack.io/javascripts-history-and-how-it-led-to-reactjs/}}
+\endentry
+
+\entry{libscope}{misc}{}
+  \field{howpublished}{\url{http://libscore.com}}
+\endentry
+
+\entry{quora}{misc}{}
+  \field{howpublished}{\url{https://www.quora.com/React-JS-Library/How-was-the-idea-to-develop-React-conceived-and-how-many-people-worked-on-developing-it-and-implementing-it-at-Facebook/answer/Bill-Fisher-17}}
+\endentry
+
+\entry{txjs}{misc}{}
+  \field{howpublished}{\url{https://www.youtube.com/watch?v=A0Kj49z6WdM}}
+\endentry
+
+\entry{reactdom}{misc}{}
+  \field{howpublished}{\url{https://facebook.github.io/react/docs/refs-and-the-dom.html}}
+\endentry
+
+\entry{jsx}{misc}{}
+  \field{howpublished}{\url{https://facebook.github.io/react/docs/jsx-in-depth.html}}
+\endentry
+
+\entry{reactnative}{misc}{}
+  \field{howpublished}{\url{https://code.facebook.com/posts/1014532261909640/react-native-bringing-modern-web-techniques-to-mobile/}}
+\endentry
+
+\entry{paypal}{misc}{}
+  \field{howpublished}{\url{https://www.paypal-engineering.com/2015/04/27/isomorphic-react-apps-with-react-engine/}}
+\endentry
+
+\entry{netflix}{misc}{}
+  \field{howpublished}{\url{http://techblog.netflix.com/2015/01/netflix-likes-react.html}}
+\endentry
+
+\entry{O3D}{misc}{}
+  \field{howpublished}{\url{https://en.wikipedia.org/wiki/O3D}}
+\endentry
+
+\entry{unity}{misc}{}
+  \field{howpublished}{\url{https://en.wikipedia.org/wiki/Unity_(game_engine)}}
+\endentry
+
+\entry{khronos}{misc}{}
+  \field{howpublished}{\url{https://www.khronos.org/news/press/khronos-releases-final-webgl-1.0-specification}}
+\endentry
+
+\entry{develop}{misc}{}
+  \field{howpublished}{\url{http://www.develop-online.net/news/study-average-dev-costs-as-high-as-28m/0106030}}
+\endentry
+
+\entry{mrdoob}{misc}{}
+  \field{howpublished}{\url{https://github.com/mrdoob/three.js/issues/1960}}
+\endentry
+
+\entry{stats.js}{misc}{}
+  \field{howpublished}{\url{https://github.com/mrdoob/stats.js}}
+\endentry
+
+\entry{webglinspector}{misc}{}
+  \field{howpublished}{\url{http://benvanik.github.io/WebGL-Inspector/}}
+\endentry
+
+\entry{threejsinspector}{misc}{}
+  \field{howpublished}{\url{http://zz85.github.io/zz85-bookmarklets/threelabs.html}}
+\endentry
+
+\entry{Firstcommit}{misc}{}
+  \field{howpublished}{\url{https://github.com/mrdoob/three.js/commit/a90c4e107ff6e3b148458c96965e876f9441b147}}
+  \field{year}{2010}
+\endentry
+
 \entry{altamura:12}{thesis}{}
   \name{author}{1}{}{%
     {{}%

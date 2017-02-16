@@ -2,15 +2,15 @@
 \label{sec:chapter_3_section_5}
 
 \noindent
-Tra i modelli 3D e 2D generati abbiamo progettato un \emph{asynchronous}.
-Il risultato attuale dell'invocazione di una funzione generatrice non \`e generare il modello stesso, ma inoltre una \emph{promise}
-di un risultato previsto. Tale scelta progettuale \`e importante poich\'e il calcolo per la generazione di modello pu\`o richiedere
-un certo tempo.
+Tra i modelli 3D e 2D generati è stato progettato un \emph{asynchronous}.
+Il risultato attuale dell'invocazione di una funzione generatrice non \`e generare il modello stesso,
+ma una \emph{promise} di un risultato previsto. Tale scelta progettuale \`e importante poich\'e il calcolo per la
+generazione di modello pu\`o richiedere un certo tempo.
 Nel frattempo l'utente deve essere in grado di interagire con l'interfaccia, che a sua volta deve rimanere reattiva.
 Basandosi su questa architettura, la generazione dei modelli pu\'o essere facilmente delegata a un server,
-sollevando così il cliente dall'onere di calcoli onerosi.  Il server espone un REST-like HTTP-based JSON API al cliente.
+sollevando così il cliente dall'onere di calcoli onerosi. Il server espone un REST-like HTTP-based JSON API al cliente.
 I plugin spaziano dal client al server, dal momento che le funzioni generatrici 2D e 3D (\emph{2Dgf} e \emph{3Dgf})
- definito dal plugin sono effettivamente eseguite sul server.
+ definito dal plugin sono effettivamente eseguite sul server.\\
 
 % Both the 3D and 2D model generations have been designed as \emph{asynchronous}.
 %  The actual result of the invocation of a generating function is not the generated model itself, but rather a \emph{promise}
@@ -21,3 +21,70 @@ I plugin spaziano dal client al server, dal momento che le funzioni generatrici 
 %     The server exposes a REST-like HTTP-based JSON API to the client. The plugins span from the client to the server,
 %      since the 2D and 3D generating functions ( \emph{2Dgf} and \emph{3Dgf}) defined by the plugin are actually executed
 %       on the server, as shown in Figure~\ref{fig:c-s-arch}.
+
+% \subsection*{Server Framework API}
+% \label{sec:chapter_3_section_5_sub_1}
+%
+% \noindent
+% Il framework Metior ha un architettura client-server web-based, \emph{Metior},
+% Il framework server-side, discusso in questa sezione, \`e un server plugin scritto in Python, il quale
+% si capitalizza sulla pila di strumenti di programmazione geometrica sopra descritti.
+%
+% % Our building deconstruction framework  has a web-based client-server architecture,  discussed in Section~\ref{sec:architecture}.
+% %   \emph{Metior}, the web client application, is illustrated in Section~\ref{sec:application}.
+% %   The server-side of the framework, discussed in this section, is a  plugin server written in Python, which capitalizes
+% %   on the stack of geometric programming tools described above.
+%
+% L'utente Metior sviluppa un gruppo gerarchico 3D di diverse parti dell'involucro edilizio,
+% nonché le partizioni orizzontali e verticali, utilizzando semplici strumenti di disegno 2D.
+% Le parti geometricamente pi\`u complesse della costruzione sono inversamente impostate dall'utente prendendo
+% da tavole di modelli context-based di plugin predefiniti, che sono script Python, la generazione di modelli solidi che
+% sono dimensionati in modo interattivo, sia utilizzando strumenti di disegno 2D, o con input numerico dell'utente da tastiera.
+%
+% % The Metior user quickly develops a 3D hierarchical assembly of different parts of the building envelope,
+% %  as well as the horizontal and vertical partitions, using very simple 2D drawing tools.
+% %  The more geometrically complex parts of the construction are conversely set up by user picking from context-based boards
+% %   of predefined plugin templates, that are Python scripts~(see Figure~\ref{spiralstair}) generating solids models which
+% %   are interactively dimensioned, either using 2D drawing tools, or by user's numeric input from keyboard.
+%
+%
+% Naturalmente, lista di modelli di plugin abbraccia la maggior parte di parti di edifici che non sono gestibili
+% per la forma rapida ingresso attraverso l'interazione 2D. In particolare, le schede di prelievo comprendono modelli per telai
+% in cemento planari, cornici costruzione spaziale, costruzione di fondazioni, tetti e scale di diverso tipo, soffitte e abbaini,
+%  camini e armadi a muro, cabine Shover e attrezzature sanitarie, porte e finestre, ecc.
+%
+%  % Of course, our list of \emph{plugin templates} embraces most of building parts that are not manageable for quick shape
+%  % input via 2D interaction. In particular, the picking boards include templates for planar concrete frames, spatial building frames,
+%  %  building foundations, roofs and stairs of different types, attics and dormers, fireplaces and fitted wardrobes, shover cabins and
+%  %   sanitary equipments, doors and windows, etc.
+%
+% Vale la pena notare che, in virt\`u della grande espressivit\`a degli operatori PLaSM e il suo stile funzionale di programmazione
+% e la dimensione indipendente della geometria, lo sviluppo di un nuovo modello plugin è molto semplice anche per i programmatori
+% non-esperti, e di solito richiede una piccola quantit\`a di tempo e di codice, che pu\`o variare tra 4-8 ore,
+% e tra 10-100 righe di codice Python / pyplasm.
+%
+%
+% % It is worth noting that, by virtue of the great expressiveness of the PLaSM operators and its functional style of programming
+% %  and dimension-independent geometry, the development of a new plugin template is very easy even for non-experienced programmers,
+% %   and usually requires a tiny amount of time and code, that may range between 4-8 hours,
+% %    and between 10-100 lines of Python/pyplasm code.
+%
+%
+% Due punti importanti che vorremmo sottolineare sono: (a) la grande \emph{potenza espressiva} del linguaggio geometrico,
+% fortemente potenziato da strigliare, cioè ~ traducendo la valutazione di una funzione che prende --- sia più argomenti
+% o una tupla di argomenti --- in valutazione di una successione di funzioni, ciascuna con un singolo argomento;
+% (b) il \emph{facilità di sviluppo}.
+%
+% % Two important points we would like to remark are: (a) the great \emph{expressive power} of the geometric language,
+% %   strongly empowered by  currying, i.e.~by translating the evaluation of a function---that takes either multiple arguments
+% %    or a tuple of arguments---into evaluating a sequence of functions, each with a single argument;
+% %    (b) the \emph{ease of development}.
+%
+%    Python/pyplasm \`e usato spesso per insegnare programmazione geometrica agli studenti del K12 ~\cite{ncLab}
+%    Diversi modelli plugin utilizzati da Metior sono stati sviluppati in classe dagli studenti, nell'ambito del computer
+%    Naturalmente la computer grafica viene insegnata da uno degli autori.
+%
+% %    Python/pyplasm is used even to teach geometric programming to K12 students~\cite{ncLab}
+% %     (see \href{https://nclab.com/3d-gallery/}{\texttt{https://nclab.com/3d-gallery/}}).
+% % Several plugin templates used by Metior were developed in class by students, in the framework of the computer
+% % graphics course being taught by one of authors.

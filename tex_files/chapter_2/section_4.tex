@@ -2,7 +2,7 @@
 \section{User Interface}
 \label{sec:chapter_2_section_4}
 
-Per definizione software CAD, è un acronimo inglese usato per indicare due concetti correlati, ma differenti:
+Per definizione il software CAD, è un acronimo inglese usato per indicare due concetti correlati, ma differenti:
 \begin{itemize}
   \item Computer-Aided Drafting;
   \item Computer-Aided Design;
@@ -13,6 +13,17 @@ user interface comprende una user interface:
   \item 2D canvas (come si evince dalla Figura~\ref{fig:view2D})
   \item 3D canvas (come si evince dalla Figura~\ref{fig:viewer3D}).
 \end{itemize}
+
+L'area di lavoro come si evince dalla Figura~\ref{fig:interfaccia} è suddivisa in delle aree ben specifiche,
+le quali adempiono e delle specifiche funzionalità che in seguito vedremo in dettaglio.\\
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=1\linewidth]{images/mock-interfaccia}
+   \caption{Schermata componenti interfaccia}
+   \label{fig:interfaccia}
+\end{figure}
+\newpage
 Dalla toolbar lo user pu\`o accedere alle funzionalit\`a relative a: ciclo di vita del progetto (new, save, load);
 view/interaction mode switching (2D, 3D); interaction mode changing (selecting, pan, zoom).
 Il canvas \`e un area nella quale lo user pu\`o interagire con il data modello attuale. Nella modalit\`a 2D
@@ -26,8 +37,8 @@ Quest'ultima modalit\'a di interazione consente allo user di associare annotazio
 \newpage
 
 \subsection{Viewer 2D}
-Il \emph{2D-viewer} invoca il \emph{2Dgf} degli elementi costruiti e aggiunti al modello e genera un suo output usando
-gli elementi SVG.
+Il \emph{2D-viewer} invoca il \emph{2Dgf} dei building elemetns aggiunti al modello e genera in output il modello
+renderizzato usando gli elementi SVG.
 Per far fronte ai frequenti aggiornamenti provenienti dall'interazione con il disegno da parte dell'utente,
 sfrutta la \emph{Virtual DOM}~\cite{vdom}, che permette di aggiornare solo la parte modificata evitando così
 il completo rendering della scena. Per eseguire le operazioni di pan e zoom, tipicamente necessaria in questo
@@ -50,7 +61,7 @@ di React denominato \emph{ReactSVGPanZoom}\footnote{\url{https://github.com/chrv
 
 
 \subsection{Viewer 3D}
-Il \emph{3D-viewer} invoca il \emph{3Dgf} dagli elementi di costruzione aggiungi al model e lo renderizza in output usando
+Il \emph{3D-viewer} invoca il \emph{3Dgf} dei building elements aggiungi al modello e lo renderizza in output usando
 le primitive WebGL\emph{Three.js}~\footnote{\url{https://threejs.org/}}. \`E stato implementato un \emph{diff} e \emph{patch} di
 sistema, standardizzate in ~\cite{rfc6902}: gli oggetti Three.js sono associati con elementi costruttivi all'interno
 dello Stato, in modo che ogni volta che l'utente attiva un'azione che si traduce in una modifica dello stato,
