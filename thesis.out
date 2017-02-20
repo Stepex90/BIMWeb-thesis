@@ -18,9 +18,9 @@
 \BOOKMARK [1][-]{section.3.1}{Definizione}{chapter.3}% 18
 \BOOKMARK [1][-]{section.3.2}{Tassonomia}{chapter.3}% 19
 \BOOKMARK [1][-]{section.3.3}{Propriet\340 Specifiche}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.4}{Plugin Catalog}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.5}{Generazione modelli server-side}{chapter.3}% 22
-\BOOKMARK [1][-]{section.3.6}{Processo implementativo}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.4}{Generazione modelli server-side}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.5}{Processo implementativo}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.5.1}{Plugin Catalog}{section.3.5}% 23
 \BOOKMARK [0][-]{chapter.4}{Custom Plugin}{}% 24
 \BOOKMARK [1][-]{section.4.1}{BaM}{chapter.4}% 25
 \BOOKMARK [1][-]{section.4.2}{Virtual CED}{chapter.4}% 26
