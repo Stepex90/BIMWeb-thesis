@@ -1,4 +1,3 @@
-\newpage
 \section{Stato dell'applicazione}
 \label{sec:chapter_2_section_4}
 
@@ -15,7 +14,7 @@ sono indicizzati da \texttt{id} permettendo così di ricerca in tempo costante, 
 campo \texttt{selected} di ogni layer, consente l'accesso diretto ad elementi selezionati senza cercare.
 Lo stato può essere caricato uno layer alla volta, conesentendo la frammentazione dello stato così,
 come può avvenire in un progetto di modellazione di un edificio molto grande.
-
+\newpage
 % The application state is modeled using the data structure shown in Listing~\ref{lst:structure}.
 % It is essentially a collection of layers, each containing a collection of vertices, lines, areas
 %  and objects, each one of which is captured in a structure composed by: (i) information required
@@ -28,21 +27,6 @@ come può avvenire in un progetto di modellazione di un edificio molto grande.
 % The state can be loaded one layer at a time to support state fragmentation thus allowing
 %  to deal with very big building modeling project.
 
-\subsubsection*{Flusso dati unidirezionale}
-\noindent
-La struttura dei dati descritta rappresenta lo stato centralizzato richiesto dal \emph{Unidirectional data flow pattern}
-~\cite{uniflow} sfruttato dall'applicazione tramite la libreria \emph{Redux.js}\footnote{\url{http://redux.js.org/}}.
-Il modello prevede che lo stato può essere modificato solo da attori specifici, chiamati \emph{reducers},
-le cui attività sono eseguite da specifiche \emph{actions} che contengono tutte le informazioni necessarie per
-ogni reducer per realizzare il cambiamento nello stato. Ogni caratteristica applicazione deve essere attuata di conseguenza
-come un paio di pezzi di codice ben isolati(\emph{action}/\emph{reducer}). Esperimenti preliminari
-\footnote{\url{https://github.com/cvdlab/walle}} su strumenti di disegno 2D, infatti,
-evidenziato la complessità di sviluppo di un'applicazione di questo tipo in termini di grande stato interno modificato
-da diversi interazioni con l'utente, che doveva essere ascoltato e applicata,
-che comporti un livello di accoppiamento elevato tra la logica dell'applicazione e l'interfaccia utente.
-Nella nostra messa a punto, invece abbiamo definito un \emph{state engine}, che rappresenta la logica dell'applicazione,
-che comprende actions e reducers e ne incapsula lo stato centralizzato.
-Di questo strato ne fanno uso in modo trasparente le differenti interfacce.
 
 % The described data structure represents the centralized state required by the \emph{unidirectional data flow pattern}
 % ~\cite{uniflow} exploited by the application via \emph{Redux.js}\footnote{\url{http://redux.js.org/}} library.
@@ -57,9 +41,8 @@ Di questo strato ne fanno uso in modo trasparente le differenti interfacce.
 %     In our setup instead we defined a \emph{state engine}, which represents the application logic, comprising
 %      actions and reducers, and encapsulates the centralized state. On this layer can transparently rely different interfaces.
 
- \newpage
 
-\noindent
+% \noindent
 % \begin{minipage}{.45\textwidth}
 % \begin{lstlisting}[
 %                    numbers=left,
@@ -122,7 +105,6 @@ Di questo strato ne fanno uso in modo trasparente le differenti interfacce.
 % }
 
 
-
 \begin{lstlisting}[
                    numbers=left,
                    frame=trBL,
@@ -175,8 +157,23 @@ Di questo strato ne fanno uso in modo trasparente le differenti interfacce.
 \end{lstlisting}
 \newpage
 
-\subsubsection*{Immutability pattern}
+\subsubsection*{Flusso dati unidirezionale}
+\noindent
+La struttura dei dati descritta rappresenta lo stato centralizzato richiesto dal \emph{Unidirectional data flow pattern}
+~\cite{uniflow} sfruttato dall'applicazione tramite la libreria \emph{Redux.js}\footnote{\url{http://redux.js.org/}}.
+Il modello prevede che lo stato può essere modificato solo da attori specifici, chiamati \emph{reducers},
+le cui attività sono eseguite da specifiche \emph{actions} che contengono tutte le informazioni necessarie per
+ogni reducer per realizzare il cambiamento nello stato. Ogni caratteristica applicazione deve essere attuata di conseguenza
+come un paio di pezzi di codice ben isolati(\emph{action}/\emph{reducer}). Esperimenti preliminari
+\footnote{\url{https://github.com/cvdlab/walle}} su strumenti di disegno 2D, infatti,
+evidenziato la complessità di sviluppo di un'applicazione di questo tipo in termini di grande stato interno modificato
+da diversi interazioni con l'utente, che doveva essere ascoltato e applicata,
+che comporti un livello di accoppiamento elevato tra la logica dell'applicazione e l'interfaccia utente.
+Nella nostra messa a punto, invece abbiamo definito un \emph{state engine}, che rappresenta la logica dell'applicazione,
+che comprende actions e reducers e ne incapsula lo stato centralizzato.
+Di questo strato ne fanno uso in modo trasparente le differenti interfacce.
 
+\subsubsection*{Immutability pattern}
 \emph{Immutability pattern}~\cite{immutability} si applica anche, per evitare effetti collaterali sui cambiamenti di stato
 eseguiti dai reducers. Lo stato può essere visto come una struttura immutabile ad albero le cui modifiche vengono applicate come segue:
 \begin{itemize}
@@ -190,7 +187,7 @@ Nonostante la sua semplicità, questo modello può tuttavia comportare sprechi d
 stato che deve che si terrà in memoria. Abbiamo affrontato questo problema utilizzando \emph{Immutable.js}
 \footnote{\url{https://facebook.github.io/immutable-js/}}, una libreria che sfrutta la condivisione strutturale tramite
 processi con mappe hash e vettoriali, riducendo al minimo la necessità di copiare o mettere i dati nella cache.
-\newpage
+
 
 % \emph{Immutability pattern}~\cite{immutability} is also applied, to avoid side effects on state changes performed by reducers.
 %  The state can be seen as an immutable tree structure whose changes are applied as follows: (i) clone the previous state
