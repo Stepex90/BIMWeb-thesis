@@ -18,39 +18,39 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Metior}{8}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Architettura}{8}{section.2.1}
+\contentsline {section}{\numberline {2.1}User Experience}{8}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Stato di memoria}{9}{section.2.2}
+\contentsline {section}{\numberline {2.2}User Interface}{10}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Stack Tecnologico}{13}{section.2.3}
+\contentsline {subsection}{\numberline {2.2.1}Viewer 2D}{12}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}React}{13}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.2.2}Viewer 3D}{13}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Storia}{13}{section*.11}
+\contentsline {section}{\numberline {2.3}Stack Tecnologico}{14}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Caratteristiche}{14}{section*.12}
+\contentsline {subsection}{\numberline {2.3.1}React}{14}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Virtual DOM}{14}{section*.13}
+\contentsline {subsubsection}{Storia}{14}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{JSX}{14}{section*.14}
+\contentsline {subsubsection}{Caratteristiche}{15}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Architettura dietro HTML}{14}{section*.15}
+\contentsline {subsubsection}{Virtual DOM}{15}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Threejs}{15}{subsection.2.3.2}
+\contentsline {subsubsection}{JSX}{15}{section*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Overview}{15}{section*.16}
+\contentsline {subsubsection}{Architettura dietro HTML}{15}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Storia}{15}{section*.17}
+\contentsline {subsection}{\numberline {2.3.2}Threejs}{16}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Caratteristiche}{16}{section*.18}
+\contentsline {subsubsection}{Overview}{16}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}User Interface}{18}{section.2.4}
+\contentsline {subsubsection}{Storia}{16}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Viewer 2D}{20}{subsection.2.4.1}
+\contentsline {subsubsection}{Caratteristiche}{17}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Viewer 3D}{21}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.4}Stato dell'applicazione}{19}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}User Experience}{22}{section.2.5}
+\contentsline {section}{\numberline {2.5}Architettura}{23}{section.2.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Metior Plugins}{24}{chapter.3}
 \defcounter {refsection}{0}\relax 
@@ -70,7 +70,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Deconstruction}{36}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}CED}{37}{section.4.3}
+\contentsline {section}{\numberline {4.3}Virtual CED}{37}{section.4.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Conclusioni e sviluppi futuri}{40}{chapter.5}
 \defcounter {refsection}{0}\relax 
