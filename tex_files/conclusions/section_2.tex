@@ -1,9 +1,10 @@
 \section{Sviluppi futuri}
 \label{sec:conclusions_section_2}
 
-I possibili sviluppi e campi di utilizzo del framework implementato possono essere tanti. Dopo aver accumulutato
-un certo quantitivo di ore da user expierience, gli spunti di riflessione hanno dilineato alcune possibile vie di sviluppo.
-Si \`e deciso di seguirne in particolare tre:
+I possibili sviluppi e campi di utilizzo del framework implementato possono essere tanti.
+Dopo aver utilizzato in scenari reali il framework, si è ritenuto di focalizzare gli sviluppi successivi nei seguenti ambiti:
+% Dopo aver accumulutato un certo quantitivo diore da user expierience, gli spunti di riflessione hanno dilineato alcune possibile vie di sviluppo.
+% Si \`e deciso di seguirne in particolare tre:
 \begin{itemize}
 \item Integrazione IoT
 \item Collaboratività
@@ -13,22 +14,22 @@ Si \`e deciso di seguirne in particolare tre:
 
 \subsection{IoT}
 \label{sec:conclusions_section_2_sub_1}
-Nel mondo gli oggetti presenti nella vita di tutti i giorni, hanno al proprio interno del hardware che consente di interagire
-con essi. Questi dispositivi sono denominati IoT (Internet of Things) e consentono l'estensione su Internet degli oggetti e dei
-luoghi reali. Questo ci consente di pensare all'inserimento di meta dati all'interno dei plugin implementati,
-consentendo all'utente un interazione realtime consentendo la fruizione di informazioni intriseche al modello.
+Nel mondo gli oggetti presenti nella vita di tutti i giorni hanno al proprio interno del hardware che consente di interagire
+con essi da remoto. Questi dispositivi sono denominati IoT (Internet of Things) e consentono l'estensione su Internet degli
+oggetti e dei luoghi reali. Questo ci consente di pensare all'inserimento di metadati all'interno dei plugin implementati,
+consentendo all'utente un interazione realtime delle informazioni intriseche al modello.
 
 %inserire foto di un plugin con sprite
 \newpage
 
 \subsection{Collaboratività}
 \label{sec:conclusions_section_2_sub_2}
-Un altro possibile sviluppo del framework \'e inserire la modalità \emph{Collaborativà}, consentendo a più utenti
-di collaborare su uno stesso progetto, ottimizando i tempi di lavoro. Si fa riferimento
+Un altro possibile sviluppo del framework è inserire la modalità \emph{Collaboratività}, consentendo a più utenti
+di collaborare contemporaneamente su uno stesso progetto, ottimizando i tempi di lavoro. Si fa riferimento
 all'utilizzo all'interno di uno studio di geometri. Lo stack tecnologico scelto per questo sviluppo sono
-\emph{Firebase} e \emph{jsondiff}. Il primo \'e necessario, per consentire in un possibile sistema di autenticazione degli utenti,
+\emph{Firebase} e \emph{jsondiff}. Il primo è stato scelto(perchè?), per consentire in un possibile sistema di autenticazione degli utenti,
 fare un controllo degli accessi e dei permessi al progetto.
-Il secondo modulo presente in npm, consente di confrontare nel contesto collaborativo i file JSON su cui lavorono
+Il secondo modulo presente in npm(descrivere npm), consente di confrontare nel contesto collaborativo i file JSON su cui lavorono
 gli utenti per trovare le modifiche apportate.
 
 % inserire screenshoot
@@ -38,27 +39,28 @@ gli utenti per trovare le modifiche apportate.
 \subsection{Fotorealismo}
 \label{sec:conclusions_section_2_sub_3}
 Con fotorealismo si intende semplicemente che una scena simulata \`e indistinguibile da una fotografia, o per estensione
-dalla vita di tutti i giorni. Questo \'e possibile attraverso la \emph{rasterizzazione}, che consiste in un algoritmo che
+dalla vita di tutti i giorni. Questo è possibile attraverso la \emph{rasterizzazione}, che consiste in un algoritmo che
 permette di convertire un'immagine a due dimensioni in una formata da pixel per avere fotogrammi proiettabili sugli schermi.
 
 % \subsubsection{Baking Service}
-Il servizio \emph{Baking} \`e un servizio remoto che prende una rappresentazione della scena in JSON come input,
+Il servizio \emph{Baking} (citazione) \`e un servizio remoto che prende una rappresentazione della scena in JSON come input,
 calcola le texture lightmapped, le Mappe Ambientali per riflessione e rifrazione e memorizza le informazioni grafiche
-in un formato che \`e compatibile con quello d'ingresso, in modo da permettere l'anello di retroazione di authoring.
+in un formato che \`e compatibile con quello d'ingresso, in modo da permettere l'anello di retroazione di authoring(che significa?).
 
 % The Baking Service is a remote web service that takes a JSON scene representation as its input,
 % computes the lightmapped textures, the envmaps for reflections and refractions and stores the enhanced graphic information
 %  in a format that is compliant with the input, so enabling the feedback authoring loop.
 
-Lo scopo principale \`e semplificare il workflow del visual 3D per fornire una user-experience ad alto livello
-sul cliente web (desktop, tablet e mobile, wearables come Google Carboard ).
-Compattare le strutture dati 3D prodotte dall'editor sul browser, trasmetterle ad un servizio di bakin web remoto,
-e restituire una piacevole esperienza VR in real-time con alto realismo e frame rate.
-Attualmente stiamo fornendo diverse ottimizzazioni, tra cui una soluzione per far fronte a scene di memoria basata
- su portali e frammentazione del ambienti caricando su richiesta solo una parte degli interi dati generati.
-Il progetto discusso fa parte di un programma di grande che fornisce Indoor mapping e indoor/outdoor 3D di modelli realistici
-partendo da (a) documenti catastali e/o disegni di costruzione, e (b) outdoor/indoor voli con drone che restituiscono
-un set di fotografie e di nuvole di punti generati.
+Lo scopo principale \`e semplificare il workflow durante la visualizzazione 3D per fornire una \emph{User Experience}
+ad alto livello sul browser (desktop, tablet e mobile) o su \emph{wearables} come Google Carboard.
+Compattare le strutture dati 3D prodotte dall'editor sul browser, trasmetterle ad un servizio di baking web remoto,
+e restituire una piacevole esperienza VR in real-time con alto realismo e frame rate. (specificare cosa fa?)
+Si stanno sviluppando nuovi algoritmi che portino all'ottimizzazione,
+tra cui una soluzione per far fronte a scene di memoria basata su portali e frammentazione del ambienti caricando
+su richiesta solo una parte degli interi dati generati.(??????)
+Il fotorealismo può essere esteso in un contesto che fornisce Indoor mapping e indoor/outdoor 3D di modelli realistici
+partendo da (a) documenti catastali e/o disegni di costruzione, e (b) scansioni outdoor/indoor realizzate tramite droni
+che restituiscono un set di fotografie e di nuvole di punti.
 Il possibile range di applicazioni in cui utilizzare il framework spazia dalla sicurezza all'interno di piccole aree o edifici pubblici, a e-commerce,
 accesso virtuale al patrimonio culturale, ai videogames, e molto altro ancora.
 

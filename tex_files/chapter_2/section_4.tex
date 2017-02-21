@@ -3,17 +3,20 @@
 
 Lo stato dell'applicazione è modellato utilizzando la struttura dei dati mostrata nel listato~\ref{lst:struttura}.
 Si tratta essenzialmente di un insieme di \emph{layers}, ciascuno contenente un insieme di vertici, linee, aree
-ed oggetti, ciascuno dei quali è racchiuso in una struttura composta da:
+ed oggetti, ognuno dei quali è racchiuso in una struttura composta da:
 \begin{itemize}
 \item le informazioni necessarie dal prototipo dell'oggetto;
-\item i riferimenti mappatura della relazione con altri oggetti;
-\item i metadati, vale a dire il punto in cui personalizzare l'oggetto.
+\item i riferimenti per la mappatura e la relazione con gli altri oggetti;
+\item i metadati, tra cui ad esempio il punto in cui posizionare l'oggetto.
 \end{itemize}
+
 La ridondanza delle informazioni viene sfruttata per ridurre i tempi di accesso. Collezioni di oggetti
-sono indicizzati da \texttt{id} permettendo così di ricerca in tempo costante, del
+sono indicizzati da un identificativo univoco \texttt{id} permettendo la ricerca in tempo costante, del
 campo \texttt{selected} di ogni layer, consente l'accesso diretto ad elementi selezionati senza cercare.
-Lo stato può essere caricato uno layer alla volta, conesentendo la frammentazione dello stato così,
-come può avvenire in un progetto di modellazione di un edificio molto grande.
+Lo stato può essere caricato un layer alla volta, consentendo la frammentazione dello stato così,
+come può avvenire in un progetto di modellazione di un edificio molto grande.\\
+riscrivere tutto
+
 \newpage
 % The application state is modeled using the data structure shown in Listing~\ref{lst:structure}.
 % It is essentially a collection of layers, each containing a collection of vertices, lines, areas
@@ -161,24 +164,25 @@ come può avvenire in un progetto di modellazione di un edificio molto grande.
 \noindent
 La struttura dei dati descritta rappresenta lo stato centralizzato richiesto dal \emph{Unidirectional data flow pattern}
 ~\cite{uniflow} sfruttato dall'applicazione tramite la libreria \emph{Redux.js}\footnote{\url{http://redux.js.org/}}.
-Il modello prevede che lo stato può essere modificato solo da attori specifici, chiamati \emph{reducers},
+Il modello prevede che lo stato possa essere modificato solo da attori specifici, chiamati \emph{reducers},
 le cui attività sono eseguite da specifiche \emph{actions} che contengono tutte le informazioni necessarie per
 ogni reducer per realizzare il cambiamento nello stato. Ogni caratteristica applicazione deve essere attuata di conseguenza
-come un paio di pezzi di codice ben isolati(\emph{action}/\emph{reducer}). Esperimenti preliminari
+come una porzione di codice a sé stanti(\emph{action}/\emph{reducer}).\\ sistemare
+Esperimenti preliminari
 \footnote{\url{https://github.com/cvdlab/walle}} su strumenti di disegno 2D, infatti,
-evidenziato la complessità di sviluppo di un'applicazione di questo tipo in termini di grande stato interno modificato
-da diversi interazioni con l'utente, che doveva essere ascoltato e applicata,
-che comporti un livello di accoppiamento elevato tra la logica dell'applicazione e l'interfaccia utente.
-Nella nostra messa a punto, invece abbiamo definito un \emph{state engine}, che rappresenta la logica dell'applicazione,
+hanno evidenziato la complessità di sviluppo di un'applicazione di questo tipo in termini di complessità di gestione
+dello stato interno dell'applicazione che viene modificato da diverse interazioni con l'utente,
+e che comporti un'associazione tra l'evento scatenato dall'utente sull'interfaccia e la logica dell'applicazione.
+Nell'archiettetura del framework, si definisce uno \emph{state engine}, che rappresenta la logica dell'applicazione,
 che comprende actions e reducers e ne incapsula lo stato centralizzato.
 Di questo strato ne fanno uso in modo trasparente le differenti interfacce.
 
 \subsubsection*{Immutability pattern}
-\emph{Immutability pattern}~\cite{immutability} si applica anche, per evitare effetti collaterali sui cambiamenti di stato
+L'\emph{Immutability pattern}~\cite{immutability} si applica anche per evitare effetti collaterali sui cambiamenti di stato
 eseguiti dai reducers. Lo stato può essere visto come una struttura immutabile ad albero le cui modifiche vengono applicate come segue:
 \begin{itemize}
-  \item clonare lo stato precedente \texttt{s} per ottenere un nuovo stato \texttt{s'};
-  \item applicare le modifiche sullo stato clonato \texttt{s'};
+  \item clonazione dello stato precedente \texttt{s} per ottenere un nuovo stato \texttt{s'};
+  \item applicazione delle modifiche sullo stato clonato \texttt{s'};
   \item aggiornamento del riferimento da \texttt{s} a \texttt{s'}.
 \end{itemize}
 Vale la pena notare che questo approccio fornisce il supporto per operazioni out-of-the-box come undo/redo:
@@ -186,7 +190,7 @@ un stato vecchio/recente possono essere ripristinati mediante sostituzione dello
 Nonostante la sua semplicità, questo modello può tuttavia comportare sprechi di memoria, a causa delle diverse copie dello
 stato che deve che si terrà in memoria. Abbiamo affrontato questo problema utilizzando \emph{Immutable.js}
 \footnote{\url{https://facebook.github.io/immutable-js/}}, una libreria che sfrutta la condivisione strutturale tramite
-processi con mappe hash e vettoriali, riducendo al minimo la necessità di copiare o mettere i dati nella cache.
+processi con mappe hash e vettoriali, riducendo al minimo la necessità di copiare o mettere i dati in una cache appositamente creata.
 
 
 % \emph{Immutability pattern}~\cite{immutability} is also applied, to avoid side effects on state changes performed by reducers.

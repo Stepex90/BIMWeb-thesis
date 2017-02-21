@@ -3,13 +3,14 @@
 
 In questa tesi si è contribuito ad implementare un'architettura serverless per supportare la modellazione di edifici
 in ambiente Web. L'architettura serverless ha dato dei benifici in termini di disponibilità, affidabilità,  scalabilità,
-facilità di implementazione, manutenzione e aggiornabilità si è ottenuta implementando un applicazione logica
-come client-side con un solo stato centralizzato (nella forma di un documento JSON) che può essere messo in
-document oriented DB-as-a-Service di terze parti e caricato nell'architettura frontend, la quale
+facilità di implementazione, manutenzione e aggiornabilità ottenutasi implementando un applicazione logica
+come client-side con un solo stato centralizzato (nella forma di un documento JSON) che può essere messo in un
+document oriented database anche di terze parti e caricato nell'architettura frontend, la quale
  trasparentemente ricarica lo stato nella sua versione serializzata che gli è stato passato .
- L'applicazione stessa è servita da un CDN (Content Delivery Network) evitando così la necessità di un server web.
- La routine non in linea si basa su una piattaforma Function-as-a-Service così come le caratteristiche
- di gestione utenti e collaborazione.
+ L'applicazione stessa può essere servita da un CDN (Content Delivery Network) evitando così la necessità di un server web.
+(le parti lato server rendering e gestione condivisa utenti può essere demanda su cloud)
+ % La routine non in linea si basa su una piattaforma Function-as-a-Service così come le caratteristiche
+ % di gestione utenti e collaborazione.
 
 % In this work we outlined a serverless architecture to support buildings modeling in a Web environment.
 %  The serverless  architecture that gives benefits in terms of availability, reliability, scalability,

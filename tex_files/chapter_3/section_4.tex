@@ -2,15 +2,15 @@
 \label{sec:chapter_3_section_4}
 
 \noindent
-Tra i modelli 3D e 2D generati è stato progettato un \emph{asynchronous}.
-Il risultato attuale dell'invocazione di una funzione generatrice non \`e generare il modello stesso,
-ma una \emph{promise} di un risultato previsto. Tale scelta progettuale \`e importante poich\'e il calcolo per la
+La generazione dei modelli 3D e 2D è realizzata in modalità \emph{asynchronous}.
+Il ritorno dell'invocazione di una funzione generatrice non \`e il modello stesso,
+ma una \emph{promise} che sarà risolta con l'output del rendering. Tale scelta progettuale \`e importante poich\'e il calcolo per la
 generazione di modello pu\`o richiedere un certo tempo.
 Nel frattempo l'utente deve essere in grado di interagire con l'interfaccia, che a sua volta deve rimanere reattiva.
-Basandosi su questa architettura, la generazione dei modelli pu\'o essere facilmente delegata a un server,
-sollevando così il cliente dall'onere di calcoli onerosi. Il server espone un REST-like HTTP-based JSON API al cliente.
-I plugin spaziano dal client al server, dal momento che le funzioni generatrici 2D e 3D (\emph{2Dgf} e \emph{3Dgf})
- definito dal plugin sono effettivamente eseguite sul server.
+Basandosi su questa architettura, la generazione dei modelli può essere facilmente delegata a un server,
+sollevando così il browser dall'onere di calcoli onerosi. Il server espone un API JSON REST-like al browser.
+I plugin possono essere eseguiti si da un client che da server, dal momento che le funzioni generatrici 2D e 3D (\emph{2Dgf} e \emph{3Dgf})
+ definite dai plugin possono essere eseguite dal server.(RIVEDERE ultima frase codice isomorfo)
 
 % Both the 3D and 2D model generations have been designed as \emph{asynchronous}.
 %  The actual result of the invocation of a generating function is not the generated model itself, but rather a \emph{promise}

@@ -9,18 +9,18 @@
 \BOOKMARK [1][-]{section.2.2}{User Interface}{chapter.2}% 9
 \BOOKMARK [2][-]{subsection.2.2.1}{Viewer 2D}{section.2.2}% 10
 \BOOKMARK [2][-]{subsection.2.2.2}{Viewer 3D}{section.2.2}% 11
-\BOOKMARK [1][-]{section.2.3}{Stack Tecnologico}{chapter.2}% 12
-\BOOKMARK [2][-]{subsection.2.3.1}{React}{section.2.3}% 13
-\BOOKMARK [2][-]{subsection.2.3.2}{Threejs}{section.2.3}% 14
-\BOOKMARK [1][-]{section.2.4}{Stato dell'applicazione}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.5}{Architettura}{chapter.2}% 16
-\BOOKMARK [0][-]{chapter.3}{Metior Plugins}{}% 17
-\BOOKMARK [1][-]{section.3.1}{Definizione}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.2}{Tassonomia}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.3}{Propriet\340 Specifiche}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.4}{Generazione modelli server-side}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.5}{Processo implementativo}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.5.1}{Plugin Catalog}{section.3.5}% 23
+\BOOKMARK [2][-]{subsection.2.2.3}{Plugin Catalog}{section.2.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Stack Tecnologico}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.3.1}{React}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.2}{Threejs}{section.2.3}% 15
+\BOOKMARK [1][-]{section.2.4}{Stato dell'applicazione}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.5}{Architettura}{chapter.2}% 17
+\BOOKMARK [0][-]{chapter.3}{Metior Plugin}{}% 18
+\BOOKMARK [1][-]{section.3.1}{Definizione}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.2}{Tassonomia}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.3}{Propriet\340 Specifiche}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.4}{Generazione modelli server-side}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.5}{Processo implementativo}{chapter.3}% 23
 \BOOKMARK [0][-]{chapter.4}{Custom Plugin}{}% 24
 \BOOKMARK [1][-]{section.4.1}{BaM}{chapter.4}% 25
 \BOOKMARK [1][-]{section.4.2}{Virtual CED}{chapter.4}% 26

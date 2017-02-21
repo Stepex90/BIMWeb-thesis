@@ -2,32 +2,32 @@
 \section{Applicazioni BIM nel Web}
 \label{sec:chapter_1_section_3}
 
-Il mondo di prodotti software, sta assistendo ad una migrazione inarrestabile, verso i servizi accessibili
+Il mondo di prodotti software sta assistendo ad una migrazione inarrestabile verso i servizi accessibili
 attraverso il mezzo Web. Ciò è dovuto principalmente ai benefici innegabili in termini di accessibilità, usabilità,
-manutenibilità e spalmabilità concesso dal mezzo Web stesso.
+manutenibilità e diffusione concessi dal mezzo Web stesso.
 Tuttavia questi benefici non arrivano senza un costo: le prestazioni e lo sviluppo della complessità diventano
 maggiori preoccupazioni nell'ambiente Web.
-In particolare, a causa dell'introduzione di diversi livelli di astrazione non è sempre possibile ``portare'' le
-applicazione Desktop nel dominio Web, un aspetto da prendere in considerazione anche per le differenze rilevanti
-tra hardware tutti i dispositivi dotati di un browser Web.
+In particolare, a causa dell'introduzione di diversi livelli di astrazione, non è sempre possibile ``portare'' le
+applicazioni Desktop nel dominio Web, un aspetto da prendere in considerazione anche per le differenze rilevanti
+tra gli hardware di tutti i dispositivi dotati di un browser Web.
 Può essere ancora più arduo affrontare un' architettura di software distribuito (almeno un client/server)
 indotta dalla piattaforma Web. Tuttavia sono sempre più ricche e complesse le applicazioni Web che sono comparse,
-sostenute dalle API arricchite da HTML5, che grazie al WebGL~\cite{webgl}
-(consente l'accesso diretto alla GPU), Canvas~\cite{Munro:15:HCC} (API raster 2D) e SVG~\cite{Jackson:11:SVG}
-(API di disegno vettoriale), ha aperto la strada per l'ingresso di applicazioni Web Graphic.
+sostenute dalle API arricchite da HTML5, insieme a WebGL~\cite{webgl}
+(che consente l'accesso diretto alla GPU), Canvas~\cite{Munro:15:HCC} (API raster 2D) e SVG~\cite{Jackson:11:SVG}
+(API di disegno vettoriale), hanno aperto la strada per l'ingresso di applicazioni Web Graphic.
 L'obiettivo è stato la definizione di uno strumento di modellazione di edifici basato sul Web
 che supera le suddette difficoltà prestazionali e di sviluppo basandosi su un modello di progettazione del flusso di dati
-unidirezionale e su un'architettura serverless rispettivamente.
+unidirezionale e su un'architettura serverless.
 Un'architettura serverless, al contrario di ciò che il nome può suggerire, in realtà si avvale di molti server specifici
 diversi, togliendo l'onere del funzionamento e della manutenzione allo sviluppatore del progetto.
 Questi diversi server possono essere visti come servizi di terze parti (tipicamente cloud-based) o funzioni eseguite
-in contenitori effimeri (può durare solo per una invocazione) per gestire lo stato interno e la logica server-side.
-L'interazione in realtime tra gli utenti che lavorano congiuntamente sullo stesso progetto di modellazione,
-è ad esempio ottenuto tramite un API di terze parti per la collaborazione gli utenti remoti.
-L'interfaccia utente, interamente basata sul modello a componenti Web, è stato mantenuto il più semplice possibile:
+in contenitori effimeri (possono durare solo per una invocazione) per gestire lo stato interno e la logica server-side.
+L'interazione in realtime tra gli utenti che lavorano congiuntamente sullo stesso progetto di modellazione
+è ad esempio ottenuta tramite API di terze parti che rendono possibile la collaborazione tra utenti remoti.
+L'interfaccia utente, interamente basata sul modello a componenti Web, è stata mantenuta il più semplice possibile:
 è richiesto all'utente interagire principalmente con segnaposto simbolici bidimensionali, che rappresentano parti dell'edificio,
 evitando così interazioni complesse in 3D.
-La complessità del modello è quindi spostato dallo sviluppatore al modellatore, che compila un \emph{catalogo} di
+La complessità del modello è quindi spostata dal modellatore allo sviluppatore, il quale deve compilare un \emph{catalogo} di
 \emph{bulding elements} estendibile e personalizzabile. Il modellatore deve solo selezionare l'elemento richiesto,
 il luogo e parametrizzare esso a seconda delle esigenze. È ovvio che un gran numero di building elements deve essere fornito
 per garantire l'adempimento delle maggior parte delle esigenze di modellazione.

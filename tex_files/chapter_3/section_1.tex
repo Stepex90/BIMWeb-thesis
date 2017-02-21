@@ -3,9 +3,9 @@
 
 \emph{Plugin} \`e un componente software che pu\`o può essere perfettamente integrato nel sistema, al fine di estenderne le sue capacit\`a.
 In \emph{Metior}, un plugin rappresenta un elemento architetturale che estende le Building Information Model progettate.
-Tecnicamente, un plugin rappresenta un \emph{prototype} (cio\'e una ``class'' in un Object Oriented Programming) di un elemento di
-costruzione che pu\'o essere inserito (``instanziato'') nel \emph{canvas}, definendo cos\`i un nuovo \emph{elemento}, in altre parole
-un nuovo componente del modello.
+Tecnicamente, un plugin rappresenta un \emph{prototype} (RIVEDERE cioè una ``class'' in un Object Oriented Programming) di un elemento di
+costruzione che può essere inserito (``instanziato'') nel \emph{canvas}, definendo cos\`i un nuovo \emph{elemento},
+in altre parole un nuovo componente del modello.
 \newpage
 
 % \emph{plugin} is a software component that can be seamlessly integrated into the system in order to extends its capabilities.
@@ -18,14 +18,14 @@ un nuovo componente del modello.
 \noindent
 Un plugin \`e descritto dalle seguenti otto propriet\`a:
 \begin{itemize}
-  \item un nome unico;
+  \item un nome univoco;
   \item una descrizione;
-  \item un insieme di metadati;
   \item l'\emph{occupation type} (uno tra \emph{linear}, \emph{area} or \emph{volume});
   \item il \emph{placement type} (\emph{inside} or \emph{over});
-  \item un insieme di propriet\'a specifiche mappano la semantica da associare al plugin;
+  \item un insieme di proprietà specifiche che mappano la semantica da associare al plugin;
   \item  una \emph{generating function} che restituisce la rappresentazione 2D dell'elemento in formato SVG, da usare nel \emph{2D-mode};
-  \item  a \emph{generating function} che restituisce la rappresentazione 3D dell'elemento in formato OBJ, da usare nel  \emph{3D-mode};
+  \item  una \emph{generating function} che restituisce la rappresentazione 3D dell'elemento in formato OBJ, da usare nel  \emph{3D-mode};
+  \item un insieme di metadati che consente l'inserimento di informazioni generiche;
 \end{itemize}
 
 % A plugin is described by the following eight properties: (1) a unique name; (2) a description; (3) a set of metadata;
