@@ -62,26 +62,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Generazione modelli server-side}{27}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Processo implementativo}{27}{section.3.5}
+\contentsline {section}{\numberline {3.5}Processo implementativo}{28}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Custom Plugin}{28}{chapter.4}
+\contentsline {subsection}{\numberline {3.5.1}Studio della geometria}{28}{subsection.3.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}BaM}{28}{section.4.1}
+\contentsline {subsection}{\numberline {3.5.2}Definizione funzione 2D}{29}{subsection.3.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Virtual CED}{34}{section.4.2}
+\contentsline {subsection}{\numberline {3.5.3}Definizione funzione 3D}{30}{subsection.3.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Deconstruction}{37}{section.4.3}
+\contentsline {subsection}{\numberline {3.5.4}Instanziazione nel catalogo}{31}{subsection.3.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusioni e sviluppi futuri}{39}{chapter.5}
+\contentsline {chapter}{\numberline {4}Custom Plugin}{32}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Conclusioni}{39}{section.5.1}
+\contentsline {section}{\numberline {4.1}BaM}{32}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Sviluppi futuri}{40}{section.5.2}
+\contentsline {section}{\numberline {4.2}Virtual CED}{38}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}IoT}{41}{subsection.5.2.1}
+\contentsline {section}{\numberline {4.3}Deconstruction}{41}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Collaborativit\IeC {\`a}}{42}{subsection.5.2.2}
+\contentsline {chapter}{\numberline {5}Conclusioni e sviluppi futuri}{43}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Fotorealismo}{43}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.1}Conclusioni}{43}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{44}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.2}Sviluppi futuri}{44}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.1}IoT}{45}{subsection.5.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.2}Collaborativit\IeC {\`a}}{46}{subsection.5.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.3}Fotorealismo}{47}{subsection.5.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{48}{subsection.5.2.3}

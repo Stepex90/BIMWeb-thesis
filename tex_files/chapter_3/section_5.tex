@@ -1,12 +1,131 @@
 \section{Processo implementativo}
 \label{sec:chapter_3_section_5}
 
-Con processo di implementazione dei \emph{Plugin} si intende la formalizzazione in modo dettagliato le fasi seguite.
-Il processo è scindibile principalmente nelle seguenti fasi:
-\begin{itemize}
-  \item ricerca delle specifiche del plugin
-  \item definizione funzione 2D
-  \item definizione funzione 3D
-  \item instanziamento nel catalogo del nuovo plugin
-  \item test del plugin con inserimento nella scena
-\end{itemize}
+Con processo implementativo di un \emph{Plugin} si intende la formalizzazione delle fasi progettuali.
+La formalizzazione del procedimento traccia metodologicamente una sequenza di passi da seguire.
+
+\subsection{Studio della geometria}
+Nella prima fase implementativa dopo aver scelto quale oggetto andare a modellare all'interno del framework,
+si passa ad uno studio della geometria dell'oggetto reale ( Figura \ref{fig:confronto} - a ), soprattutto in presenza di un modello complesso bisogna
+pensare a come realizzarlo cercando di scinderlo in parti geometriche semplici. Ad esempio prendiamo il caso
+di un estintore, esso è un oggetto composto geometria complessa, ed è scindibile in parti geometriche semplice
+come un cilindro più una sfera per il corpo centrale (Figura \ref{fig:confronto} - b ).\\
+
+   \begin{figure}[htbp]
+   \begin{center}
+   \begin{tabular}{c @{\hspace{1em}} c}
+   \includegraphics[width=4cm]{images/estintore2} &
+   \includegraphics[width=4cm]{images/estintore} \\
+    (a) & (b) \\
+   \end{tabular}
+   \end{center}
+   \caption{(a) Foto modello reale, (b) Immagine modello scomposto in elementi geometri semplici}
+   \label{fig:confronto}
+   \end{figure}
+
+Dopo aver scompoto l'oggetto in elementi geometrici semplici, è necessario reperire le informazioni, utili come
+larghezza, profondità, altezza e altri dati utili alla modellazione.
+\newpage
+
+\subsection{Definizione funzione 2D}
+La definizione della funzione di render 2D definisce attraverso il linguaggio SVG - (Scalable Vector Graphics),
+consente di visualizzare oggetti di grafica vettoriale e, pertanto, di gestire immagini scalabili dimensionalmente.
+Questa definizione consente di rappresentare il Plugin all'interno di Metior durante la visualizzazione in 2D della scena.\\
+
+\lstset{
+    basicstyle=\fontfamily{cr}\selectfont\footnotesize\color{black},
+    numbers=none, % where to put the line-numbers
+    numberstyle=\tiny, % the size of the fonts that are used for the line-numbers
+    backgroundcolor=\color{white},
+    showspaces=false, % show spaces adding particular underscores
+    showstringspaces=false, % underline spaces within strings
+    showtabs=false, % show tabs within strings adding particular underscores
+    frame=single, % adds a frame around the code
+    tabsize=2, % sets default tabsize to 2 spaces
+    captionpos=b, % sets the caption-position to bottom
+    breaklines=true, % sets automatic line breaking
+    breakatwhitespace=false,
+    xleftmargin=17pt,
+    framexleftmargin=17pt,
+    framexrightmargin=17pt,
+    framexbottommargin=5pt,
+    framextopmargin=5pt
+}
+\begin{lstlisting}[
+                   numbers=left,
+                   frame=trBL,
+                   basicstyle=\tiny,
+                   caption={Definizion della funzione di render 2D},
+                   label=struttura]
+   render2D: (element, layer, scene) => {
+      let style = {
+        stroke: "#000",
+        strokeWidth: element.selected ? "2px" : "0px",
+        fill: element.properties.get('color')
+      };
+
+      return (
+        <g transform='translate(-50, -50)'>
+          <rect x="0" y="0" width="100" height="100" style={style}/>
+        </g>
+      );
+    },
+\end{lstlisting}
+\newpage
+
+\subsection{Definizione funzione 3D}
+La definizione della funzione di render 3D definisce attraverso codice scritto in Javascript e la libreria open-source Threejs,
+un modello 3D del Plugin; questa definizione ne consente pertanto la rappresentazione all'interno di Metior
+durante la visualizzazione in 3D della scena.\\
+
+
+\begin{lstlisting}[
+                   numbers=left,
+                   frame=trBL,
+                   basicstyle=\tiny,
+                   caption={Definizione della funzione render 3D},
+                   label=struttura]
+ render3D: (element, layer, scene) => {
+   let geometry = new BoxGeometry(100, 100, 100);
+   let material = new MeshBasicMaterial({
+     color: element.properties.get('color')
+   });
+
+   let mesh = new Mesh(geometry, material);
+
+   if (element.selected) {
+     let box = new BoxHelper(mesh, '#000000');
+     box.material.linewidth = 1;
+     box.material.depthTest = false;
+     box.renderOrder = 1000;
+     mesh.add(box);
+   }
+
+   mesh.position.y = +50;
+
+   return Promise.resolve(mesh);
+ }
+\end{lstlisting}
+\newpage
+
+\subsection{Instanziazione nel catalogo}
+Dopo aver implementato un Plugin è necessario al fine di poterlo inserire all'interno di una scena, instanziarlo
+all'interno del \emph{Plugin Catalog}.\\
+\begin{lstlisting}[
+                   numbers=left,
+                   frame=trBL,
+                   basicstyle=\tiny,
+                   caption={Instanziazione del Plugin nel Catalogo},
+                   label=struttura]
+import {Catalog} from 'react-planner';
+...
+import cube from './items/cubo/cubo';
+...
+catalog.registerElement(cube);
+...
+export default catalog;
+\end{lstlisting}
+% \newpage
+
+% \subsection{Test nella scena}
+% \newpage

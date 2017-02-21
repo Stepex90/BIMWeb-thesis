@@ -87,25 +87,25 @@ riscrivere tutto
 % \end{lstlisting}
 % \end{minipage}
 
-% \lstset{
-%     basicstyle=\fontfamily{cr}\selectfont\footnotesize\color{black},
-%     numbers=none, % where to put the line-numbers
-%     numberstyle=\tiny, % the size of the fonts that are used for the line-numbers
-%     backgroundcolor=\color{white},
-%     showspaces=false, % show spaces adding particular underscores
-%     showstringspaces=false, % underline spaces within strings
-%     showtabs=false, % show tabs within strings adding particular underscores
-%     frame=single, % adds a frame around the code
-%     tabsize=2, % sets default tabsize to 2 spaces
-%     captionpos=b, % sets the caption-position to bottom
-%     breaklines=true, % sets automatic line breaking
-%     breakatwhitespace=false,
-%     xleftmargin=17pt,
-%     framexleftmargin=17pt,
-%     framexrightmargin=17pt,
-%     framexbottommargin=5pt,
-%     framextopmargin=5pt
-% }
+\lstset{
+    basicstyle=\fontfamily{cr}\selectfont\footnotesize\color{black},
+    numbers=none, % where to put the line-numbers
+    numberstyle=\tiny, % the size of the fonts that are used for the line-numbers
+    backgroundcolor=\color{white},
+    showspaces=false, % show spaces adding particular underscores
+    showstringspaces=false, % underline spaces within strings
+    showtabs=false, % show tabs within strings adding particular underscores
+    frame=single, % adds a frame around the code
+    tabsize=2, % sets default tabsize to 2 spaces
+    captionpos=b, % sets the caption-position to bottom
+    breaklines=true, % sets automatic line breaking
+    breakatwhitespace=false,
+    xleftmargin=17pt,
+    framexleftmargin=17pt,
+    framexrightmargin=17pt,
+    framexbottommargin=5pt,
+    framextopmargin=5pt
+}
 
 
 \begin{lstlisting}[
@@ -191,7 +191,6 @@ Nonostante la sua semplicità, questo modello può tuttavia comportare sprechi d
 stato che deve che si terrà in memoria. Abbiamo affrontato questo problema utilizzando \emph{Immutable.js}
 \footnote{\url{https://facebook.github.io/immutable-js/}}, una libreria che sfrutta la condivisione strutturale tramite
 processi con mappe hash e vettoriali, riducendo al minimo la necessità di copiare o mettere i dati in una cache appositamente creata.
-
 
 % \emph{Immutability pattern}~\cite{immutability} is also applied, to avoid side effects on state changes performed by reducers.
 %  The state can be seen as an immutable tree structure whose changes are applied as follows: (i) clone the previous state
