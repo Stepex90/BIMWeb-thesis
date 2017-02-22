@@ -37,8 +37,8 @@ Quest'ultima modalità di interazione consente al utente di associare annotazion
 \newpage
 
 \subsection{Viewer 2D}
-Il \emph{2D-viewer} invoca la funzione\emph{2Dgf} dei \emph{building elements} aggiunti al modello e genera in output il modello
-renderizzato usando gli elementi SVG.
+Il \emph{2D-viewer} invoca la funzione \emph{2Dgf} dei \emph{building elements} aggiunti al modello e
+genera in output il modello renderizzato usando gli elementi SVG.
 Per far fronte ai frequenti aggiornamenti provenienti dall'interazione con il disegno da parte dell'utente,
 sfrutta la \emph{Virtual DOM}~\cite{vdom}, che permette di aggiornare solo la parte modificata evitando così
 il completo rendering della scena. Per eseguire le operazioni di pan e zoom, tipicamente necessaria in questo
@@ -62,17 +62,18 @@ di React denominato \emph{ReactSVGPanZoom}\footnote{\url{https://github.com/chrv
 
 \subsection{Viewer 3D}
 Il \emph{3D-viewer} invoca la funzione \emph{3Dgf} dei \emph{building elements} aggiunge al modello una vista 3D usando
-le primitive WebGL\emph{Three.js}~\footnote{\url{https://threejs.org/}}. \`E stato implementato un \emph{diff} e \emph{patch} di
-sistema, definite nel Jsonpatch~\cite{rfc6902}: gli oggetti Three.js sono associati con elementi costruttivi all'interno
-dello stato dell'applicazione, in modo che ogni volta che l'utente attiva un'azione che si traduce in una modifica dello stato,
-l'applicazione calcola la differenza tra il vecchio stato e quello nuovo e cambia solo l'oggetto interessato.
-(spostare prima causa effetto delle azioni)
-In particolare possiamo avere le seguenti \textit{operazioni}:
+le primitive WebGL\emph{Three.js}~\footnote{\url{https://threejs.org/}}.
+In particolare durante l'interazione con la scena si dispone delle seguenti \textit{operazioni} sui \emph{Plugin}:
 \begin{itemize}
   \item \emph{add};
   \item \emph{replace};
   \item \emph{remove};
 \end{itemize}
+Per eseguire l'update è stato implementato un \emph{diff} e \emph{patch} di
+sistema, definite nel Jsonpatch~\cite{rfc6902}: gli oggetti Three.js sono associati con elementi costruttivi all'interno
+dello stato dell'applicazione, in modo che ogni volta che l'utente attiva un'azione che si traduce in una modifica dello stato,
+l'applicazione calcola la differenza tra il vecchio stato e quello nuovo e cambia solo l'oggetto interessato.\\
+
 
 % The \emph{3D-viewer} invokes the \emph{3Dgf} of the building elements added to the model and renders its output using WebGL
 %  primitives via \emph{Three.js}~\footnote{https://threejs.org/}. It has been implemented a \emph{diff} and \emph{patch}
@@ -97,7 +98,7 @@ In particolare possiamo avere le seguenti \textit{operazioni}:
  in cui ogni elemento presente al suo interno \`e definito da un nome, una descrizione ed una
  immagine di anteprima del modello 3D (Figura~\ref{fig:figura1} (a)). Quando l'utente \`e al suo interno
  sceglie il plugin da inserire con un click dopo il quale si passa nella modalit\`a 2D-view, dove verrà posizionato
- all'interno della scena (Figura~\ref{fig:figura1} (b)).
+ all'interno della scena (Figura~\ref{fig:figura1} (b)).\\
 
 
 \begin{figure}[htbp]

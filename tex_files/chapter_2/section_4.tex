@@ -12,10 +12,9 @@ ed oggetti, ognuno dei quali è racchiuso in una struttura composta da:
 
 La ridondanza delle informazioni viene sfruttata per ridurre i tempi di accesso. Collezioni di oggetti
 sono indicizzati da un identificativo univoco \texttt{id} permettendo la ricerca in tempo costante, del
-campo \texttt{selected} di ogni layer, consente l'accesso diretto ad elementi selezionati senza cercare.
-Lo stato può essere caricato un layer alla volta, consentendo la frammentazione dello stato così,
-come può avvenire in un progetto di modellazione di un edificio molto grande.\\
-riscrivere tutto
+campo \texttt{selected} di ogni layer, questo consente l'accesso diretto ad elementi selezionati senza cercare.
+Lo stato dell'applicazione può essere caricato un layer alla volta, consentendo la visualizzazione del solo layer selezionato,
+come può avvenire in un framework di modellazione Desktop.\\
 
 \newpage
 % The application state is modeled using the data structure shown in Listing~\ref{lst:structure}.
@@ -176,6 +175,7 @@ e che comporti un'associazione tra l'evento scatenato dall'utente sull'interfacc
 Nell'archiettetura del framework, si definisce uno \emph{state engine}, che rappresenta la logica dell'applicazione,
 che comprende actions e reducers e ne incapsula lo stato centralizzato.
 Di questo strato ne fanno uso in modo trasparente le differenti interfacce.
+\newpage
 
 \subsubsection*{Immutability pattern}
 L'\emph{Immutability pattern}~\cite{immutability} si applica anche per evitare effetti collaterali sui cambiamenti di stato
@@ -191,7 +191,7 @@ Nonostante la sua semplicità, questo modello può tuttavia comportare sprechi d
 stato che deve che si terrà in memoria. Abbiamo affrontato questo problema utilizzando \emph{Immutable.js}
 \footnote{\url{https://facebook.github.io/immutable-js/}}, una libreria che sfrutta la condivisione strutturale tramite
 processi con mappe hash e vettoriali, riducendo al minimo la necessità di copiare o mettere i dati in una cache appositamente creata.
-
+\newpage
 % \emph{Immutability pattern}~\cite{immutability} is also applied, to avoid side effects on state changes performed by reducers.
 %  The state can be seen as an immutable tree structure whose changes are applied as follows: (i) clone the previous state
 %  \texttt{s} obtaining a new state \texttt{s'}; (ii) apply changes on the cloned state \texttt{s'}; (iii) Update reference

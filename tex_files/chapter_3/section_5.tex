@@ -2,35 +2,43 @@
 \label{sec:chapter_3_section_5}
 
 Con processo implementativo di un \emph{Plugin} si intende la formalizzazione delle fasi progettuali.
-La formalizzazione del procedimento traccia metodologicamente una sequenza di passi da seguire.
+La formalizzazione del procedimento traccia metodologicamente una sequenza di passi da seguire:
+(a) studio della geometria, (b) definizione della funzione di render 2D, (c) definizione della funzione di render 3D,
+ (d) instanziazzione nel catalogo, (e) testing nella scena.
+
 
 \subsection{Studio della geometria}
 Nella prima fase implementativa dopo aver scelto quale oggetto andare a modellare all'interno del framework,
-si passa ad uno studio della geometria dell'oggetto reale ( Figura \ref{fig:confronto} - a ), soprattutto in presenza di un modello complesso bisogna
+si passa ad uno studio della geometria dell'oggetto reale (Figura \ref{fig:confronto} - a), soprattutto in presenza di un modello complesso bisogna
 pensare a come realizzarlo cercando di scinderlo in parti geometriche semplici. Ad esempio prendiamo il caso
-di un estintore, esso è un oggetto composto geometria complessa, ed è scindibile in parti geometriche semplice
-come un cilindro più una sfera per il corpo centrale (Figura \ref{fig:confronto} - b ).\\
+di un estintore, esso è un oggetto composto da una geometria complessa, ed è scindibile in parti geometriche semplice
+come un cilindro più una sfera per il corpo centrale (Figura \ref{fig:confronto} - b) e si segue questa procedura
+per tutte le componenti dell'oggetto.\\
 
    \begin{figure}[htbp]
    \begin{center}
-   \begin{tabular}{c @{\hspace{1em}} c}
-   \includegraphics[width=4cm]{images/estintore2} &
-   \includegraphics[width=4cm]{images/estintore} \\
-    (a) & (b) \\
+   \begin{tabular}{lcr @{\hspace{2cm}} lr}
+   \includegraphics[width=3.8cm]{images/estintore2} &
+   \includegraphics[width=3.8cm]{images/estintore} &
+   \includegraphics[width=3.8cm]{images/estintore}\\
+    (a) & (b) & (c)\\
    \end{tabular}
    \end{center}
-   \caption{(a) Foto modello reale, (b) Immagine modello scomposto in elementi geometri semplici}
+   \caption{(a) Foto modello reale, (b) Modello 3D (c) Modello 3D esploso in elementi geometri semplici}
    \label{fig:confronto}
    \end{figure}
 
-Dopo aver scompoto l'oggetto in elementi geometrici semplici, è necessario reperire le informazioni, utili come
+Dopo aver scompoto l'oggetto in elementi geometrici semplici, è necessario reperire le informazioni come
 larghezza, profondità, altezza e altri dati utili alla modellazione.
-\newpage
+
 
 \subsection{Definizione funzione 2D}
-La definizione della funzione di render 2D definisce attraverso il linguaggio SVG - (Scalable Vector Graphics),
+La funzione di render 2D, attraverso il linguaggio SVG (Scalable Vector Graphics),
 consente di visualizzare oggetti di grafica vettoriale e, pertanto, di gestire immagini scalabili dimensionalmente.
-Questa definizione consente di rappresentare il Plugin all'interno di Metior durante la visualizzazione in 2D della scena.\\
+Questa definizione consente di inserire all'interno del Virtual DOM della content-area la rappresentazione 2D dell'oggetto
+aggiornando l'area interessata del canvas.
+In questo modo il Plugin viene visualizzato all'interno di Metior durante la visualizzazione in 2D della scena.\\
+
 
 \lstset{
     basicstyle=\fontfamily{cr}\selectfont\footnotesize\color{black},
@@ -74,9 +82,9 @@ Questa definizione consente di rappresentare il Plugin all'interno di Metior dur
 \newpage
 
 \subsection{Definizione funzione 3D}
-La definizione della funzione di render 3D definisce attraverso codice scritto in Javascript e la libreria open-source Threejs,
-un modello 3D del Plugin; questa definizione ne consente pertanto la rappresentazione all'interno di Metior
-durante la visualizzazione in 3D della scena.\\
+La funzione di render 3D definisce attraverso una porzione di codice scritto in Javascript ed utilizzando
+la libreria open-source Threejs, un modello 3D del Plugin;
+questa definizione ne consente pertanto la rappresentazione all'interno di Metior durante la visualizzazione in 3D della scena.\\
 
 
 \begin{lstlisting}[
@@ -125,7 +133,8 @@ catalog.registerElement(cube);
 ...
 export default catalog;
 \end{lstlisting}
-% \newpage
 
-% \subsection{Test nella scena}
-% \newpage
+\subsection{Testing nella scena}
+La fine del processo porta al testing del nuovo \emph{Plugin} implementato, testandolo all'interno
+di una scena per verificare che le caratteristiche, geometriche e dimensionali corrispondando con quelle
+del modello reale dal quale si è preso spunto per la realizzazione del modello digitale.

@@ -3,36 +3,72 @@
 
 I possibili sviluppi e campi di utilizzo del framework implementato possono essere tanti.
 Dopo aver utilizzato in scenari reali il framework, si è ritenuto di focalizzare gli sviluppi successivi nei seguenti ambiti:
-% Dopo aver accumulutato un certo quantitivo diore da user expierience, gli spunti di riflessione hanno dilineato alcune possibile vie di sviluppo.
-% Si \`e deciso di seguirne in particolare tre:
-\begin{itemize}
-\item Integrazione IoT
-\item Collaboratività
-\item Fotorealismo
-\end{itemize}
-\newpage
+(a) integrazione con dispositivi IoT, (b) progettazione collaborativa, (c) fotorealismo.
 
 \subsection{IoT}
 \label{sec:conclusions_section_2_sub_1}
 Nel mondo gli oggetti presenti nella vita di tutti i giorni hanno al proprio interno del hardware che consente di interagire
 con essi da remoto. Questi dispositivi sono denominati IoT (Internet of Things) e consentono l'estensione su Internet degli
 oggetti e dei luoghi reali. Questo ci consente di pensare all'inserimento di metadati all'interno dei plugin implementati,
-consentendo all'utente un interazione realtime delle informazioni intriseche al modello.
+consentendo all'utente un interazione realtime delle informazioni intriseche al modello.\\
 
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=1\linewidth]{images/3d-school-2}
+   \caption{PROVVISORIA INSERIRE Immagine Sprite}
+   \label{fig:revit}
+   \end{figure}
 %inserire foto di un plugin con sprite
 \newpage
 
-\subsection{Collaboratività}
+\subsection{Progettazione Collaborativa}
 \label{sec:conclusions_section_2_sub_2}
-Un altro possibile sviluppo del framework è inserire la modalità \emph{Collaboratività}, consentendo a più utenti
+Un altro possibile sviluppo del framework è inserire la modalità di \emph{Progettazione Collaborativa}, consentendo a più utenti
 di collaborare contemporaneamente su uno stesso progetto, ottimizando i tempi di lavoro. Si fa riferimento
 all'utilizzo all'interno di uno studio di geometri. Lo stack tecnologico scelto per questo sviluppo sono
 \emph{Firebase} e \emph{jsondiff}. Il primo è stato scelto(perchè?), per consentire in un possibile sistema di autenticazione degli utenti,
 fare un controllo degli accessi e dei permessi al progetto.
 Il secondo modulo presente in npm(descrivere npm), consente di confrontare nel contesto collaborativo i file JSON su cui lavorono
-gli utenti per trovare le modifiche apportate.
+gli utenti per trovare le modifiche apportate.\\
 
 % inserire screenshoot
+\noindent
+\begin{minipage}{.45\textwidth}
+\begin{lstlisting}[
+                   numbers=left,
+                   frame=trBL,
+                   basicstyle=\tiny,
+                   caption={JSON prima della modifica},
+                   label=struttura]
+  {
+    "id": "HJAe59YF8Ux",
+    "x": 201,
+    "y": 891,
+    "prototype": "vertices",
+    "selected": false,
+    "lines": ["Hype99FK88x", "S1w-hqKKL8e"],
+    "areas": ["Byg1oFKUIe"]
+  }
+\end{lstlisting}
+\end{minipage}\hfill
+\begin{minipage}{.45\textwidth}
+\begin{lstlisting}[
+                   numbers=left,
+                   frame=trBL,
+                   basicstyle=\tiny,
+                   caption={JSON dopo la modifica},
+                   label=struttura]
+ {
+   "id": "HJAe59YF8Ux",
+   "x": 201,
+   "y": 891,
+   "prototype": "vertices",
+   "selected": false,
+   "lines": ["Hype99FK88x", "S1w-hqKKL8e"],
+   "areas": ["Byg1oFKUIe"]
+ }
+\end{lstlisting}
+\end{minipage}
 
 \newpage
 
@@ -58,6 +94,16 @@ e restituire una piacevole esperienza VR in real-time con alto realismo e frame 
 Si stanno sviluppando nuovi algoritmi che portino all'ottimizzazione,
 tra cui una soluzione per far fronte a scene di memoria basata su portali e frammentazione del ambienti caricando
 su richiesta solo una parte degli interi dati generati.(??????)
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=1\linewidth]{images/3d-school-2}
+   \caption{PROVVISORIA INSERIRE Immagine Sprite}
+   \label{fig:revit}
+   \end{figure}
+%inserire foto di un plugin con sprite
+\newpage
+
 Il fotorealismo può essere esteso in un contesto che fornisce Indoor mapping e indoor/outdoor 3D di modelli realistici
 partendo da (a) documenti catastali e/o disegni di costruzione, e (b) scansioni outdoor/indoor realizzate tramite droni
 che restituiscono un set di fotografie e di nuvole di punti.
