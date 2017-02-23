@@ -166,15 +166,13 @@ La struttura dei dati descritta rappresenta lo stato centralizzato richiesto dal
 Il modello prevede che lo stato possa essere modificato solo da attori specifici, chiamati \emph{reducers},
 le cui attività sono eseguite da specifiche \emph{actions} che contengono tutte le informazioni necessarie per
 ogni reducer per realizzare il cambiamento nello stato. Ogni caratteristica applicazione deve essere attuata di conseguenza
-come una porzione di codice a sé stanti(\emph{action}/\emph{reducer}).\\ sistemare
-Esperimenti preliminari
-\footnote{\url{https://github.com/cvdlab/walle}} su strumenti di disegno 2D, infatti,
+come una porzione di codice a sé stanti(\emph{action}/\emph{reducer}).
+Esperimenti preliminari \footnote{\url{https://github.com/cvdlab/walle}} su strumenti di disegno 2D, infatti,
 hanno evidenziato la complessità di sviluppo di un'applicazione di questo tipo in termini di complessità di gestione
 dello stato interno dell'applicazione che viene modificato da diverse interazioni con l'utente,
 e che comporti un'associazione tra l'evento scatenato dall'utente sull'interfaccia e la logica dell'applicazione.
 Nell'archiettetura del framework, si definisce uno \emph{state engine}, che rappresenta la logica dell'applicazione,
-che comprende actions e reducers e ne incapsula lo stato centralizzato.
-Di questo strato ne fanno uso in modo trasparente le differenti interfacce.
+che comprende actions e reducers e ne incapsula lo stato in modo centralizzato.
 \newpage
 
 \subsubsection*{Immutability pattern}

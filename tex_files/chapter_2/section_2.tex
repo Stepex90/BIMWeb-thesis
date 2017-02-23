@@ -3,35 +3,34 @@
 
 Per definizione il software CAD è un acronimo inglese usato per indicare due concetti correlati, ma differenti:
 \begin{itemize}
-  \item Computer-Aided Drafting;
-  \item Computer-Aided Design;
-\end{itemize}
-L'applicazione web che si è implementata, si presenta come un software CAD semplificato, dove la
-user interface comprende:
-\begin{itemize}
-  \item 2D canvas (Figura~\ref{fig:view2D})
-  \item 3D canvas (Figura~\ref{fig:viewer3D}).
+  \item Computer-Aided Drafting
+  \item Computer-Aided Design
 \end{itemize}
 
-L'area di lavoro (Figura~\ref{fig:interfaccia}) è suddivisa in aree ben specifiche,
-le quali adempiono a funzionalità che verranno approfondite in dettaglio nei paragrafi successivi.\\
+L'area di lavoro (Figura~\ref{fig:interfaccia}) è suddivisa in tre aree,
+le quali adempiono a funzionalità ben specifiche:
+\begin{itemize}
+  \item toolbar
+  \item content-area
+  \item sidebar
+\end{itemize}
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=1\linewidth]{images/mock-interfaccia}
-   \caption{Schermata componenti interfaccia}
+   \caption{Schermata interfaccia utente}
    \label{fig:interfaccia}
 \end{figure}
-\newpage
-Dalla toolbar l'utente pu\`o accedere alle funzionalit\`a relative a: ciclo di vita del progetto (new, save, load);
-view/interaction mode switching (2D, 3D); interaction mode changing (selecting, pan, zoom).
-La content-area \`e un area nella quale l'utente pu\`o interagire con il modello attuale. Nella modalit\`a 2D
+
+Dalla  \emph{toolbar} l'utente pu\`o accedere alle funzionalit\`a relative a: ciclo di vita del progetto (new, save, load);
+view/interaction mode switching (2D, 3D); interaction mode changing (selecting, pan, zoom).\\
+La \emph{content-area} \`e un area nella quale l'utente pu\`o interagire con il modello attuale. Nella modalit\`a 2D
 il modello \`e visualizzato come una proiezione 2D dall'alto e l'interazione consiste nell'inserimento, selezione e modifica
 dell'elemento (in accordo con le specifiche interattive del prototipo). Nella modalità 3D un modello 3D pu\`o essere
 inspezionato e navigato attraverso due modalità differenti: in prima persona usando il mouse e la tastiera ponendo la vista
 ad altezza uomo, o dall'alto cambiando la posizione della telecamera con il solo mouse. Anche in modalità 3D è possibile
-selezionare e posizionare gli oggetti.
-La sidebar visualizza le propriet\`a dell'elemento correntemente selezionato. Nel pannello delle propriet\`a \`e possibile
+selezionare e posizionare gli oggetti.\\
+La \emph{sidebar} visualizza le propriet\`a dell'elemento correntemente selezionato. Nel pannello delle propriet\`a \`e possibile
 vedere la descrizione dell'elemento, aggiungere/rimuovere metadata, e modificare qualsiasi propriet\`a.
 Quest'ultima modalità di interazione consente al utente di associare annotazioni semantiche su ogni parte del modello.
 \newpage

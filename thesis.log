@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.2.13)  22 FEB 2017 16:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.2.13)  23 FEB 2017 15:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -910,9 +910,6 @@ LaTeX Warning: Label `struttura' multiply defined.
 LaTeX Warning: Label `fig:figura1' multiply defined.
 
 
-LaTeX Warning: Label `fig:revit' multiply defined.
-
-
 LaTeX Warning: Label `struttura' multiply defined.
 
 
@@ -1057,7 +1054,7 @@ Package pdftex.def Info: images/logo/logo.png used on input line 6.
 [5
 
 ]) (./tex_files/introduction/introduction.tex
-<images/bim.png, id=294, 357.9774pt x 177.0615pt>
+<images/bim.png, id=295, 357.9774pt x 177.0615pt>
 File: images/bim.png Graphic file (type png)
  <use images/bim.png>
 Package pdftex.def Info: images/bim.png used on input line 11.
@@ -1103,7 +1100,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--31
 
  []
 
-[4] <images/maxresdefault.jpg, id=340, 1284.8pt x 722.7pt>
+[4] <images/maxresdefault.jpg, id=341, 1284.8pt x 722.7pt>
 File: images/maxresdefault.jpg Graphic file (type jpg)
 
 <use images/maxresdefault.jpg>
@@ -1127,7 +1124,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--24
 
  []
 
-<images/3d-school.png, id=367, 1371.1225pt x 744.7825pt>
+<images/3d-school.png, id=368, 1371.1225pt x 744.7825pt>
 File: images/3d-school.png Graphic file (type png)
 
 <use images/3d-school.png>
@@ -1143,62 +1140,69 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--18
-
- []
-
-<images/mock-interfaccia.pdf, id=376, 487.421pt x 265.3915pt>
+<images/mock-interfaccia.pdf, id=375, 487.421pt x 265.3915pt>
 File: images/mock-interfaccia.pdf Graphic file (type pdf)
 
 <use images/mock-interfaccia.pdf>
-Package pdftex.def Info: images/mock-interfaccia.pdf used on input line 21.
+Package pdftex.def Info: images/mock-interfaccia.pdf used on input line 20.
 (pdftex.def)             Requested size: 360.0pt x 196.01811pt.
- [10] [11 <./images/mock-interfaccia.pdf>]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 46.
+ [10 <./images/mock-interfaccia.pdf>] [11]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 40--47
+Underfull \hbox (badness 10000) in paragraph at lines 39--46
 
  []
 
-<images/2d.png, id=399, 872.25874pt x 385.44pt>
+<images/2d.png, id=398, 872.25874pt x 385.44pt>
 File: images/2d.png Graphic file (type png)
  <use images/2d.png>
-Package pdftex.def Info: images/2d.png used on input line 56.
+Package pdftex.def Info: images/2d.png used on input line 55.
 (pdftex.def)             Requested size: 360.0pt x 159.0783pt.
  [12 <./images/2d.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 72--76
+Underfull \hbox (badness 10000) in paragraph at lines 71--75
 
  []
 
-<images/3d.png, id=413, 876.27374pt x 394.47375pt>
+<images/3d.png, id=412, 876.27374pt x 394.47375pt>
 File: images/3d.png Graphic file (type png)
  <use images/3d.png>
-Package pdftex.def Info: images/3d.png used on input line 87.
+Package pdftex.def Info: images/3d.png used on input line 86.
 (pdftex.def)             Requested size: 360.0pt x 162.06032pt.
  [13 <./images/3d.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 96--102
+Underfull \hbox (badness 10000) in paragraph at lines 95--101
 
  []
 
-<images/figcatalog.png, id=423, 1371.1225pt x 746.79pt>
+<images/figcatalog.png, id=422, 1371.1225pt x 746.79pt>
 File: images/figcatalog.png Graphic file (type png)
 
 <use images/figcatalog.png>
-Package pdftex.def Info: images/figcatalog.png used on input line 107.
+Package pdftex.def Info: images/figcatalog.png used on input line 106.
 (pdftex.def)             Requested size: 256.0748pt x 139.46442pt.
 
-<images/positioning.png, id=424, 1371.1225pt x 770.88pt>
+<images/positioning.png, id=423, 1371.1225pt x 770.88pt>
 File: images/positioning.png Graphic file (type png)
 
 <use images/positioning.png>
-Package pdftex.def Info: images/positioning.png used on input line 109.
+Package pdftex.def Info: images/positioning.png used on input line 108.
 (pdftex.def)             Requested size: 256.0748pt x 143.96327pt.
  [14 <./images/figcatalog.png> <./images/positioning.png>]) (./tex_files/chapte
-r_2/section_3.tex [15] [16] [17] [18])
-(./tex_files/chapter_2/section_4.tex
+r_2/section_3.tex [15] [16] [17]
+Overfull \hbox (7.31313pt too wide) in paragraph at lines 153--154
+\T1/cmr/m/n/10.95 lens fla-re, pas-sag-gio in pro-fon-di-tà e un va-sta li-bre-
+ria di post-elaborazione; 
+ []
+
+[18]
+Overfull \hbox (0.46507pt too wide) in paragraph at lines 161--162
+[]\T1/cmr/m/n/10.95 Debugging: Sta-ts.js, [[]14[]] We-b-GL In-spec-tor, [[]15[]
+] Th-ree.js In-spec-tor [[]16[]]. 
+ []
+
+) (./tex_files/chapter_2/section_4.tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--18
 
  []
@@ -1225,29 +1229,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--17
 
  []
 
-<images/estintore2.jpg, id=605, 346.29375pt x 346.29375pt>
+<images/estintore2.jpg, id=601, 346.29375pt x 346.29375pt>
 File: images/estintore2.jpg Graphic file (type jpg)
 
 <use images/estintore2.jpg>
 Package pdftex.def Info: images/estintore2.jpg used on input line 21.
 (pdftex.def)             Requested size: 108.12054pt x 108.12141pt.
 
-<images/estintore.png, id=606, 459.7175pt x 460.72125pt>
+<images/estintore.png, id=602, 459.7175pt x 460.72125pt>
 File: images/estintore.png Graphic file (type png)
 
 <use images/estintore.png>
 Package pdftex.def Info: images/estintore.png used on input line 22.
 (pdftex.def)             Requested size: 108.12054pt x 108.35387pt.
-File: images/estintore.png Graphic file (type png)
- <use images/estintore.png>
-Package pdftex.def Info: images/estintore.png used on input line 23.
-(pdftex.def)             Requested size: 108.12054pt x 108.35387pt.
 
-Overfull \hbox (51.26717pt too wide) in paragraph at lines 20--26
+<images/esplosoestintore.png, id=603, 461.725pt x 460.72125pt>
+File: images/esplosoestintore.png Graphic file (type png)
+
+<use images/esplosoestintore.png>
+Package pdftex.def Info: images/esplosoestintore.png used on input line 23.
+(pdftex.def)             Requested size: 108.12054pt x 107.88286pt.
+
+Overfull \hbox (51.26714pt too wide) in paragraph at lines 20--26
  [] 
  []
 
-[29 <./images/estintore2.jpg> <./images/estintore.png (PNG copy)>]
+[29 <./images/estintore2.jpg> <./images/estintore.png (PNG copy)> <./images/esp
+losoestintore.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 36--41
 
  []
@@ -1277,13 +1285,18 @@ Overfull \hbox (23.0pt too wide) in paragraph at lines 135--135
 [][][][][][][] 
  []
 
-) (./tex_files/chapter_3/conclusions.tex)) (./tex_files/chapter_4/index.tex
+)
+Underfull \hbox (badness 10000) in paragraph at lines 138--14
+
+ []
+
+(./tex_files/chapter_3/conclusions.tex)) (./tex_files/chapter_4/index.tex
 (./tex_files/chapter_4/title.tex [32]
 Capitolo 4.
 ) (./tex_files/chapter_4/introduction.tex) (./tex_files/chapter_4/section_1.tex
 [33
 
-] <images/3d-school-2.png, id=675, 1004.75375pt x 680.5425pt>
+] <images/3d-school-2.png, id=672, 1004.75375pt x 680.5425pt>
 File: images/3d-school-2.png Graphic file (type png)
 
 <use images/3d-school-2.png>
@@ -1294,26 +1307,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--38
 
  []
 
-<images/hanger.png, id=682, 401.5pt x 260.975pt>
+<images/hanger.png, id=679, 401.5pt x 260.975pt>
 File: images/hanger.png Graphic file (type png)
  <use images/hanger.png>
 Package pdftex.def Info: images/hanger.png used on input line 42.
 (pdftex.def)             Requested size: 156.49014pt x 101.72011pt.
 
-<images/wardrobe.png, id=683, 401.5pt x 260.975pt>
+<images/wardrobe.png, id=680, 401.5pt x 260.975pt>
 File: images/wardrobe.png Graphic file (type png)
  <use images/wardrobe.png>
 Package pdftex.def Info: images/wardrobe.png used on input line 43.
 (pdftex.def)             Requested size: 156.49014pt x 101.72011pt.
 
-<images/attaccapanni2.png, id=684, 532.99126pt x 532.99126pt>
+<images/attaccapanni2.png, id=681, 532.99126pt x 532.99126pt>
 File: images/attaccapanni2.png Graphic file (type png)
 
 <use images/attaccapanni2.png>
 Package pdftex.def Info: images/attaccapanni2.png used on input line 47.
 (pdftex.def)             Requested size: 156.49014pt x 156.49097pt.
 
-<images/portaombrelli.png, id=685, 401.5pt x 260.975pt>
+<images/portaombrelli.png, id=682, 401.5pt x 260.975pt>
 File: images/portaombrelli.png Graphic file (type png)
 
 <use images/portaombrelli.png>
@@ -1331,25 +1344,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
  []
 
-<images/banco2.png, id=692, 401.5pt x 260.975pt>
+<images/banco2.png, id=688, 401.5pt x 260.975pt>
 File: images/banco2.png Graphic file (type png)
  <use images/banco2.png>
 Package pdftex.def Info: images/banco2.png used on input line 62.
 (pdftex.def)             Requested size: 156.49014pt x 101.72011pt.
 
-<images/cattedra2.png, id=693, 472.76625pt x 472.76625pt>
+<images/cattedra2.png, id=689, 472.76625pt x 472.76625pt>
 File: images/cattedra2.png Graphic file (type png)
 
 <use images/cattedra2.png>
 Package pdftex.def Info: images/cattedra2.png used on input line 63.
 (pdftex.def)             Requested size: 156.49014pt x 156.48946pt.
- <images/lavagna.png, id=694, 401.5pt x 260.975pt>
+ <images/lavagna.png, id=690, 401.5pt x 260.975pt>
 File: images/lavagna.png Graphic file (type png)
 
 <use images/lavagna.png>
 Package pdftex.def Info: images/lavagna.png used on input line 67.
 (pdftex.def)             Requested size: 156.49014pt x 101.72011pt.
- <images/lim.png, id=695, 571.13374pt x 571.13374pt>
+ <images/lim.png, id=691, 571.13374pt x 571.13374pt>
 File: images/lim.png Graphic file (type png)
 
 <use images/lim.png>
@@ -1361,27 +1374,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--79
 
  []
 
-<images/cestino.png, id=701, 471.7625pt x 471.7625pt>
+<images/cestino.png, id=698, 471.7625pt x 471.7625pt>
 File: images/cestino.png Graphic file (type png)
  <use images/cestino.png>
 Package pdftex.def Info: images/cestino.png used on input line 84.
 (pdftex.def)             Requested size: 156.49014pt x 156.48833pt.
 
-<images/recycling-bins.png, id=702, 401.5pt x 260.975pt>
+<images/recycling-bins.png, id=699, 401.5pt x 260.975pt>
 File: images/recycling-bins.png Graphic file (type png)
 
 <use images/recycling-bins.png>
 Package pdftex.def Info: images/recycling-bins.png used on input line 85.
 (pdftex.def)             Requested size: 156.49014pt x 101.72011pt.
 
-<images/condizionatore.png, id=703, 571.13374pt x 629.35126pt>
+<images/condizionatore.png, id=700, 571.13374pt x 629.35126pt>
 File: images/condizionatore.png Graphic file (type png)
 
 <use images/condizionatore.png>
 Package pdftex.def Info: images/condizionatore.png used on input line 89.
 (pdftex.def)             Requested size: 156.49014pt x 172.44312pt.
 
-<images/termosifone.png, id=704, 581.17125pt x 581.17125pt>
+<images/termosifone.png, id=701, 581.17125pt x 581.17125pt>
 File: images/termosifone.png Graphic file (type png)
 
 <use images/termosifone.png>
@@ -1393,25 +1406,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--100
 
  []
 
-<images/bookcase.png, id=711, 401.5pt x 260.975pt>
+<images/bookcase.png, id=708, 401.5pt x 260.975pt>
 File: images/bookcase.png Graphic file (type png)
  <use images/bookcase.png>
 Package pdftex.def Info: images/bookcase.png used on input line 104.
 (pdftex.def)             Requested size: 156.49014pt x 101.72011pt.
 
-<images/monitorPC.png, id=712, 420.57124pt x 421.575pt>
+<images/monitorPC.png, id=709, 420.57124pt x 421.575pt>
 File: images/monitorPC.png Graphic file (type png)
 
 <use images/monitorPC.png>
 Package pdftex.def Info: images/monitorPC.png used on input line 105.
 (pdftex.def)             Requested size: 156.49014pt x 156.86157pt.
- <images/tenda.png, id=713, 542.025pt x 542.025pt>
+ <images/tenda.png, id=710, 542.025pt x 542.025pt>
 File: images/tenda.png Graphic file (type png)
 
 <use images/tenda.png>
 Package pdftex.def Info: images/tenda.png used on input line 109.
 (pdftex.def)             Requested size: 156.49014pt x 156.48848pt.
- <images/veneziana.png, id=714, 538.01pt x 538.01pt>
+ <images/veneziana.png, id=711, 538.01pt x 538.01pt>
 File: images/veneziana.png Graphic file (type png)
 
 <use images/veneziana.png>
@@ -1424,30 +1437,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
  []
 
-File: images/3d-school-2.png Graphic file (type png)
-<use images/3d-school-2.png>
-Package pdftex.def Info: images/3d-school-2.png used on input line 10.
-(pdftex.def)             Requested size: 360.0pt x 243.83208pt.
- [39]
+<images/virtualCED.png, id=718, 1371.1225pt x 770.88pt>
+File: images/virtualCED.png Graphic file (type png)
+
+<use images/virtualCED.png>
+Package pdftex.def Info: images/virtualCED.png used on input line 10.
+(pdftex.def)             Requested size: 360.0pt x 202.40019pt.
+ [39 <./images/virtualCED.png>]
 File: images/estintore.png Graphic file (type png)
- <use images/estintore.png>
+
+<use images/estintore.png>
 Package pdftex.def Info: images/estintore.png used on input line 22.
 (pdftex.def)             Requested size: 156.49014pt x 156.83296pt.
 
-<images/rilevatore.png, id=726, 421.575pt x 421.575pt>
+<images/rilevatore.png, id=724, 421.575pt x 421.575pt>
 File: images/rilevatore.png Graphic file (type png)
 
 <use images/rilevatore.png>
 Package pdftex.def Info: images/rilevatore.png used on input line 23.
 (pdftex.def)             Requested size: 156.49014pt x 156.48848pt.
 
-<images/naspo.png, id=727, 355.3275pt x 354.32375pt>
+<images/naspo.png, id=725, 355.3275pt x 354.32375pt>
 File: images/naspo.png Graphic file (type png)
  <use images/naspo.png>
 Package pdftex.def Info: images/naspo.png used on input line 27.
 (pdftex.def)             Requested size: 156.49014pt x 156.0489pt.
 
-<images/panicDoorDouble.png, id=728, 401.5pt x 260.975pt>
+<images/panicDoorDouble.png, id=726, 401.5pt x 260.975pt>
 File: images/panicDoorDouble.png Graphic file (type png)
 
 <use images/panicDoorDouble.png>
@@ -1455,26 +1471,26 @@ Package pdftex.def Info: images/panicDoorDouble.png used on input line 28.
 (pdftex.def)             Requested size: 156.49014pt x 101.72011pt.
  [40 <./images/rilevatore.png (PNG copy)> <./images/naspo.png (PNG copy)> <./im
 ages/panicDoorDouble.png>]
-<images/metalDetector.png, id=735, 514.92375pt x 514.92375pt>
+<images/metalDetector.png, id=733, 514.92375pt x 514.92375pt>
 File: images/metalDetector.png Graphic file (type png)
 
 <use images/metalDetector.png>
 Package pdftex.def Info: images/metalDetector.png used on input line 42.
 (pdftex.def)             Requested size: 156.49014pt x 156.48973pt.
- <images/rack.png, id=736, 574.145pt x 570.13pt>
+ <images/rack.png, id=734, 574.145pt x 570.13pt>
 File: images/rack.png Graphic file (type png)
 
 <use images/rack.png>
 Package pdftex.def Info: images/rack.png used on input line 43.
 (pdftex.def)             Requested size: 156.49014pt x 155.38997pt.
- <images/routerWifi.png, id=737, 355.3275pt x 359.3425pt>
+ <images/routerWifi.png, id=735, 355.3275pt x 359.3425pt>
 File: images/routerWifi.png Graphic file (type png)
 
 <use images/routerWifi.png>
 Package pdftex.def Info: images/routerWifi.png used on input line 47.
 (pdftex.def)             Requested size: 156.49014pt x 158.25922pt.
 
-<images/telecamera.png, id=738, 355.3275pt x 355.3275pt>
+<images/telecamera.png, id=736, 355.3275pt x 355.3275pt>
 File: images/telecamera.png Graphic file (type png)
 
 <use images/telecamera.png>
@@ -1494,30 +1510,31 @@ Overfull \hbox (2.74548pt too wide) in paragraph at lines 20--30
 -zio-ne il si-ste-ma SMART-
  []
 
-[42] <images/3d-sel.png, id=750, 858.20625pt x 526.96875pt>
+[42] <images/3d-sel.png, id=748, 858.20625pt x 526.96875pt>
 File: images/3d-sel.png Graphic file (type png)
 
 <use images/3d-sel.png>
 Package pdftex.def Info: images/3d-sel.png used on input line 33.
 (pdftex.def)             Requested size: 360.0pt x 221.05197pt.
  [43 <./images/3d-sel.png>])
-(./tex_files/chapter_4/conclusions.tex)) [44] [45]
+(./tex_files/chapter_4/conclusions.tex)) [44]
 (./tex_files/conclusions/index.tex (./tex_files/conclusions/title.tex
 Capitolo 5.
 ) (./tex_files/conclusions/introduction.tex)
 (./tex_files/conclusions/section_1.tex) (./tex_files/conclusions/section_2.tex
-[46
+[45
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-File: images/3d-school-2.png Graphic file (type png)
-<use images/3d-school-2.png>
-Package pdftex.def Info: images/3d-school-2.png used on input line 17.
-(pdftex.def)             Requested size: 360.0pt x 243.83208pt.
- [47]
+<images/iot.png, id=769, 1371.1225pt x 770.88pt>
+File: images/iot.png Graphic file (type png)
+ <use images/iot.png>
+Package pdftex.def Info: images/iot.png used on input line 17.
+(pdftex.def)             Requested size: 360.0pt x 202.40019pt.
+ [46 <./images/iot.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 26--33
 
  []
@@ -1532,13 +1549,25 @@ Overfull \hbox (23.0pt too wide) in paragraph at lines 70--70
 [][][][][][][] 
  []
 
-[48]
-File: images/3d-school-2.png Graphic file (type png)
- <use images/3d-school-2.png>
-Package pdftex.def Info: images/3d-school-2.png used on input line 100.
-(pdftex.def)             Requested size: 360.0pt x 243.83208pt.
- [49] [50])
-(./tex_files/conclusions/conclusions.tex)) (./tex_files/bibliography/index.tex
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
+
+ []
+
+<images/explorer-a-1.png, id=798, 1027.84pt x 578.16pt>
+File: images/explorer-a-1.png Graphic file (type png)
+
+<use images/explorer-a-1.png>
+Package pdftex.def Info: images/explorer-a-1.png used on input line 91.
+(pdftex.def)             Requested size: 360.0pt x 202.50018pt.
+ [48 <./images/explorer-a-1.png>]
+<images/vr.png, id=804, 1027.6794pt x 578.16pt>
+File: images/vr.png Graphic file (type png)
+ <use images/vr.png>
+Package pdftex.def Info: images/vr.png used on input line 107.
+(pdftex.def)             Requested size: 360.0pt x 202.53546pt.
+ [49 <./images/vr.png>]) (./tex_files/conclusions/conclusions.tex))
+(./tex_files/bibliography/index.tex
 Overfull \hbox (9.52966pt too wide) in paragraph at lines 12--12
 [][]$\T1/pcr/m/n/10.95 http : / / www . infoworld . com / article / 2608181 / j
 avascript /
@@ -1556,7 +1585,7 @@ Overfull \hbox (10.52966pt too wide) in paragraph at lines 12--12
  -[] releases -[]
  []
 
-[51
+[50
 
 
 ]
@@ -1572,7 +1601,7 @@ i-di-rec-tio-nal da-ta flow\T1/cmr/m/n/10.95 . \T1/cmr/m/sc/10.95 url\T1/cmr/m/
 n/10.95 : []$\T1/pcr/m/n/10.95 https :
  []
 
-[52]
+[51]
 Overfull \hbox (2.51425pt too wide) in paragraph at lines 12--12
 []\T1/cmr/m/n/10.95 D. Jack-son. \T1/cmr/m/it/10.95 We-b-GL Spe-ci-fi-ca-tion\T
 1/cmr/m/n/10.95 . Kh-ro-nos Re-com-men-da-tion. []$\T1/pcr/m/n/10.95 "https :
@@ -1613,13 +1642,13 @@ Overfull \hbox (4.45967pt too wide) in paragraph at lines 12--12
 
 (./tex_files/bibliography/bibliography.tex))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
- [53]
+ [52]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: C0CAADE5D2BF4C7DD8AB170E0561559E;2459.
+(rerunfilecheck)             Checksum: FBA3D72DBBD582D637F7CF42E613F7F1;2459.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1629,10 +1658,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 16340 strings out of 493304
- 251263 string characters out of 6139871
+ 16366 strings out of 493304
+ 251837 string characters out of 6139871
  497983 words of memory out of 5000000
- 19092 multiletter control sequences out of 15000+600000
+ 19114 multiletter control sequences out of 15000+600000
  28279 words of font info for 76 fonts, out of 8000000 for 9000
  960 hyphenation exceptions out of 8191
  40i,13n,49p,895b,1874s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1653,10 +1682,10 @@ blic/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm14
 exmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/pub
 lic/cm-super/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courie
 r/ucrr8a.pfb>
-Output written on thesis.pdf (64 pages, 6042648 bytes).
+Output written on thesis.pdf (63 pages, 11521270 bytes).
 PDF statistics:
- 1003 PDF objects out of 1200 (max. 8388607)
- 860 compressed objects within 9 object streams
- 279 named destinations out of 1000 (max. 500000)
- 493 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1002 PDF objects out of 1200 (max. 8388607)
+ 853 compressed objects within 9 object streams
+ 278 named destinations out of 1000 (max. 500000)
+ 518 words of extra memory for PDF output out of 10000 (max. 10000000)
 

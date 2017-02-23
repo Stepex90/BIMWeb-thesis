@@ -82,16 +82,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Deconstruction}{42}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusioni e sviluppi futuri}{46}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusioni e sviluppi futuri}{45}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Conclusioni}{46}{section.5.1}
+\contentsline {section}{\numberline {5.1}Conclusioni}{45}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Sviluppi futuri}{47}{section.5.2}
+\contentsline {section}{\numberline {5.2}Sviluppi futuri}{46}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}IoT}{47}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.1}IoT}{46}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Progettazione Collaborativa}{48}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Progettazione Collaborativa}{47}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Fotorealismo}{49}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.3}Fotorealismo}{48}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{51}{figure.caption.35}
+\contentsline {chapter}{Bibliografia}{50}{figure.caption.36}

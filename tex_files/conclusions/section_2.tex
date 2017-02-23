@@ -14,9 +14,9 @@ consentendo all'utente un interazione realtime delle informazioni intriseche al 
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=1\linewidth]{images/3d-school-2}
-   \caption{PROVVISORIA INSERIRE Immagine Sprite}
-   \label{fig:revit}
+   \includegraphics[width=1\linewidth]{images/iot}
+   \caption{Plugin con informazioni IoT visualizzate tramite sprite}
+   \label{fig:iot}
    \end{figure}
 %inserire foto di un plugin con sprite
 \newpage
@@ -74,18 +74,25 @@ gli utenti per trovare le modifiche apportate.\\
 
 \subsection{Fotorealismo}
 \label{sec:conclusions_section_2_sub_3}
-Con fotorealismo si intende semplicemente che una scena simulata \`e indistinguibile da una fotografia, o per estensione
+Con \emph{Fotorealismo} si intende semplicemente che una scena simulata \`e indistinguibile da una fotografia, o per estensione
 dalla vita di tutti i giorni. Questo è possibile attraverso la \emph{rasterizzazione}, che consiste in un algoritmo che
 permette di convertire un'immagine a due dimensioni in una formata da pixel per avere fotogrammi proiettabili sugli schermi.
 
 % \subsubsection{Baking Service}
 Il servizio \emph{Baking} (citazione) \`e un servizio remoto che prende una rappresentazione della scena in JSON come input,
 calcola le texture lightmapped, le Mappe Ambientali per riflessione e rifrazione e memorizza le informazioni grafiche
-in un formato che \`e compatibile con quello d'ingresso, in modo da permettere l'anello di retroazione di authoring(che significa?).
+in un formato che \`e compatibile con quello d'ingresso, in modo da permettere l'anello di retroazione di authoring(che significa?).\\
 
 % The Baking Service is a remote web service that takes a JSON scene representation as its input,
 % computes the lightmapped textures, the envmaps for reflections and refractions and stores the enhanced graphic information
 %  in a format that is compliant with the input, so enabling the feedback authoring loop.
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=1\linewidth]{images/explorer-a-1}
+   \caption{Esempio di un ambiente realizzato con il fotorealismo}
+   \label{fig:revit}
+   \end{figure}
+%inserire foto di un plugin con sprite
 
 Lo scopo principale \`e semplificare il workflow durante la visualizzazione 3D per fornire una \emph{User Experience}
 ad alto livello sul browser (desktop, tablet e mobile) o su \emph{wearables} come Google Carboard.
@@ -97,12 +104,10 @@ su richiesta solo una parte degli interi dati generati.(??????)
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=1\linewidth]{images/3d-school-2}
-   \caption{PROVVISORIA INSERIRE Immagine Sprite}
+   \includegraphics[width=1\linewidth]{images/vr}
+   \caption{Esempio di visione di un ambiente attraverso VR}
    \label{fig:revit}
    \end{figure}
-%inserire foto di un plugin con sprite
-\newpage
 
 Il fotorealismo può essere esteso in un contesto che fornisce Indoor mapping e indoor/outdoor 3D di modelli realistici
 partendo da (a) documenti catastali e/o disegni di costruzione, e (b) scansioni outdoor/indoor realizzate tramite droni
