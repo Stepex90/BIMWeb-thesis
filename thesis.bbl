@@ -80,6 +80,13 @@
   \field{howpublished}{\url{http://zz85.github.io/zz85-bookmarklets/threelabs.html}}
 \endentry
 
+\entry{firebase}{misc}{}
+  \field{howpublished}{\url{https://firebase.google.com/}}
+\endentry
+
+\entry{npm}{misc}{}
+\endentry
+
 \entry{Firstcommit}{misc}{}
   \field{howpublished}{\url{https://github.com/mrdoob/three.js/commit/a90c4e107ff6e3b148458c96965e876f9441b147}}
   \field{year}{2010}

@@ -15,24 +15,13 @@ Si possono dividere in \emph{horizontal area} (e.g. pavimento e celle), e \emph{
 Il plugin \emph{volume} si estende in tre dimensioni. Si possono avere \emph{fixed volume}, (e.g. un pezzo di arredo) e
 un \emph{scalable volume}, che può essere scalato proporzionalmente o no, (e.g. pilastri, scale).
 
-% The plugins can be organized according to \emph{occupation type} and \emph{placement type}.
-% In the \emph{occupation type} three different kind of plugins can be identified: \emph{linear}, \emph{area} or \emph{volume} plugins.
-% The \emph{linear} ones extend in one dimension (unless a radial thickness) (e.g. hydraulic lines, electrical cables).
-% The \emph{area} plugins extend in two dimensions (unless a linear thickness), (e.g. separation elements).
-% They can be divided into \emph{horizontal area} (e.g. floor and ceil), and \emph{vertical area}, (e.g. walls).
-% The \emph{volume} plugins extend in three dimensions. They can be \emph{fixed volume}, (e.g. a piece of furniture) and
-%   \emph{scalable volume}, that can be scaled (proportionally or not), (eg. pillars, staircases).
 
 L'\emph{occupation type} determina un modo differente di instanziare e inserire i plugin nel canvas.
 In particolare, nel \emph{2D-mode}, i plugins \emph{linear} sono inseriti disegnando linee attraverso l'interazione drag\&drop;
 Il plugins \emph{area} sono inseriti disegnando una bounding-box dell'elemento attraverso l'interazione drag\&drop;
 Il plugins \emph{volume} sono inseriti scegliendo la posizione dell'elemento attraverso l'interazione point\&click,
 e sistemando la loro dimensione modificando la bounding-box attraverso il drag\&drop.
-% The \emph{occupation type} determines a different way to instantiate and to insert the plugins into the canvas.
-% In particular, in \emph{2D-mode}, \emph{linear} plugins are inserted drawing lines by mean of a drag\&drop interaction;
-% the \emph{area} plugins are inserted drawing the bounding-box of the element by mean of a drag\&drop interaction;
-% the \emph{volume} plugins are inserted picking the position of the element by mean of a point\&click interaction,
-% and adjusting their dimensions modifying the bounding-box by drag\&drop.
+
 
 Il \emph{placement type} determina se l'elemento può essere inserito all'interno del canvas in un specifico punto occupato o meno
 da altri elementi. In altre parole, esso determina la relazione tra una nuova instanza del plugin e l'instanza di altri
@@ -46,14 +35,3 @@ mentre un ``pannello elettrico'' è un elemento``volume over vertical area''.
 In fase di progettazione, un elemento che non soddisfa i vincoli di posizionamento definiti dal \emph{placement type} \`e
 notificato dal sistema come un warning, visualizzando la sua bounding-box in semitrasparenza di colore rosso.
 \newpage
-% The \emph{placement type} determines if the element can be inserted into the canvas in a specific point occupied or not by
-% other elements. In other words, the {placement type} determines the relationship between a new instance of a plugin and
-% instances of other plugins previously added to the model. The relationship can be of two kind: \emph{inside} or \emph{over}.
-% Plugins belonging to the \emph{inside} category can be added only inside other element (that can be \emph{linear}, \emph{area}
-% or \emph{volume}); e.g., a ``window'' is a ``volume inside vertical area'' element,
-% while an ``hydraulic line'' is a ``linear inside horizontal area'' element.
-% Plugins of the \emph{over} category can be added only over other elements (of any type);
-% e.g., a ``pillar'' is a ``volume over horizontal area'' element,
-% while an ``electric panel'' is a ``volume over vertical area'' element.
-% In the design phase, an element that doesn't meet the placement constraints defined by the \emph{placement type} is notified
-% by the system as a visual warning, showing its bounding-box in semi-transparent blinked red color.

@@ -7,10 +7,11 @@ Dopo aver utilizzato in scenari reali il framework, si è ritenuto di focalizzar
 
 \subsection{IoT}
 \label{sec:conclusions_section_2_sub_1}
-Nel mondo gli oggetti presenti nella vita di tutti i giorni hanno al proprio interno del hardware che consente di interagire
-con essi da remoto. Questi dispositivi sono denominati IoT (Internet of Things) e consentono l'estensione su Internet degli
-oggetti e dei luoghi reali. Questo ci consente di pensare all'inserimento di metadati all'interno dei plugin implementati,
-consentendo all'utente un interazione realtime delle informazioni intriseche al modello.\\
+Nel mondo gli oggetti presenti nella vita di tutti i giorni hanno integrati al proprio interno del hardware e del software
+che consente di interagire con essi da remoto. Questi dispositivi sono denominati \emph{IoT} (Internet of Things) e
+consentono l'estensione su Internet degli oggetti e dei luoghi reali. Questo consente di pensare all'inserimento di
+metadati all'interno dei plugin implementati nel framework \emph{Metior},
+consentendo all'utente un interazione realtime con il dispositivo e le sue informazioni.\\
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
@@ -18,7 +19,8 @@ consentendo all'utente un interazione realtime delle informazioni intriseche al 
    \caption{Plugin con informazioni IoT visualizzate tramite sprite}
    \label{fig:iot}
    \end{figure}
-%inserire foto di un plugin con sprite
+
+In questo contesto di sviluppo si potrebbe ...
 \newpage
 
 \subsection{Progettazione Collaborativa}
@@ -26,12 +28,27 @@ consentendo all'utente un interazione realtime delle informazioni intriseche al 
 Un altro possibile sviluppo del framework è inserire la modalità di \emph{Progettazione Collaborativa}, consentendo a più utenti
 di collaborare contemporaneamente su uno stesso progetto, ottimizando i tempi di lavoro. Si fa riferimento
 all'utilizzo all'interno di uno studio di geometri. Lo stack tecnologico scelto per questo sviluppo sono
-\emph{Firebase} e \emph{jsondiff}. Il primo è stato scelto(perchè?), per consentire in un possibile sistema di autenticazione degli utenti,
-fare un controllo degli accessi e dei permessi al progetto.
-Il secondo modulo presente in npm(descrivere npm), consente di confrontare nel contesto collaborativo i file JSON su cui lavorono
-gli utenti per trovare le modifiche apportate.\\
+\emph{Firebase} e \emph{jsondiff} modulo di npm.\\
+\emph{Firebase}~\cite{firebase} è una piattaforma mobile e applicazioni web con strumenti e infrastrutture progettati per aiutare gli sviluppatori
+a creare applicazioni di alta qualità.
+Il Database Realtime di Firebase  è un database cloud-hosted. I dati vengono memorizzati come JSON e
+sincronizzati in tempo reale ad ogni client connesso. Quando si crea applicazioni cross-platform con
+i nostri Android, iOS SDK, e JavaScript, tutti i client condividono una istanza in tempo reale del
+database e ricevere automaticamente gli aggiornamenti con i dati più recenti.
+\`E stato scelto per implementare un possibile sistema di autenticazione degli utenti, fare un controllo degli accessi e dei permessi
+sul progetto, essendo che il framework salva lo stato dell'applicazione in un file JSON.\\
+Si è deciso inoltre di utilizzare il gestore di pacchetti, o, talvolta, moduli \emph{npm}~\cite{npm} il quale rende facile per gli sviluppatori
+JavaScript condividere e riutilizzare il codice e rendendolo facile da aggiornare.
+Un \emph{pacchetto} è un file o una directory con uno o più file in essa contenuti, che viene descritto da un "package.json"
+con alcuni metadati su di esso. Una tipica applicazione, ad esempio un sito web, dipenderà da decine o centinaia di pacchetti.
+Questi pacchetti sono spesso piccoli. L'idea generale è che si crea un piccolo blocco di istruzioni che risolve un problema.
+In questo modo è possibile risolvere un problema più grande, attraverso una soluzione personalizzata di questi piccoli,
+blocchi condivisi.
+\newpage
 
-% inserire screenshoot
+Si è scelto il modulo \emph{jsondiff} fornito dal gestore \emph{npm}, il quale consente di confrontare nel contesto collaborativo i file JSON su cui
+lavorono gli utenti per trovare le modifiche apportate.\\
+
 \noindent
 \begin{minipage}{.45\textwidth}
 \begin{lstlisting}[
@@ -70,6 +87,13 @@ gli utenti per trovare le modifiche apportate.\\
 \end{lstlisting}
 \end{minipage}
 
+Sfruttando le tecnologie sopra descrite, si può pensare di sviluppare il framework \emph{Metior} per la Progettazione Collaborativa
+pensando di gestire le modifiche apportate dai diversi utenti che lavorano su uno stesso progetto pensando ad un workflow simile
+a quello del sistema utilizzato da GitHub nella gestione dei repository, consentendo all'utente di effettuare operazioni come
+merge, push e pull.
+Per gestire il problema della conflittualità sulle modifiche apportate dagli utenti, si potrebbe inserire una gestione intelligente
+dei layer consentendo all'utente di fare un ``lock'' sul layer sul quale sta lavorando non consentendo cosi agli altri utenti
+di apportare modifiche fino al suo rilascio.
 \newpage
 
 \subsection{Fotorealismo}
@@ -78,21 +102,16 @@ Con \emph{Fotorealismo} si intende semplicemente che una scena simulata \`e indi
 dalla vita di tutti i giorni. Questo è possibile attraverso la \emph{rasterizzazione}, che consiste in un algoritmo che
 permette di convertire un'immagine a due dimensioni in una formata da pixel per avere fotogrammi proiettabili sugli schermi.
 
-% \subsubsection{Baking Service}
-Il servizio \emph{Baking} (citazione) \`e un servizio remoto che prende una rappresentazione della scena in JSON come input,
+Il servizio \emph{Baking}~\cite{baking} \`e un servizio remoto che prende una rappresentazione della scena in JSON come input,
 calcola le texture lightmapped, le Mappe Ambientali per riflessione e rifrazione e memorizza le informazioni grafiche
 in un formato che \`e compatibile con quello d'ingresso, in modo da permettere l'anello di retroazione di authoring(che significa?).\\
 
-% The Baking Service is a remote web service that takes a JSON scene representation as its input,
-% computes the lightmapped textures, the envmaps for reflections and refractions and stores the enhanced graphic information
-%  in a format that is compliant with the input, so enabling the feedback authoring loop.
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=1\linewidth]{images/explorer-a-1}
    \caption{Esempio di un ambiente realizzato con il fotorealismo}
    \label{fig:revit}
    \end{figure}
-%inserire foto di un plugin con sprite
 
 Lo scopo principale \`e semplificare il workflow durante la visualizzazione 3D per fornire una \emph{User Experience}
 ad alto livello sul browser (desktop, tablet e mobile) o su \emph{wearables} come Google Carboard.
@@ -114,21 +133,4 @@ partendo da (a) documenti catastali e/o disegni di costruzione, e (b) scansioni 
 che restituiscono un set di fotografie e di nuvole di punti.
 Il possibile range di applicazioni in cui utilizzare il framework spazia dalla sicurezza all'interno di piccole aree o edifici pubblici, a e-commerce,
 accesso virtuale al patrimonio culturale, ai videogames, e molto altro ancora.
-
-% In this paper we have discussed a simplified visual 3D workflow to provide a high-level user-experience
-%  on web clients (desktop, tablet and mobile, reaching wearables like Google Cardboard).
-%  Compact 3D data structures are produced by the editor on the browser, transmitted to a remote web baking service,
-%   and given back as a real-time enjoyable VR experience with high realism and frame rate. We are currently providing
-%   several optimizations including a solution to cope with out of memory scenes based on portals and fragmentation of
-%   the environments, thus loading on demand only a portion of the whole generated data.
-
- % We are also working to automatize the generation of built environments using the novel LAR (Linear Algebraic Representation)
- %   data structure~\cite{Dicarlo:2014:TNL:2543138.2543294}.
-
-% The project discussed here is actually a component of a much larger programme to provide indoor mapping and indoor/outdoor 3D
-%  realistic models starting from (a) cadaster documents and/or building drawings, and (b)  outdoor/indoor drone flights and their
-%   returned set of photographs and generated point clouds.
-% The possible applications range from security enforcing inside small areas and public buildings, to e-commerce, to virtual access
-%  to cultural heritage, to serious games, and much more.
-
 \newpage
