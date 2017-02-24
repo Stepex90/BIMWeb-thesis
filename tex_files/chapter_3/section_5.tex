@@ -9,22 +9,22 @@ La formalizzazione del procedimento traccia metodologicamente una sequenza di pa
 
 \subsection{Studio della geometria}
 Nella prima fase implementativa dopo aver scelto quale oggetto andare a modellare all'interno del framework,
-si passa ad uno studio della geometria dell'oggetto reale (Figura \ref{fig:confronto} - a), soprattutto in presenza di un modello complesso bisogna
-pensare a come realizzarlo cercando di scinderlo in parti geometriche semplici. Ad esempio prendiamo il caso
-di un estintore, esso è un oggetto composto da una geometria complessa, ed è scindibile in parti geometriche semplice
-come un cilindro più una sfera per il corpo centrale (Figura \ref{fig:confronto} - b) e si segue questa procedura
-per tutte le componenti dell'oggetto.\\
+si passa ad uno studio della geometria dell'oggetto reale (Figura \ref{fig:confronto} - a).
+In presenza di un modello complesso bisogna pensare a come realizzarlo cercando di scinderlo in parti geometriche semplici.
+Ad esempio analizzando l'oggetto estintore, esso è composto da una geometria complessa, ed è scindibile in parti geometriche
+semplici come un cilindro più una semisfera per il corpo centrale (Figura \ref{fig:confronto} - b) e si segue questa procedura
+per tutte le componenti fino alla realizzazione dell'intero modello(Figura \ref{fig:confronto} - c).\\
 
    \begin{figure}[htbp]
    \begin{center}
    \begin{tabular}{ccc @{\hspace{2cm}} ccc}
    \includegraphics[width=3.8cm]{images/estintore2} &
-   \includegraphics[width=3.8cm]{images/estintore} &
-   \includegraphics[width=3.8cm]{images/esplosoestintore}\\
+   \includegraphics[width=3.8cm]{images/esplosoestintore} &
+   \includegraphics[width=3.8cm]{images/estintore}\\
     (a) & (b) & (c)\\
    \end{tabular}
    \end{center}
-   \caption{(a) Foto modello reale, (b) Modello 3D (c) Modello 3D esploso in elementi geometri semplici}
+   \caption{(a) Foto modello reale, (b) Modello 3D esploso in elementi geometri semplici, (c) Modello 3D}
    \label{fig:confronto}
    \end{figure}
 
@@ -32,8 +32,8 @@ Dopo aver scompoto l'oggetto in elementi geometrici semplici, è necessario repe
 larghezza, profondità, altezza e altri dati utili alla modellazione.
 
 
-\subsection{Definizione funzione 2D}
-La funzione di render 2D, attraverso il linguaggio SVG (Scalable Vector Graphics),
+\subsection{Definizione funzione di render 2D}
+La funzione di render 2D, attraverso il linguaggio \emph{SVG} (Scalable Vector Graphics),
 consente di visualizzare oggetti di grafica vettoriale e, pertanto, di gestire immagini scalabili dimensionalmente.
 Questa definizione consente di inserire all'interno del Virtual DOM della content-area la rappresentazione 2D dell'oggetto
 aggiornando l'area interessata del canvas.
@@ -65,25 +65,32 @@ In questo modo il Plugin viene visualizzato all'interno di Metior durante la vis
                    basicstyle=\tiny,
                    caption={Definizion della funzione di render 2D},
                    label=struttura]
-   render2D: (element, layer, scene) => {
-      let style = {
-        stroke: "#000",
-        strokeWidth: element.selected ? "2px" : "0px",
-        fill: element.properties.get('color')
-      };
-
-      return (
-        <g transform='translate(-50, -50)'>
-          <rect x="0" y="0" width="100" height="100" style={style}/>
-        </g>
-      );
-    },
+render2D: function (element, layer, scene) {
+ return (
+  <g transform={'translate(${-RADIUS/(RADIUS/2)},
+                           ${-(RADIUS+5)/(RADIUS/2)})'}>
+   <ellipse key="1" cx="0" cy="0" rx={RADIUS+5} ry={RADIUS}
+   style={{stroke: element.selected ? '#0096fd' : '#000',
+           strokeWidth: "2px", fill: "#ff0000"}}/>
+   <line key="2" x1={0} x2={0} y1={RADIUS} y2={2*RADIUS}/>
+   <line key="3" x1={-RADIUS/2+.15*RADIUS} x2={-RADIUS/2+RADIUS/2}
+                 y1={1.2*RADIUS} y2={2* RADIUS}/>
+   <line key="4" x1={0} x2={-RADIUS/2+.85*RADIUS}
+                 y1={2*RADIUS} y2={1.2*RADIUS}/>
+   <text key="5" cx={RADIUS} cy={RADIUS}
+    transform={ 'translate(${RADIUS/8}, ${0})
+                 scale(1,-1) rotate(${angle/2})'}>
+     {element.type}
+   </text>
+  </g>
+ )
+},
 \end{lstlisting}
 \newpage
 
-\subsection{Definizione funzione 3D}
+\subsection{Definizione funzione di render 3D}
 La funzione di render 3D definisce attraverso una porzione di codice scritto in Javascript ed utilizzando
-la libreria open-source Threejs, un modello 3D del Plugin;
+la libreria open-source \emph{Threejs}, un modello 3D del Plugin;
 questa definizione ne consente pertanto la rappresentazione all'interno di Metior durante la visualizzazione in 3D della scena.\\
 
 
@@ -93,25 +100,45 @@ questa definizione ne consente pertanto la rappresentazione all'interno di Metio
                    basicstyle=\tiny,
                    caption={Definizione della funzione render 3D},
                    label=struttura]
- render3D: (element, layer, scene) => {
-   let geometry = new BoxGeometry(100, 100, 100);
-   let material = new MeshBasicMaterial({
-     color: element.properties.get('color')
-   });
+ render3D: function (element, layer, scene) {
 
-   let mesh = new Mesh(geometry, material);
+  var red = new Three.MeshLambertMaterial({color: 0xff0000});
+
+  var fireExtinguisher = new Three.Object3D();
+
+  var bodyGeometry = new Three.CylinderGeometry(0.1, 0.1, 0.5, 32);
+  var body = new Three.Mesh(bodyGeometry, red);
+  body.position.set(0, 1, 0);
+  fireExtinguisher.add(body);
+
+  var geometrySphereUp = new Three.SphereGeometry(0.1, 32, 32);
+  var sphereUp = new Three.Mesh(geometrySphereUp, red);
+  sphereUp.position.set(0, 0.25, 0);
+  body.add(sphereUp);
+
+  ...
+
+  let value = new Three.Box3().setFromObject(fireExtinguisher);
+
+   let deltaX = Math.abs(value.max.x - value.min.x);
+   let deltaY = Math.abs(value.max.y - value.min.y);
+   let deltaZ = Math.abs(value.max.z - value.min.z);
 
    if (element.selected) {
-     let box = new BoxHelper(mesh, '#000000');
-     box.material.linewidth = 1;
-     box.material.depthTest = false;
-     box.renderOrder = 1000;
-     mesh.add(box);
+     let bbox = new Three.BoxHelper(fireExtinguisher, 0x99c3fb);
+     bbox.material.linewidth = 5;
+     bbox.renderOrder = 1000;
+     bbox.material.depthTest = false;
+     fireExtinguisher.add(bbox);
    }
 
-   mesh.position.y = +50;
+   fireExtinguisher.rotation.y += -Math.PI / 2;
+   fireExtinguisher.position.y += -HEIGHT / 1.15 + newAltitude;
+   fireExtinguisher.position.z += 10;
 
-   return Promise.resolve(mesh);
+   fireExtinguisher.scale.set(RADIUS/deltaX,RADIUS/deltaX,HEIGHT/deltaY);
+
+   return Promise.resolve(fireExtinguisher);
  }
 \end{lstlisting}
 \newpage
@@ -127,9 +154,9 @@ all'interno del \emph{Plugin Catalog}.\\
                    label=struttura]
 import {Catalog} from 'react-planner';
 ...
-import cube from './items/cubo/cubo';
+import estintore from './items/estintore/estintore';
 ...
-catalog.registerElement(cube);
+catalog.registerElement(estintore);
 ...
 export default catalog;
 \end{lstlisting}

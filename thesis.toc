@@ -66,9 +66,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.5.1}Studio della geometria}{29}{subsection.3.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.2}Definizione funzione 2D}{30}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.2}Definizione funzione di render 2D}{30}{subsection.3.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.3}Definizione funzione 3D}{31}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.3}Definizione funzione di render 3D}{31}{subsection.3.5.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.5.4}Instanziazione nel catalogo}{32}{subsection.3.5.4}
 \defcounter {refsection}{0}\relax 

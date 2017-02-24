@@ -2,34 +2,34 @@
 \label{sec:chapter_3_section_2}
 
 \noindent
-I plugin possono essere organizzati in accordo con \emph{occupation type} e \emph{placement type}.
-L'\emph{occupation type} può essere identificato da tre differenti tipi di plugin:
+I \emph{Plugin} possono essere organizzati in accordo con \emph{occupation type} e \emph{placement type}.
+L'\emph{occupation type} può essere identificato da tre differenti tipi di Plugin:
 \begin{itemize}
   \item \emph{linear};
   \item \emph{area};
   \item \emph{volume};
 \end{itemize}
 Quello \emph{linear} si estende in una dimensione (a meno di uno spessore radiale) (e.g. linee idrauliche, cavi elettrici).
-Il plugin \emph{area} si estende in due dimensioni (a meno di uno spessore lineare) (e.g. elementi di separazione).
+Il Plugin \emph{area} si estende in due dimensioni (a meno di uno spessore lineare) (e.g. elementi di separazione).
 Si possono dividere in \emph{horizontal area} (e.g. pavimento e celle), e \emph{vertical area}, (e.g. muri).
-Il plugin \emph{volume} si estende in tre dimensioni. Si possono avere \emph{fixed volume}, (e.g. un pezzo di arredo) e
+Il Plugin \emph{volume} si estende in tre dimensioni. Si possono avere \emph{fixed volume}, (e.g. un pezzo di arredo) e
 un \emph{scalable volume}, che può essere scalato proporzionalmente o no, (e.g. pilastri, scale).
 
 
-L'\emph{occupation type} determina un modo differente di instanziare e inserire i plugin nel canvas.
-In particolare, nel \emph{2D-mode}, i plugins \emph{linear} sono inseriti disegnando linee attraverso l'interazione drag\&drop;
-Il plugins \emph{area} sono inseriti disegnando una bounding-box dell'elemento attraverso l'interazione drag\&drop;
-Il plugins \emph{volume} sono inseriti scegliendo la posizione dell'elemento attraverso l'interazione point\&click,
+L'\emph{occupation type} determina un modo differente di instanziare e inserire i Plugin nel canvas.
+In particolare, nel \emph{2D-mode}, i Plugin \emph{linear} sono inseriti disegnando linee attraverso l'interazione drag\&drop;
+Il Plugin \emph{area} sono inseriti disegnando una bounding-box dell'elemento attraverso l'interazione drag\&drop;
+Il Plugin \emph{volume} sono inseriti scegliendo la posizione dell'elemento attraverso l'interazione point\&click,
 e sistemando la loro dimensione modificando la bounding-box attraverso il drag\&drop.
 
 
 Il \emph{placement type} determina se l'elemento può essere inserito all'interno del canvas in un specifico punto occupato o meno
-da altri elementi. In altre parole, esso determina la relazione tra una nuova instanza del plugin e l'instanza di altri
-plugins precedentemente aggiunti al modello. La relazione può essere di due tipi: \emph{inside} o \emph{over}.
-I plugin appartenenti alla categoria \emph{inside} posso essere aggiunti solo all'interno di altri elementi (che possono essere
+da altri elementi. In altre parole, esso determina la relazione tra una nuova instanza del Plugin e l'instanza di altri
+Plugin precedentemente aggiunti al modello. La relazione può essere di due tipi: \emph{inside} o \emph{over}.
+I Plugin appartenenti alla categoria \emph{inside} posso essere aggiunti solo all'interno di altri elementi (che possono essere
 \emph{linear}, \emph{area} o \emph{volume}); e.g., una ``finestra'' è un elemento ``volume inside vertical area'',
 mentre un ``linea idraulica'' \`e un elemento ``linear inside horizontal area''.
-I plugin della categoria \emph{over} possono essere aggiunti solo sopra ad altri elementi (di qualsiasi tipo)
+I Plugin della categoria \emph{over} possono essere aggiunti solo sopra ad altri elementi (di qualsiasi tipo)
 e.g., un ``pilastro'' \`e un elemento ``volume over horizontal area'',
 mentre un ``pannello elettrico'' è un elemento``volume over vertical area''.
 In fase di progettazione, un elemento che non soddisfa i vincoli di posizionamento definiti dal \emph{placement type} \`e

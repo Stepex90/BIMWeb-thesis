@@ -22,8 +22,8 @@
 \BOOKMARK [1][-]{section.3.4}{Generazione modelli server-side}{chapter.3}% 22
 \BOOKMARK [1][-]{section.3.5}{Processo implementativo}{chapter.3}% 23
 \BOOKMARK [2][-]{subsection.3.5.1}{Studio della geometria}{section.3.5}% 24
-\BOOKMARK [2][-]{subsection.3.5.2}{Definizione funzione 2D}{section.3.5}% 25
-\BOOKMARK [2][-]{subsection.3.5.3}{Definizione funzione 3D}{section.3.5}% 26
+\BOOKMARK [2][-]{subsection.3.5.2}{Definizione funzione di render 2D}{section.3.5}% 25
+\BOOKMARK [2][-]{subsection.3.5.3}{Definizione funzione di render 3D}{section.3.5}% 26
 \BOOKMARK [2][-]{subsection.3.5.4}{Instanziazione nel catalogo}{section.3.5}% 27
 \BOOKMARK [2][-]{subsection.3.5.5}{Testing nella scena}{section.3.5}% 28
 \BOOKMARK [0][-]{chapter.4}{Custom Plugin}{}% 29
