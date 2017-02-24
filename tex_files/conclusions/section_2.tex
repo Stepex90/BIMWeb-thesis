@@ -7,9 +7,9 @@ Dopo aver utilizzato in scenari reali il framework, si è ritenuto di focalizzar
 
 \subsection{IoT}
 \label{sec:conclusions_section_2_sub_1}
-Nel mondo gli oggetti presenti nella vita di tutti i giorni contengono del hardware e del software
-che consentono di interagire con essi da remoto, questi dispositvi grazie all'evoluzione tecnologica sono chiamati
-a comunicare in una forma sempre più interconnessa. Questi dispositivi sono denominati \emph{IoT} (Internet of Things) e
+Gli oggetti presenti nella vita di tutti i giorni contengono hardware e software
+che consentono di interagire con essi da remoto. L'evoluzione tecnologica ha permesso a questi dispositivi
+di comunicare con il resto del mondo in tempo reale. Questi dispositivi sono denominati \emph{IoT} (Internet of Things) e
 consentono l'estensione su Internet degli oggetti e dei luoghi reali. Questo consente di pensare all'inserimento di
 metadati all'interno dei \emph{Plugin} implementati nel framework \emph{Metior},
 consentendo all'utente un interazione realtime con i dispositivi e le loro informazioni.\\
@@ -17,7 +17,7 @@ consentendo all'utente un interazione realtime con i dispositivi e le loro infor
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=1\linewidth]{images/iot}
-   \caption{Plugin con informazioni IoT visualizzate tramite sprite}
+   \caption{Plugin con informazioni IoT visualizzate in real-time}
    \label{fig:iot}
    \end{figure}
 
@@ -25,25 +25,25 @@ consentendo all'utente un interazione realtime con i dispositivi e le loro infor
 
 \subsection{Progettazione Collaborativa}
 \label{sec:conclusions_section_2_sub_2}
-Un altro possibile sviluppo del framework è inserire la modalità di \emph{Progettazione Collaborativa}, consentendo a più utenti
+Un altro possibile sviluppo del framework è l'aggiunta della modalità di \emph{Progettazione Collaborativa}, consentendo a più utenti
 di collaborare contemporaneamente su uno stesso progetto, ottimizando i tempi di lavoro.
-Lo stack tecnologico scelto per questo sviluppo sono
-\emph{Firebase} e \emph{jsondiff} modulo di npm.\\
+I software proposti per implementare questa funzionalitàscelto per questo sviluppo sono
+\emph{Firebase} e \emph{jsondiff}.\\
 \emph{Firebase}~\cite{firebase} è una piattaforma mobile e per applicazioni web con strumenti e infrastrutture progettati
 per aiutare gli sviluppatori a creare applicazioni di alta qualità. Si è scelto di utilizzare
 il Database Realtime di Firebase  il quale è un database cloud-hosted. I dati vengono memorizzati come JSON e
 sincronizzati in tempo reale ad ogni client connesso. Quando si crea applicazioni cross-platform con
 tecnologie Android, iOS SDK, e JavaScript, tutti i client condividono una istanza in tempo reale del
-database e ricevere automaticamente gli aggiornamenti con i dati più recenti.
+database e ricevono automaticamente gli aggiornamenti con i dati più recenti.
 Esso è stato scelto per implementare un possibile sistema di autenticazione degli utenti,
 fare un controllo degli accessi e dei permessi sul progetto,
-essendo che il framework salva lo stato dell'applicazione in un file JSON.\\
+poichè il framework \emph{Metior} salva lo stato dell'applicazione in un file JSON.\\
 Si è deciso inoltre di utilizzare il gestore di pacchetti e moduli \emph{npm}~\cite{npm} il quale rende facile per gli sviluppatori
 JavaScript condividere e riutilizzare il codice e rendendolo facile da aggiornare.
-Un \emph{pacchetto} è un file o una directory con uno o più file in essa contenuti, che viene descritto da un "package.json"
-con alcuni metadati su di esso. Una tipica applicazione, ad esempio un sito web, dipenderà da decine o centinaia di pacchetti.
+Un \emph{pacchetto} è un file o una directory con uno o più file in essa contenuti, che viene descritto tramite un file chiamato ``package.json''
+contenete i metadati del pacchetto stesso. Una tipica applicazione, ad esempio un sito web, può dipendere da decine o centinaia di pacchetti.
 Questi pacchetti sono spesso piccoli. L'idea generale è che si crea un piccolo blocco di istruzioni che risolve un problema.
-In questo modo è possibile risolvere un problema più grande, attraverso una soluzione personalizzata di questi piccoli,
+In questo modo è possibile risolvere un problema più grande, attraverso una composizione personalizzata di questi piccoli
 blocchi condivisi.
 \newpage
 
@@ -86,8 +86,9 @@ i file JSON su cui lavorono gli utenti per trovare le modifiche apportate.\\
    "areas": ["Byg1oFKUIe"]
  }
 \end{lstlisting}
-\end{minipage}
+\end{minipage}\\
 
+(TERZA IMMAGINE CON OUTPUT JSONDIFF E CAMBIARE LISTATI)\\
 Sfruttando le tecnologie sopra descrite, si può pensare di sviluppare il framework \emph{Metior}
 per la Progettazione Collaborativa pensando di gestire le modifiche apportate dai diversi utenti che lavorano su uno
 stesso progetto seguendo un workflow simile a quello che usa GitHub nella gestione dei repository,
@@ -100,7 +101,7 @@ sta lavorando non consentendo cosi agli altri utenti di apportare modifiche fino
 \subsection{Fotorealismo}
 \label{sec:conclusions_section_2_sub_3}
 Con \emph{Fotorealismo} si intende semplicemente che una scena simulata \`e indistinguibile da una fotografia, o per estensione
-dalla vita di tutti i giorni. Questo è possibile attraverso la \emph{rasterizzazione}, che consiste in un algoritmo che
+dalla vita di tutti i giorni. Questo è possibile attraverso un processo di \emph{rasterizzazione}, che consiste in un algoritmo che
 permette di convertire un'immagine a due dimensioni in una formata da pixel per avere fotogrammi proiettabili sugli schermi.
 
 Il servizio \emph{Baking}~\cite{baking} \`e un servizio remoto che prende una rappresentazione della scena in JSON come input,
@@ -116,7 +117,8 @@ in un formato che \`e compatibile con quello d'ingresso, in modo da permettere l
 
 Lo scopo principale \`e semplificare il workflow durante la visualizzazione 3D per fornire una \emph{User Experience}
 ad alto livello sul browser (desktop, tablet e mobile) o su \emph{wearables} come Google Carboard.
-Compattare le strutture dati 3D prodotte dall'editor sul browser, trasmetterle ad un servizio di baking web remoto,
+\newpage
+Lo scopo di questo sviluppo è compattare le strutture dati 3D prodotte dall'editor sul browser, trasmetterle ad un servizio di baking web remoto,
 e restituire una piacevole esperienza VR in real-time con alto realismo e frame rate.
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page

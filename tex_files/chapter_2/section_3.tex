@@ -2,8 +2,8 @@
 \label{sec:chapter_2_section_3}
 
 La User Interface è stata sviluppata seguendo i \emph{Web Components pattern}~\cite{web_components},
-supportati dal framework \emph{React.js}.
-L'idea principale è definire un applicazione frontend come una collezione di componenti indipendenti,
+supportati dal framework \emph{React}.
+L'idea principale è definire un applicazione di frontend come una collezione di componenti indipendenti,
 ognuno dei quali si riferisce ad uno specifico sottoinsieme di stati centralizzati ed in grado
 di fare il render in accordo con i valori effettivi di quella porzione dello stato.
 I Web Components sono la base per contenitori generici di alto livello, come la barra degli strumenti o il catalogo,
@@ -12,8 +12,8 @@ modello di costruzione: il \emph{2D-viewer} e \emph{3D-viewer}.
 
 \subsection{React}
 \label{sec:chapter_2_section_3_sub_1}
-React (a volte definito React.js or ReactJS) è una libreria open-source JavaScript per la costruzione di user interfaces.
-\`E sviluppato da Facebook, e sostenuto da Instagram e una comunità di sviluppatori tramite la sua disponibilità su repository GitHub.
+React (definito React.js or ReactJS) è una libreria open-source JavaScript per la costruzione di user interfaces.
+\`E sviluppato da Facebook, e sostenuto da Instagram e una comunità di sviluppatori tramite la sua disponibilità su repository GitHub
 ~\cite{infoworld}~\cite{facebookreact}~\cite{reactjs}. Secondo il servizio di analisi JavaScript Libscore~\cite{libscope},
 React è attualmente utilizzato sui  siti web di Netflix, Imgur, Bleacher Report, Feedly, Airbnb, SeatGeek,
 HelloSign, Walmart, e altri.
@@ -21,12 +21,13 @@ HelloSign, Walmart, e altri.
 
 \subsubsection{Storia}
 React è stato creato da Jordan Walke, un ingegnere del software di Facebook. \`E stato influenzato da XHP, un HTML
-framework di componenti per PHP~\cite{quora}. \'E stato distribuito sulle newsfeed di Facebook nel 2011 e in seguito
-Instagram.com nel 2012~\cite{txjs}. \`E stato reso open-source durante il JSConf Stati Uniti nel maggio 2013.
+framework di componenti per PHP. \`E stato distribuito sulle newsfeed di Facebook nel 2011 e in seguito
+Instagram.com nel 2012. \`E stato reso open-source durante il JSConf Stati Uniti nel maggio 2013.
 React Native, che consente lo sviluppo di applicazioni native su iOS, Android e Windows Mobile attraverso React,
 è stato annunciato alla Facebook's React.js Conf in febbraio 2015 e reso open-source nel marzo 2015.
 
 \subsubsection{Caratteristiche}
+(---RIVEDERE CHE SIGNIFICA---)\\
 In un flusso di dati unidirezionale le propriet\`a, ed un insieme di valori immutabili, sono passati al
 componente di rendering come propriet\`a nel suo tag HTML.
 Un componente non pu\`o modificare direttamente le propriet\`a passate ad esso, ma pu\`o usare funzioni di
@@ -35,13 +36,13 @@ callback passategli che gli fanno modificare i valori.
 \subsubsection{Virtual DOM}
 Un'altra caratteristica degna di nota è l'utilizzo di un "virtual Document Object Model", o "virtual DOM".
 React crea una struttura cache dei dati in memoria, calcola le differenze risultanti, e poi aggiorna
-la DOM~\cite{reactdom} del browser visualizzati in maniere efficiente.
+la DOM~\cite{reactdom} del browser visualizzandola in maniera efficiente.
 Questo permette al programmatore di scrivere codice come se
-l'intera pagina venisse cambia, mentre le librerie React fanno il render delle sole sottocomponenti che in realtà cambiano.
+l'intera pagina venisse cambiata, mentre le librerie React fanno il render delle sole sottocomponenti che in realtà cambiano.
 
 \subsubsection{JSX}
 I componenti React sono tipicamente scritti in JSX, una estensione della sintassi JavaScript che permette di citare
-HTML e utilizzando la sintassi tag HTML per fare  il render delle sottocomponenti.~\cite{jsx}
+HTML e utilizzano la sintassi dei tag HTML per fare  il render delle sottocomponenti.~\cite{jsx}
 La sintassi HTML è trasformata in chiamate JavaScript
 della libreria React. Gli sviluppatori possono anche scrivere in JavaScript puro.
 
@@ -49,8 +50,8 @@ della libreria React. Gli sviluppatori possono anche scrivere in JavaScript puro
 \newpage
 \subsection{Threejs}
 \label{sec:chapter_2_section_3_sub_2}
-Three.js \`e una libreria cross-browser JavaScript/API utilizzata per creare e visualizzare grafica animata in 3D
-in un browser web. Three.js utilizza WebGL. Il codice sorgente è ospitato in un repository su GitHub. (citazione)
+Three.js \`e una libreria cross-browser JavaScript utilizzata per creare e visualizzare grafica animata in 3D
+in un browser web. Three.js utilizza WebGL. Il codice sorgente è ospitato in un repository su GitHub\footnote{\url{https://github.com/}}.
 
 \subsubsection{Overview}
 Three.js permette la creazione di animazioni 3D accelerate dalla GPU utilizzando il linguaggio JavaScript
@@ -58,18 +59,18 @@ come parte di un sito web senza fare affidamento su plugin propietari dei browse
  Questo è possibile grazie all'avvento delle specifiche WebGL.~\cite{khronos}
 
 \subsubsection{Storia}
-Three.js per è stato pubblicato da Ricardo Cabello su GitHub nel mese di aprile 2010.~\cite{Firstcommit}
-Le origini della libreria risalgono al suo coinvolgimento con il demoscene nei primi anni 2000.
-Il codice \`e stato sviluppato in ActionScript, poi nel 2009 portato su JavaScript. Nella mente di Cabello,
+Three.js è stato pubblicato da Ricardo Cabello su GitHub nel mese di aprile 2010.~\cite{Firstcommit}
+Le origini della libreria risalgono al coinvolgimento di Cabello con il demoscene nei primi anni 2000.
+Il codice \`e stato sviluppato originariamente in ActionScript, poi nel 2009 portato su JavaScript. Nella mente di Cabello,
 i due punti di forza per la riscrittura in JavaScript sono stati non essere costretti a compilare il codice prima
 ogni run e l' indipendenza dalla piattaforma. Con l'avvento di WebGL, Paul Brunt è stato in grado di integrare il renderer
-WebGl all'interno di Three.js creando un modulo di rendering appropriato.~\cite{develop}
-I contributi di Cabello comprendono la progettazione API, CanvasRenderer, SVGRenderer e di essere
-responsabile per la fusione dei commit da parte dei vari collaboratori nel progetto.
+WebGL all'interno di Three.js creando un modulo di rendering appropriato.~\cite{develop}
+I contributi di Cabello comprendono la progettazione API, CanvasRenderer, SVGRenderer ed è il
+responsabile per la gestione dei commit da parte dei vari collaboratori nel progetto.
 
 Il secondo contributo, in termini di commit, è di Branislav Ulicny che ha iniziato a lavorare su Three.js nel 2010
 dopo aver pubblicato una serie di demo WebGL sul proprio sito. Voleva che la capacit\`a di rendering di WebGL in Three.js
-fossero superiori a quelli di CanvasRenderer o SVGRenderer.~\cite{develop}
+fossero superiori a quelle di CanvasRenderer o SVGRenderer.~\cite{develop}\\
 I suoi maggiori contributi comportano migliorie nei moduli dei materiali, degli shaders e di post-processing.
 
 \subsubsection{Caratteristiche}

@@ -16,44 +16,46 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Schermata con visuale in prima persona\relax }}{9}{figure.caption.9}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Schermata con visuale 3D\relax }}{9}{figure.caption.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Schermata interfaccia utente\relax }}{10}{figure.caption.10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Schermata con visuale in prima persona\relax }}{10}{figure.caption.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Schermata viewer 2D\relax }}{12}{figure.caption.11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Schermata interfaccia utente\relax }}{11}{figure.caption.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Schermata viewer 3D \relax }}{13}{figure.caption.12}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Schermata viewer 2D\relax }}{13}{figure.caption.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Dettaglio Plugin: (a) Vista dei plugin nel catalogo, (b) inserimento oggetto dopo la selezione nel catalogo\relax }}{14}{figure.caption.13}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Schermata viewer 3D \relax }}{14}{figure.caption.13}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces (a) Foto modello reale, (b) Modello 3D esploso in elementi geometri semplici, (c) Modello 3D\relax }}{29}{figure.caption.24}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Dettaglio Plugin: (a) Vista dei plugin nel catalogo, (b) inserimento oggetto dopo la selezione nel catalogo\relax }}{15}{figure.caption.14}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Vista 3D del modello di un'aula\relax }}{34}{figure.caption.25}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Dettaglio Plugin: (a) appendiabiti, (b) armadietto, (c) attaccapanni, (d) portaombrelli\relax }}{35}{figure.caption.26}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Dettaglio Plugin: (a) banco, (b) cattedra, (c) lavagna, (d) lim\relax }}{36}{figure.caption.27}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Dettaglio Plugin: (a) cestini differenziata, (b) condizionatore, (c) termosifone\relax }}{37}{figure.caption.28}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Dettaglio Plugin: (a) libreria, (b) computer, (c) finestra con tenda, (d) finestra con veneziana\relax }}{38}{figure.caption.29}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Vista 3D di un Virtual CED\relax }}{39}{figure.caption.30}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Dettaglio Plugins: (a) estintore, (b) rilevatore fumo, (c) cassetta naspo, (d) porta antipanico\relax }}{40}{figure.caption.31}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Dettaglio Plugin: (a) metal detector, (b) rack server, (c) router wifi, (d) telecamera\relax }}{41}{figure.caption.32}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Vista 3D di un modello per il Deconstruction\relax }}{43}{figure.caption.33}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces (a) Foto modello reale, (b) Modello 3D esploso in elementi geometri semplici, (c) Modello 3D\relax }}{30}{figure.caption.25}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Plugin con informazioni IoT visualizzate tramite sprite\relax }}{46}{figure.caption.34}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Vista 3D del modello di un'aula\relax }}{35}{figure.caption.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Esempio di un ambiente realizzato con il fotorealismo\relax }}{49}{figure.caption.35}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Dettaglio Plugin: (a) appendiabiti, (b) armadietto, (c) attaccapanni, (d) portaombrelli\relax }}{36}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Esempio di visione di un ambiente attraverso VR\relax }}{50}{figure.caption.36}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Dettaglio Plugin: (a) banco, (b) cattedra, (c) lavagna, (d) lim\relax }}{37}{figure.caption.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Dettaglio Plugin: (a) condizionatore, (b) termosifone, (c) cestini differenziata\relax }}{38}{figure.caption.29}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Dettaglio Plugin: (a) libreria, (b) computer, (c) finestra con tenda, (d) finestra con veneziana\relax }}{39}{figure.caption.30}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Vista 3D di un Virtual CED\relax }}{40}{figure.caption.31}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Dettaglio Plugins: (a) estintore, (b) metal detecton, (c) rilevatore fumo, (d) cassetta naspo, (e) porta antipanico, (f) rilevatore di fumo\relax }}{41}{figure.caption.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Dettaglio Plugin: (a) quadro elettrico, (b) rack server, (c) router wifi, (d) telecamera\relax }}{42}{figure.caption.33}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Vista 3D di un modello per il Deconstruction\relax }}{44}{figure.caption.34}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Plugin con informazioni IoT visualizzate in real-time\relax }}{47}{figure.caption.35}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Esempio di un ambiente realizzato con il fotorealismo\relax }}{50}{figure.caption.36}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Esempio di visione di un ambiente attraverso VR\relax }}{51}{figure.caption.37}

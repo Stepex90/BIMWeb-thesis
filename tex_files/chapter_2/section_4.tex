@@ -11,10 +11,10 @@ ed oggetti, ognuno dei quali è racchiuso in una struttura composta da:
 \end{itemize}
 
 La ridondanza delle informazioni viene sfruttata per ridurre i tempi di accesso. Collezioni di oggetti
-sono indicizzati da un identificativo univoco \texttt{id} permettendo la ricerca in tempo costante, del
-campo \texttt{selected} di ogni layer, questo consente l'accesso diretto ad elementi selezionati senza cercare.
-Lo stato dell'applicazione può essere caricato un layer alla volta, consentendo la visualizzazione del solo layer selezionato,
-come può avvenire in un framework di modellazione Desktop.\\
+sono indicizzate da un identificativo univoco \texttt{id} che permette la ricerca in tempo costante e del
+campo \texttt{selected} in ogni layer che consente l'accesso diretto ad elementi selezionati senza cercare.
+Lo stato dell'applicazione può caricare i layer indipendentemente, anche uno alla volta, consentendo quindi
+la visualizzazione dei soli layer selezionati, come può avvenire in un framework di modellazione Desktop.\\
 
 \newpage
 
@@ -94,16 +94,17 @@ come può avvenire in un framework di modellazione Desktop.\\
 \subsubsection*{Flusso dati unidirezionale}
 \noindent
 La struttura dei dati descritta rappresenta lo stato centralizzato richiesto dal \emph{Unidirectional data flow pattern}
-~\cite{uniflow} sfruttato dall'applicazione tramite la libreria \emph{Redux.js}\footnote{\url{http://redux.js.org/}}.
+~\cite{uniflow} sfruttato dall'applicazione tramite la libreria \emph{Redux.js}\footnote{\url{http://redux.js.org/}},
+la quale è un contenitore di stato per le applicazioni JavaScript.
 Il modello prevede che lo stato possa essere modificato solo da attori specifici, chiamati \emph{reducers},
 le cui attività sono eseguite da specifiche \emph{actions} che contengono tutte le informazioni necessarie per
 ogni reducer per realizzare il cambiamento nello stato. Ogni caratteristica applicazione deve essere attuata di conseguenza
 come una porzione di codice a sé stanti(\emph{action}/\emph{reducer}).
-Esperimenti preliminari \footnote{\url{https://github.com/cvdlab/walle}} su strumenti di disegno 2D, infatti,
-hanno evidenziato la complessità di sviluppo di un'applicazione di questo tipo in termini di complessità di gestione
-dello stato interno dell'applicazione che viene modificato da diverse interazioni con l'utente,
-e che comporti un'associazione tra l'evento scatenato dall'utente sull'interfaccia e la logica dell'applicazione.
-Nell'archiettetura del framework, si definisce uno \emph{state engine}, che rappresenta la logica dell'applicazione,
+Degli esperimenti preliminari \footnote{\url{https://github.com/cvdlab/walle}} su strumenti di disegno 2D
+hanno evidenziato la complessità di sviluppo di un'applicazione di questo tipo, in quanto
+lo stato interno dell'applicazione viene modificato da diverse interazioni dell'utente.
+\`E presente un'associazione tra l'evento scatenato dall'utente sull'interfaccia e la logica dell'applicazione.
+Nell'archiettetura del framework si definisce uno \emph{state engine}, che rappresenta la logica dell'applicazione,
 che comprende actions e reducers e ne incapsula lo stato in modo centralizzato.
 \newpage
 
@@ -116,9 +117,9 @@ eseguiti dai reducers. Lo stato può essere visto come una struttura immutabile 
   \item aggiornamento del riferimento da \texttt{s} a \texttt{s'}.
 \end{itemize}
 Vale la pena notare che questo approccio fornisce il supporto per operazioni out-of-the-box come undo/redo:
-un stato vecchio/recente possono essere ripristinati mediante sostituzione dello stato attuale con Il precedente/successivo.
+un stato vecchio/recente possono essere ripristinati mediante sostituzione dello stato attuale con il precedente/successivo.
 Nonostante la sua semplicità, questo modello può tuttavia comportare sprechi di memoria, a causa delle diverse copie dello
-stato che deve che si terrà in memoria. Abbiamo affrontato questo problema utilizzando \emph{Immutable.js}
+stato che è necessario mantenere in memoria. Abbiamo affrontato questo problema utilizzando \emph{Immutable.js}
 \footnote{\url{https://facebook.github.io/immutable-js/}}, una libreria che sfrutta la condivisione strutturale tramite
 processi con mappe hash e vettoriali, riducendo al minimo la necessità di copiare o mettere i dati in una cache appositamente creata.
 \newpage

@@ -28,7 +28,7 @@ per tutte le componenti fino alla realizzazione dell'intero modello(Figura \ref{
    \label{fig:confronto}
    \end{figure}
 
-Dopo aver scompoto l'oggetto in elementi geometrici semplici, è necessario reperire le informazioni come
+Dopo aver scomposto l'oggetto in elementi geometrici semplici, è necessario reperire le informazioni come
 larghezza, profondità, altezza e altri dati utili alla modellazione.
 
 
@@ -63,7 +63,7 @@ In questo modo il Plugin viene visualizzato all'interno di Metior durante la vis
                    numbers=left,
                    frame=trBL,
                    basicstyle=\tiny,
-                   caption={Definizion della funzione di render 2D},
+                   caption={Definizione della funzione di render 2D},
                    label=struttura]
 render2D: function (element, layer, scene) {
  return (
@@ -144,7 +144,7 @@ questa definizione ne consente pertanto la rappresentazione all'interno di Metio
 \newpage
 
 \subsection{Instanziazione nel catalogo}
-Dopo aver implementato un Plugin è necessario al fine di poterlo inserire all'interno di una scena, instanziarlo
+Dopo aver implementato un Plugin è necessario, al fine di poterlo inserire all'interno di una scena, instanziarlo
 all'interno del \emph{Plugin Catalog}.\\
 \begin{lstlisting}[
                    numbers=left,
@@ -162,6 +162,6 @@ export default catalog;
 \end{lstlisting}
 
 \subsection{Testing nella scena}
-La fine del processo porta al testing del nuovo \emph{Plugin} implementato, testandolo all'interno
+La fine del processo richiede il testing del nuovo \emph{Plugin} implementato, testandolo all'interno
 di una scena per verificare che le caratteristiche, geometriche e dimensionali corrispondando con quelle
 del modello reale dal quale si è preso spunto per la realizzazione del modello digitale.\\

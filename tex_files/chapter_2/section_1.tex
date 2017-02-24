@@ -3,25 +3,31 @@
 
 Nello sviluppo del framework \emph{Metior} ci si è concentrati nel fornire all'utente una \emph{User Experience} tale
 da semplificare il compito di modellazione di un edificio.
-L'interfaccia richiede che l'utente utilizzi il più possibile un'interfaccia bidimensionale la quale permette
+Il framework richiede che l'utente utilizzi il più possibile un'interfaccia bidimensionale la quale permette
 di definire il piano e posizionare gli elementi architettonici complessi (chiamati \emph{building elements}) su di esso.
 Tali \emph{building elements} sono presenti all'interno in un catalogo pre-caricato, e possono essere
-configurati e personalizzati attraverso il pannello laterale. Questo approccio
+configurati e personalizzati attraverso un pannello laterale. Questo approccio
 di modellazione sposta la complessità verso lo sviluppatore dei \emph{bulding elements} personalizzabili,
 lasciando all'utente finale il compito di posizionare e configurare gli elementi utilizzati.
 Un ricco catalogo di elementi \`e quindi fondamentale per rispondere alle esigenze di modellazione degli utenti.
 Una volta che la scena \`e stata definita in base all'approccio \emph{place-and-configure}, il sistema può automaticamente
-generare un modello 3D che pu\`o essere esplorato esternamente o in prima persona,
-(Figura~\ref{fig:3D-school}).\\
+generare un modello 3D che pu\`o essere esplorato esternamente (Figura~\ref{fig:3D-school}) o
+in prima persona (Figura~\ref{fig:1D-school}).\\\\
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=1\linewidth]{images/3d-school}
+   \caption{Schermata con visuale 3D}
+   \label{fig:3D school}
+\end{figure}
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=1\linewidth]{images/3d-school}
    \caption{Schermata con visuale in prima persona}
-   \label{fig:3D-school}
+   \label{fig:1D-school}
 \end{figure}
-\newpage
 
 Ogni \emph{building element} infatti comprende sia un \emph{funzione generatrice 2D (2Dgf)} e un
-\emph{funzione generatrice 3D (3Dgf)}, utilizzate per ottenere modelli nella planimetria 2D e in 3D che ha generato il modello
-rispettivamente.
+\emph{funzione generatrice 3D (3Dgf)}, utilizzate per ottenere modelli nella planimetria 2D e in 3D.
+\newpage
