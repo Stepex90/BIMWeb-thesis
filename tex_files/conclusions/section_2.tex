@@ -2,7 +2,7 @@
 \label{sec:conclusions_section_2}
 
 I possibili sviluppi e campi di utilizzo del framework \emph{Metior} implementato possono essere tanti.
-Dopo aver utilizzato in scenari reali il framework, si è ritenuto di focalizzare gli sviluppi successivi nei seguenti ambiti:
+Dopo aver utilizzato l'applicativo in scenari reali, si è ritenuto di focalizzare gli sviluppi successivi nei seguenti ambiti:
 (a) integrazione con dispositivi IoT, (b) progettazione collaborativa, (c) fotorealismo.
 
 \subsection{IoT}
@@ -27,7 +27,7 @@ consentendo all'utente un interazione realtime con i dispositivi e le loro infor
 \label{sec:conclusions_section_2_sub_2}
 Un altro possibile sviluppo del framework è l'aggiunta della modalità di \emph{Progettazione Collaborativa}, consentendo a più utenti
 di collaborare contemporaneamente su uno stesso progetto, ottimizando i tempi di lavoro.
-I software proposti per implementare questa funzionalitàscelto per questo sviluppo sono
+I software proposti per implementare questa funzionalità sono:
 \emph{Firebase} e \emph{jsondiff}.\\
 \emph{Firebase}~\cite{firebase} è una piattaforma mobile e per applicazioni web con strumenti e infrastrutture progettati
 per aiutare gli sviluppatori a creare applicazioni di alta qualità. Si è scelto di utilizzare
@@ -36,9 +36,8 @@ sincronizzati in tempo reale ad ogni client connesso. Quando si crea applicazion
 tecnologie Android, iOS SDK, e JavaScript, tutti i client condividono una istanza in tempo reale del
 database e ricevono automaticamente gli aggiornamenti con i dati più recenti.
 Esso è stato scelto per implementare un possibile sistema di autenticazione degli utenti,
-fare un controllo degli accessi e dei permessi sul progetto,
-poichè il framework \emph{Metior} salva lo stato dell'applicazione in un file JSON.\\
-Si è deciso inoltre di utilizzare il gestore di pacchetti e moduli \emph{npm}~\cite{npm} il quale rende facile per gli sviluppatori
+fare un controllo degli accessi e dei permessi sul progetto.\\
+Si è deciso inoltre di utilizzare il gestore di pacchetti e moduli \emph{npm}~\cite{npm} il quale rende facile agli sviluppatori
 JavaScript condividere e riutilizzare il codice e rendendolo facile da aggiornare.
 Un \emph{pacchetto} è un file o una directory con uno o più file in essa contenuti, che viene descritto tramite un file chiamato ``package.json''
 contenete i metadati del pacchetto stesso. Una tipica applicazione, ad esempio un sito web, può dipendere da decine o centinaia di pacchetti.
@@ -56,17 +55,44 @@ i file JSON su cui lavorono gli utenti per trovare le modifiche apportate.\\
                    numbers=left,
                    frame=trBL,
                    basicstyle=\tiny,
-                   caption={JSON prima della modifica},
+                   caption={JSON originario prima della modifica di un utente},
                    label=struttura]
-  {
-    "id": "HJAe59YF8Ux",
-    "x": 201,
-    "y": 891,
-    "prototype": "vertices",
-    "selected": false,
-    "lines": ["Hype99FK88x", "S1w-hqKKL8e"],
-    "areas": ["Byg1oFKUIe"]
-  }
+   ...
+
+   "items": {
+     "BkrJVNl9e": {
+       "id": "BkrJVNl9e",
+       "prototype": "items",
+       "type": "cattedra",
+       "properties": {
+         "altitude": {
+           "length": 0,
+           "unit": "cm"
+         }
+       },
+       "selected": false,
+       "x": 452.23424450039795,
+       "y": 1750.8919038286344,
+       "rotation": 0
+     },
+     "Hk1xEVg5g": {
+       "id": "Hk1xEVg5g",
+       "prototype": "items",
+       "type": "banco",
+       "properties": {
+         "altitude": {
+           "length": 0,
+           "unit": "cm"
+         }
+       },
+       "selected": false,
+       "x": 444.0737738367833,
+       "y": 1555.0406079018835,
+       "rotation": 0
+     }
+   },
+
+   ...
 \end{lstlisting}
 \end{minipage}\hfill
 \begin{minipage}{.45\textwidth}
@@ -74,23 +100,89 @@ i file JSON su cui lavorono gli utenti per trovare le modifiche apportate.\\
                    numbers=left,
                    frame=trBL,
                    basicstyle=\tiny,
-                   caption={JSON dopo la modifica},
+                   caption={JSON dopo la modifica di un utente},
                    label=struttura]
- {
-   "id": "HJAe59YF8Ux",
-   "x": 201,
-   "y": 891,
-   "prototype": "vertices",
-   "selected": false,
-   "lines": ["Hype99FK88x", "S1w-hqKKL8e"],
-   "areas": ["Byg1oFKUIe"]
- }
-\end{lstlisting}
-\end{minipage}\\
+   ...
 
-(TERZA IMMAGINE CON OUTPUT JSONDIFF E CAMBIARE LISTATI)\\
+   "items": {
+     "BkrJVNl9e": {
+       "id": "BkrJVNl9e",
+       "prototype": "items",
+       "type": "cattedra",
+       "properties": {
+         "altitude": {
+           "length": 0,
+           "unit": "cm"
+         }
+       },
+       "selected": false,
+       "x": 452.23424450039795,
+       "y": 1750.8919038286344,
+       "rotation": 0
+     },
+     "rkiM4Ngcl": {
+       "id": "rkiM4Ngcl",
+       "prototype": "items",
+       "type": "estintore",
+       "properties": {
+         "altitude": {
+           "length": 100,
+           "unit": "cm"
+         }
+       },
+       "selected": false,
+       "x": 831.6984550413513,
+       "y": 1620.1209426149287,
+       "rotation": 0
+     }
+   },
+
+  ...
+\end{lstlisting}
+\end{minipage}
+\newpage
+
+\begin{lstlisting}[
+                   numbers=left,
+                   frame=trBL,
+                   basicstyle=\tiny,
+                   caption={Output dopo l'esecuzione del modulo jsondiff con le differenze tra i due file JSON precedenti},
+                   label=struttura]
+ layers:
+  layer-1:
+    items:
+      Hk1xEVg5g:
+        -
+          id:         Hk1xEVg5g
+          prototype:  items
+          type:       banco
+          properties:
+            altitude:
+              length: 0
+              unit:   cm
+          selected:   false
+          x:          444.0737738367833
+          y:          1555.0406079018835
+          rotation:   0
+        - 0
+        - 0
+      rkiM4Ngcl:
+        -
+          id:         rkiM4Ngcl
+          prototype:  items
+          type:       estintore
+          properties:
+            altitude:
+              length: 100
+              unit:   cm
+          selected:   false
+          x:          831.6984550413513
+          y:          1620.1209426149287
+          rotation:   0
+\end{lstlisting}
+
 Sfruttando le tecnologie sopra descrite, si può pensare di sviluppare il framework \emph{Metior}
-per la Progettazione Collaborativa pensando di gestire le modifiche apportate dai diversi utenti che lavorano su uno
+per la Progettazione Collaborativa gestendo le modifiche apportate dai diversi utenti che lavorano su uno
 stesso progetto seguendo un workflow simile a quello che usa GitHub nella gestione dei repository,
 consentendo all'utente di effettuare operazioni come merge, push e pull.
 Per gestire il problema della conflittualità sulle modifiche apportate dagli utenti,
@@ -106,7 +198,7 @@ permette di convertire un'immagine a due dimensioni in una formata da pixel per 
 
 Il servizio \emph{Baking}~\cite{baking} \`e un servizio remoto che prende una rappresentazione della scena in JSON come input,
 calcola le texture lightmapped, le Mappe Ambientali per riflessione e rifrazione e memorizza le informazioni grafiche
-in un formato che \`e compatibile con quello d'ingresso, in modo da permettere l'anello di retroazione di authoring(che significa?).\\
+in un formato che \`e compatibile con quello d'ingresso.\\
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
@@ -131,6 +223,3 @@ e restituire una piacevole esperienza VR in real-time con alto realismo e frame 
 Il fotorealismo può essere esteso in un contesto che fornisce Indoor mapping e indoor/outdoor 3D di modelli realistici
 partendo da (a) documenti catastali e/o disegni di costruzione, e (b) scansioni outdoor/indoor realizzate tramite droni
 che restituiscono un set di fotografie e di nuvole di punti.
-Il possibile range di applicazioni in cui utilizzare il framework spazia dalla sicurezza all'interno di piccole aree
-o edifici pubblici, a e-commerce, accesso virtuale al patrimonio culturale, ai videogames, e molti altri ancora.
-\newpage

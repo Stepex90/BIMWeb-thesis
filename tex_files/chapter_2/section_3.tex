@@ -18,7 +18,6 @@ React (definito React.js or ReactJS) è una libreria open-source JavaScript per 
 React è attualmente utilizzato sui  siti web di Netflix, Imgur, Bleacher Report, Feedly, Airbnb, SeatGeek,
 HelloSign, Walmart, e altri.
 
-
 \subsubsection{Storia}
 React è stato creato da Jordan Walke, un ingegnere del software di Facebook. \`E stato influenzato da XHP, un HTML
 framework di componenti per PHP. \`E stato distribuito sulle newsfeed di Facebook nel 2011 e in seguito
@@ -26,12 +25,10 @@ Instagram.com nel 2012. \`E stato reso open-source durante il JSConf Stati Uniti
 React Native, che consente lo sviluppo di applicazioni native su iOS, Android e Windows Mobile attraverso React,
 è stato annunciato alla Facebook's React.js Conf in febbraio 2015 e reso open-source nel marzo 2015.
 
-\subsubsection{Caratteristiche}
-(---RIVEDERE CHE SIGNIFICA---)\\
-In un flusso di dati unidirezionale le propriet\`a, ed un insieme di valori immutabili, sono passati al
-componente di rendering come propriet\`a nel suo tag HTML.
-Un componente non pu\`o modificare direttamente le propriet\`a passate ad esso, ma pu\`o usare funzioni di
-callback passategli che gli fanno modificare i valori.
+\subsubsection{Flusso dati unidirezionale}
+Le propriet\`a ed un insieme di valori immutabili, sono passate al componente di rendering come propriet\`a nel suo tag HTML.
+Un componente non pu\`o modificare direttamente le propriet\`a che gli sono state passate, ma pu\`o usare funzioni di
+callback le quali vanno a modificare i valori.
 
 \subsubsection{Virtual DOM}
 Un'altra caratteristica degna di nota è l'utilizzo di un "virtual Document Object Model", o "virtual DOM".
@@ -78,7 +75,7 @@ Three.js include le seguenti caratteristiche:~\cite{mrdoob}
 \begin{itemize}
 
 \item Effetti: Anaglyph, cross-eyed e parallax barrier;
-\item Scenea: aggiunta e rimozione oggetti a run-time;
+\item Scena: aggiunta e rimozione oggetti a run-time;
 \item Camera: prospettica e ortogonale; controllers: trackball, FPS, path e molte altre;
 \item Animazioni: armatures, forward kinematics, kinematics inversa, morph e keyframe;
 \item Luci: ambientale, direzionale, in un punto e spot lights; shadows: generata e ricevuta;

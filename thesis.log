@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.2.13)  24 FEB 2017 15:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.2.13)  26 FEB 2017 18:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -916,6 +916,9 @@ LaTeX Warning: Label `struttura' multiply defined.
 LaTeX Warning: Label `struttura' multiply defined.
 
 
+LaTeX Warning: Label `struttura' multiply defined.
+
+
 LaTeX Warning: Label `fig:revit' multiply defined.
 
 )
@@ -1120,10 +1123,6 @@ Capitolo 2.
 
 ])
 (./tex_files/chapter_2/section_1.tex
-
-LaTeX Warning: Reference `fig:3D-school' on page 9 undefined on input line 14.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 4--16
 
  []
@@ -1133,17 +1132,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--16
 
  []
 
-<images/3d-school.png, id=373, 1371.1225pt x 744.7825pt>
+<images/3d-school.png, id=374, 1371.1225pt x 770.88pt>
 File: images/3d-school.png Graphic file (type png)
 
 <use images/3d-school.png>
 Package pdftex.def Info: images/3d-school.png used on input line 19.
-(pdftex.def)             Requested size: 360.0pt x 195.54811pt.
-File: images/3d-school.png Graphic file (type png)
- <use images/3d-school.png>
-Package pdftex.def Info: images/3d-school.png used on input line 26.
-(pdftex.def)             Requested size: 360.0pt x 195.54811pt.
- [9 <./images/3d-school.png>] [10]) (./tex_files/chapter_2/section_2.tex
+(pdftex.def)             Requested size: 360.0pt x 202.40019pt.
+
+<images/1d-school.png, id=375, 1371.1225pt x 770.88pt>
+File: images/1d-school.png Graphic file (type png)
+
+<use images/1d-school.png>
+Package pdftex.def Info: images/1d-school.png used on input line 26.
+(pdftex.def)             Requested size: 360.0pt x 202.40019pt.
+ [9 <./images/3d-school.png>] [10 <./images/1d-school.png>]) (./tex_files/chapt
+er_2/section_2.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -1152,7 +1155,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
 
-<images/mock-interfaccia.pdf, id=384, 487.421pt x 265.3915pt>
+<images/mock-interfaccia.pdf, id=385, 487.421pt x 265.3915pt>
 File: images/mock-interfaccia.pdf Graphic file (type pdf)
 
 <use images/mock-interfaccia.pdf>
@@ -1168,7 +1171,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--41
 
  []
 
-<images/2d.png, id=407, 872.25874pt x 385.44pt>
+<images/2d.png, id=408, 872.25874pt x 385.44pt>
 File: images/2d.png Graphic file (type png)
  <use images/2d.png>
 Package pdftex.def Info: images/2d.png used on input line 45.
@@ -1178,24 +1181,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--65
 
  []
 
-<images/3d.png, id=421, 876.27374pt x 394.47375pt>
+<images/3d.png, id=422, 876.27374pt x 394.47375pt>
 File: images/3d.png Graphic file (type png)
  <use images/3d.png>
 Package pdftex.def Info: images/3d.png used on input line 69.
 (pdftex.def)             Requested size: 360.0pt x 162.06032pt.
- [14 <./images/3d.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 78--85
-
- []
-
-<images/figcatalog.png, id=432, 1371.1225pt x 746.79pt>
+ [14 <./images/3d.png>] <images/figcatalog.png, id=433, 1371.1225pt x 746.79pt>
 File: images/figcatalog.png Graphic file (type png)
 
 <use images/figcatalog.png>
 Package pdftex.def Info: images/figcatalog.png used on input line 89.
 (pdftex.def)             Requested size: 256.0748pt x 139.46442pt.
 
-<images/positioning.png, id=433, 1371.1225pt x 770.88pt>
+<images/positioning.png, id=434, 1371.1225pt x 770.88pt>
 File: images/positioning.png Graphic file (type png)
 
 <use images/positioning.png>
@@ -1203,13 +1201,13 @@ Package pdftex.def Info: images/positioning.png used on input line 91.
 (pdftex.def)             Requested size: 256.0748pt x 143.96327pt.
  [15 <./images/figcatalog.png> <./images/positioning.png>]) (./tex_files/chapte
 r_2/section_3.tex [16] [17] [18]
-Overfull \hbox (7.31313pt too wide) in paragraph at lines 86--87
+Overfull \hbox (7.31313pt too wide) in paragraph at lines 83--84
 \T1/cmr/m/n/10.95 lens fla-re, pas-sag-gio in pro-fon-di-tà e un va-sta li-bre-
 ria di post-elaborazione; 
  []
 
 [19]
-Overfull \hbox (0.46507pt too wide) in paragraph at lines 94--95
+Overfull \hbox (0.46507pt too wide) in paragraph at lines 91--92
 []\T1/cmr/m/n/10.95 Debugging: Sta-ts.js, [[]21[]] We-b-GL In-spec-tor, [[]31[]
 ] Th-ree.js In-spec-tor [[]30[]]. 
  []
@@ -1241,21 +1239,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--17
 
  []
 
-<images/estintore2.jpg, id=613, 346.29375pt x 346.29375pt>
+<images/estintore2.jpg, id=614, 346.29375pt x 346.29375pt>
 File: images/estintore2.jpg Graphic file (type jpg)
 
 <use images/estintore2.jpg>
 Package pdftex.def Info: images/estintore2.jpg used on input line 21.
 (pdftex.def)             Requested size: 108.12054pt x 108.12141pt.
 
-<images/esplosoestintore.png, id=614, 461.725pt x 460.72125pt>
+<images/esplosoestintore.png, id=615, 461.725pt x 460.72125pt>
 File: images/esplosoestintore.png Graphic file (type png)
 
 <use images/esplosoestintore.png>
 Package pdftex.def Info: images/esplosoestintore.png used on input line 22.
 (pdftex.def)             Requested size: 108.12054pt x 107.88286pt.
 
-<images/estintore.png, id=615, 459.7175pt x 460.72125pt>
+<images/estintore.png, id=616, 459.7175pt x 460.72125pt>
 File: images/estintore.png Graphic file (type png)
 
 <use images/estintore.png>
@@ -1310,7 +1308,7 @@ Capitolo 4.
 ) (./tex_files/chapter_4/introduction.tex) (./tex_files/chapter_4/section_1.tex
 [34
 
-] <images/3d-school-2.png, id=712, 1004.75375pt x 680.5425pt>
+] <images/3d-school-2.png, id=713, 1004.75375pt x 680.5425pt>
 File: images/3d-school-2.png Graphic file (type png)
 
 <use images/3d-school-2.png>
@@ -1321,7 +1319,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--38
 
  []
 
-<images/20170223-appendiabiti2.png, id=719, 1003.75pt x 770.88pt>
+<images/20170223-appendiabiti2.png, id=720, 1003.75pt x 770.88pt>
 File: images/20170223-appendiabiti2.png Graphic file (type png)
 
 <use images/20170223-appendiabiti2.png>
@@ -1329,7 +1327,7 @@ Package pdftex.def Info: images/20170223-appendiabiti2.png used on input line 4
 2.
 (pdftex.def)             Requested size: 170.71652pt x 131.10667pt.
 
-<images/20170223-armadietto2.png, id=720, 1004.75375pt x 770.88pt>
+<images/20170223-armadietto2.png, id=721, 1004.75375pt x 770.88pt>
 File: images/20170223-armadietto2.png Graphic file (type png)
 
 <use images/20170223-armadietto2.png>
@@ -1337,7 +1335,7 @@ Package pdftex.def Info: images/20170223-armadietto2.png used on input line 43.
 
 (pdftex.def)             Requested size: 170.71652pt x 130.97728pt.
 
-<images/20170223-attaccapanni2.png, id=721, 1002.74625pt x 770.88pt>
+<images/20170223-attaccapanni2.png, id=722, 1002.74625pt x 770.88pt>
 File: images/20170223-attaccapanni2.png Graphic file (type png)
 
 <use images/20170223-attaccapanni2.png>
@@ -1345,7 +1343,7 @@ Package pdftex.def Info: images/20170223-attaccapanni2.png used on input line 4
 7.
 (pdftex.def)             Requested size: 170.71652pt x 131.23607pt.
 
-<images/20170223-portaombrelli2.png, id=722, 1002.74625pt x 770.88pt>
+<images/20170223-portaombrelli2.png, id=723, 1002.74625pt x 770.88pt>
 File: images/20170223-portaombrelli2.png Graphic file (type png)
 
 <use images/20170223-portaombrelli2.png>
@@ -1375,28 +1373,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
  []
 
-<images/20170223-banco2.png, id=728, 1004.75375pt x 770.88pt>
+<images/20170223-banco2.png, id=729, 1004.75375pt x 770.88pt>
 File: images/20170223-banco2.png Graphic file (type png)
 
 <use images/20170223-banco2.png>
 Package pdftex.def Info: images/20170223-banco2.png used on input line 62.
 (pdftex.def)             Requested size: 170.71652pt x 130.97728pt.
 
-<images/20170223-cattedra2.png, id=729, 1004.75375pt x 770.88pt>
+<images/20170223-cattedra2.png, id=730, 1004.75375pt x 770.88pt>
 File: images/20170223-cattedra2.png Graphic file (type png)
 
 <use images/20170223-cattedra2.png>
 Package pdftex.def Info: images/20170223-cattedra2.png used on input line 63.
 (pdftex.def)             Requested size: 170.71652pt x 130.97728pt.
 
-<images/20170223-lavagna2.png, id=730, 1002.74625pt x 770.88pt>
+<images/20170223-lavagna2.png, id=731, 1002.74625pt x 770.88pt>
 File: images/20170223-lavagna2.png Graphic file (type png)
 
 <use images/20170223-lavagna2.png>
 Package pdftex.def Info: images/20170223-lavagna2.png used on input line 67.
 (pdftex.def)             Requested size: 170.71652pt x 131.23607pt.
 
-<images/20170223-lim2.png, id=731, 1002.74625pt x 770.88pt>
+<images/20170223-lim2.png, id=732, 1002.74625pt x 770.88pt>
 File: images/20170223-lim2.png Graphic file (type png)
 
 <use images/20170223-lim2.png>
@@ -1419,7 +1417,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--79
 
  []
 
-<images/20170223-condizionatore2.png, id=737, 1005.7575pt x 770.88pt>
+<images/20170223-condizionatore2.png, id=738, 1005.7575pt x 770.88pt>
 File: images/20170223-condizionatore2.png Graphic file (type png)
 
 <use images/20170223-condizionatore2.png>
@@ -1427,7 +1425,7 @@ Package pdftex.def Info: images/20170223-condizionatore2.png used on input line
  84.
 (pdftex.def)             Requested size: 170.71652pt x 130.8479pt.
 
-<images/20170223-termosifone2.png, id=738, 1002.74625pt x 765.86125pt>
+<images/20170223-termosifone2.png, id=739, 1002.74625pt x 765.86125pt>
 File: images/20170223-termosifone2.png Graphic file (type png)
 
 <use images/20170223-termosifone2.png>
@@ -1435,7 +1433,7 @@ Package pdftex.def Info: images/20170223-termosifone2.png used on input line 85
 .
 (pdftex.def)             Requested size: 170.71652pt x 130.38167pt.
 
-<images/20170223-riciclo2.png, id=739, 1002.74625pt x 770.88pt>
+<images/20170223-riciclo2.png, id=740, 1002.74625pt x 770.88pt>
 File: images/20170223-riciclo2.png Graphic file (type png)
 
 <use images/20170223-riciclo2.png>
@@ -1452,28 +1450,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
-<images/20170223-libreria2.png, id=746, 1002.74625pt x 770.88pt>
+<images/20170223-libreria2.png, id=747, 1002.74625pt x 770.88pt>
 File: images/20170223-libreria2.png Graphic file (type png)
 
 <use images/20170223-libreria2.png>
 Package pdftex.def Info: images/20170223-libreria2.png used on input line 103.
 (pdftex.def)             Requested size: 170.71652pt x 131.23607pt.
 
-<images/20170223-pc2.png, id=747, 1001.7425pt x 770.88pt>
+<images/20170223-pc2.png, id=748, 1001.7425pt x 770.88pt>
 File: images/20170223-pc2.png Graphic file (type png)
 
 <use images/20170223-pc2.png>
 Package pdftex.def Info: images/20170223-pc2.png used on input line 104.
 (pdftex.def)             Requested size: 170.71652pt x 131.36545pt.
 
-<images/20170223-tenda2.png, id=748, 1004.75375pt x 770.88pt>
+<images/20170223-tenda2.png, id=749, 1004.75375pt x 770.88pt>
 File: images/20170223-tenda2.png Graphic file (type png)
 
 <use images/20170223-tenda2.png>
 Package pdftex.def Info: images/20170223-tenda2.png used on input line 108.
 (pdftex.def)             Requested size: 170.71652pt x 130.97728pt.
 
-<images/20170223-veneziana2.png, id=749, 1003.75pt x 770.88pt>
+<images/20170223-veneziana2.png, id=750, 1003.75pt x 770.88pt>
 File: images/20170223-veneziana2.png Graphic file (type png)
 
 <use images/20170223-veneziana2.png>
@@ -1497,21 +1495,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
  []
 
-<images/virtualCED.png, id=755, 1371.1225pt x 770.88pt>
+<images/virtualCED.png, id=756, 1371.1225pt x 770.88pt>
 File: images/virtualCED.png Graphic file (type png)
 
 <use images/virtualCED.png>
 Package pdftex.def Info: images/virtualCED.png used on input line 10.
 (pdftex.def)             Requested size: 360.0pt x 202.40019pt.
  [40 <./images/virtualCED.png>]
-<images/20170223-estintore2.png, id=761, 1002.74625pt x 768.8725pt>
+<images/20170223-estintore2.png, id=762, 1002.74625pt x 768.8725pt>
 File: images/20170223-estintore2.png Graphic file (type png)
 
 <use images/20170223-estintore2.png>
 Package pdftex.def Info: images/20170223-estintore2.png used on input line 22.
 (pdftex.def)             Requested size: 170.71652pt x 130.8943pt.
 
-<images/20170223-metaldetector2.png, id=762, 1001.7425pt x 770.88pt>
+<images/20170223-metaldetector2.png, id=763, 1001.7425pt x 770.88pt>
 File: images/20170223-metaldetector2.png Graphic file (type png)
 
 <use images/20170223-metaldetector2.png>
@@ -1519,21 +1517,21 @@ Package pdftex.def Info: images/20170223-metaldetector2.png used on input line
 23.
 (pdftex.def)             Requested size: 170.71652pt x 131.36545pt.
 
-<images/20170223-naspo2.png, id=763, 1002.74625pt x 770.88pt>
+<images/20170223-naspo2.png, id=764, 1002.74625pt x 770.88pt>
 File: images/20170223-naspo2.png Graphic file (type png)
 
 <use images/20170223-naspo2.png>
 Package pdftex.def Info: images/20170223-naspo2.png used on input line 27.
 (pdftex.def)             Requested size: 113.81102pt x 87.4907pt.
 
-<images/20170223-porta2.png, id=764, 1002.74625pt x 770.88pt>
+<images/20170223-porta2.png, id=765, 1002.74625pt x 770.88pt>
 File: images/20170223-porta2.png Graphic file (type png)
 
 <use images/20170223-porta2.png>
 Package pdftex.def Info: images/20170223-porta2.png used on input line 28.
 (pdftex.def)             Requested size: 113.81102pt x 87.4907pt.
 
-<images/20170223-rilevatore2.png, id=765, 1003.75pt x 737.75626pt>
+<images/20170223-rilevatore2.png, id=766, 1003.75pt x 737.75626pt>
 File: images/20170223-rilevatore2.png Graphic file (type png)
 
 <use images/20170223-rilevatore2.png>
@@ -1553,28 +1551,28 @@ Overfull \hbox (22.32094pt too wide) in paragraph at lines 21--32
 [41 <./images/20170223-estintore2.png (PNG copy)> <./images/20170223-metaldetec
 tor2.png (PNG copy)> <./images/20170223-naspo2.png (PNG copy)> <./images/201702
 23-porta2.png (PNG copy)> <./images/20170223-rilevatore2.png>]
-<images/20170223-quadro2.png, id=771, 1002.74625pt x 767.86874pt>
+<images/20170223-quadro2.png, id=772, 1002.74625pt x 767.86874pt>
 File: images/20170223-quadro2.png Graphic file (type png)
 
 <use images/20170223-quadro2.png>
 Package pdftex.def Info: images/20170223-quadro2.png used on input line 43.
 (pdftex.def)             Requested size: 170.71652pt x 130.72342pt.
 
-<images/20170223-rack2.png, id=772, 1001.7425pt x 770.88pt>
+<images/20170223-rack2.png, id=773, 1001.7425pt x 770.88pt>
 File: images/20170223-rack2.png Graphic file (type png)
 
 <use images/20170223-rack2.png>
 Package pdftex.def Info: images/20170223-rack2.png used on input line 44.
 (pdftex.def)             Requested size: 170.71652pt x 131.36545pt.
 
-<images/20170223-wifi2.png, id=773, 1000.73875pt x 770.88pt>
+<images/20170223-wifi2.png, id=774, 1000.73875pt x 770.88pt>
 File: images/20170223-wifi2.png Graphic file (type png)
 
 <use images/20170223-wifi2.png>
 Package pdftex.def Info: images/20170223-wifi2.png used on input line 48.
 (pdftex.def)             Requested size: 170.71652pt x 131.49484pt.
 
-<images/20170223-telecamera2.png, id=774, 1005.7575pt x 770.88pt>
+<images/20170223-telecamera2.png, id=775, 1005.7575pt x 770.88pt>
 File: images/20170223-telecamera2.png Graphic file (type png)
 
 <use images/20170223-telecamera2.png>
@@ -1605,7 +1603,7 @@ Overfull \hbox (2.74548pt too wide) in paragraph at lines 20--30
 -zio-ne il si-ste-ma SMART-
  []
 
-[43] <images/3d-sel.png, id=786, 858.20625pt x 526.96875pt>
+[43] <images/3d-sel.png, id=787, 858.20625pt x 526.96875pt>
 File: images/3d-sel.png Graphic file (type png)
 
 <use images/3d-sel.png>
@@ -1628,49 +1626,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--16
 
  []
 
-<images/iot.png, id=807, 1371.1225pt x 770.88pt>
+<images/iot.png, id=808, 1371.1225pt x 770.88pt>
 File: images/iot.png Graphic file (type png)
  <use images/iot.png>
 Package pdftex.def Info: images/iot.png used on input line 19.
 (pdftex.def)             Requested size: 360.0pt x 202.40019pt.
  [47 <./images/iot.png>] [48]
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
 
  []
 
 
-Overfull \hbox (23.0pt too wide) in paragraph at lines 70--70
+Overfull \hbox (23.0pt too wide) in paragraph at lines 96--96
 [][][][][][][] 
  []
 
 
-Overfull \hbox (23.0pt too wide) in paragraph at lines 88--88
+Overfull \hbox (23.0pt too wide) in paragraph at lines 141--141
 [][][][][][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--90
-
  []
 
 [49]
-Underfull \hbox (badness 10000) in paragraph at lines 107--110
+Overfull \hbox (23.0pt too wide) in paragraph at lines 182--182
+[][][][][][][] 
+ []
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 199--202
 
  []
 
-<images/explorer-a-1.png, id=846, 1027.84pt x 578.16pt>
+<images/explorer-a-1.png, id=939, 1027.84pt x 578.16pt>
 File: images/explorer-a-1.png Graphic file (type png)
 
 <use images/explorer-a-1.png>
-Package pdftex.def Info: images/explorer-a-1.png used on input line 113.
+Package pdftex.def Info: images/explorer-a-1.png used on input line 205.
 (pdftex.def)             Requested size: 360.0pt x 202.50018pt.
- [50 <./images/explorer-a-1.png>]
-<images/vr.png, id=854, 1027.6794pt x 578.16pt>
+ [51 <./images/explorer-a-1.png>]
+<images/vr.png, id=946, 1027.6794pt x 578.16pt>
 File: images/vr.png Graphic file (type png)
  <use images/vr.png>
-Package pdftex.def Info: images/vr.png used on input line 126.
+Package pdftex.def Info: images/vr.png used on input line 218.
 (pdftex.def)             Requested size: 360.0pt x 202.53546pt.
- [51 <./images/vr.png>]) (./tex_files/conclusions/conclusions.tex))
+)
+(./tex_files/conclusions/conclusions.tex)) [52 <./images/vr.png>]
 (./tex_files/bibliography/index.tex
 Overfull \hbox (6.80688pt too wide) in paragraph at lines 12--12
 []\T1/cmr/m/n/10.95 Chris Da-w-son. \T1/cmr/m/it/10.95 Ja-va-Scrip-t's Hi-sto-r
@@ -1683,7 +1682,7 @@ Overfull \hbox (3.86101pt too wide) in paragraph at lines 12--12
  . []$\T1/pcr/m/n/10.95 https : / / facebook . github . io / react /
  []
 
-[52
+[53
 
 
 ]
@@ -1711,7 +1710,7 @@ Overfull \hbox (7.95967pt too wide) in paragraph at lines 12--12
 r -[] data -[] driven -[]
  []
 
-[53]
+[54]
 Overfull \hbox (111.10564pt too wide) in paragraph at lines 12--12
 \T1/pcr/m/n/10.95 com / mrdoob / three . js / commit / a90c4e107ff6e3b148458c96
 965e876f9441b147$[]\T1/cmr/m/n/10.95 .
@@ -1737,7 +1736,7 @@ Overfull \hbox (10.52966pt too wide) in paragraph at lines 12--12
 onents -[]
  []
 
-[54]
+[55]
 Overfull \hbox (16.90813pt too wide) in paragraph at lines 12--12
 []\T1/cmr/m/it/10.95 Threejs In-spec-tor\T1/cmr/m/n/10.95 . []$\T1/pcr/m/n/10.9
 5 http : / / zz85 . github . io / zz85 -[] bookmarklets /
@@ -1752,16 +1751,13 @@ http : / / benvanik . github . io / WebGL -[] Inspector/$[]\T1/cmr/m/n/10.95 .
 
 (./tex_files/bibliography/bibliography.tex))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
- [55]
+ [56]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 6E53F73A5DFEA8B6B845E8CC41DC4459;2479.
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1771,10 +1767,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 16411 strings out of 493304
- 253614 string characters out of 6139871
+ 16502 strings out of 493304
+ 255083 string characters out of 6139871
  557983 words of memory out of 5000000
- 19123 multiletter control sequences out of 15000+600000
+ 19126 multiletter control sequences out of 15000+600000
  28279 words of font info for 76 fonts, out of 8000000 for 9000
  960 hyphenation exceptions out of 8191
  40i,13n,49p,895b,1869s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1795,10 +1791,10 @@ blic/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm14
 exmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/pub
 lic/cm-super/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courie
 r/ucrr8a.pfb>
-Output written on thesis.pdf (66 pages, 21843041 bytes).
+Output written on thesis.pdf (67 pages, 22355679 bytes).
 PDF statistics:
- 1067 PDF objects out of 1200 (max. 8388607)
- 915 compressed objects within 10 object streams
- 312 named destinations out of 1000 (max. 500000)
- 523 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1178 PDF objects out of 1200 (max. 8388607)
+ 1024 compressed objects within 11 object streams
+ 399 named destinations out of 1000 (max. 500000)
+ 528 words of extra memory for PDF output out of 10000 (max. 10000000)
 
