@@ -153,7 +153,7 @@
   \field{year}{2014}
 \endentry
 
-\entry{jsx}{misc}{}
+\entry{jsx}{online}{}
   \name{author}{1}{}{%
     {{}%
      {Facebook}{F.}%
@@ -164,11 +164,13 @@
   \strng{namehash}{F1}
   \strng{fullhash}{F1}
   \field{sortinit}{F}
-  \field{howpublished}{\url{https://facebook.github.io/react/docs/jsx-in-depth.html}}
   \field{title}{JSX In Depth}
+  \verb{url}
+  \verb https://facebook.github.io/react/docs/jsx-in-depth.html
+  \endverb
 \endentry
 
-\entry{reactdom}{misc}{}
+\entry{reactdom}{online}{}
   \name{author}{1}{}{%
     {{}%
      {Facebook}{F.}%
@@ -179,14 +181,18 @@
   \strng{namehash}{F1}
   \strng{fullhash}{F1}
   \field{sortinit}{F}
-  \field{howpublished}{\url{https://facebook.github.io/react/docs/refs-and-the-dom.html}}
   \field{title}{Refs and the DOM}
+  \verb{url}
+  \verb https://facebook.github.io/react/docs/refs-and-the-dom.html
+  \endverb
 \endentry
 
-\entry{firebase}{misc}{}
+\entry{firebase}{online}{}
   \field{sortinit}{F}
-  \field{howpublished}{\url{https://firebase.google.com/}}
   \field{title}{Firebase}
+  \verb{url}
+  \verb https://firebase.google.com/
+  \endverb
 \endentry
 
 \entry{galic2014bim}{article}{}
@@ -404,10 +410,12 @@
   \field{year}{2014}
 \endentry
 
-\entry{libscope}{misc}{}
+\entry{libscope}{online}{}
   \field{sortinit}{L}
-  \field{howpublished}{\url{http://libscore.com}}
   \field{title}{Libscope}
+  \verb{url}
+  \verb http://libscore.com
+  \endverb
 \endentry
 
 \entry{immutability}{misc}{}
@@ -514,13 +522,15 @@
   \field{year}{2015}
 \endentry
 
-\entry{npm}{misc}{}
+\entry{npm}{online}{}
   \field{sortinit}{N}
-  \field{howpublished}{https://www.npmjs.com/}
   \field{title}{npm}
+  \verb{url}
+  \verb https://www.npmjs.com/
+  \endverb
 \endentry
 
-\entry{baking}{misc}{}
+\entry{baking}{article}{}
   \name{author}{1}{}{%
     {{}%
      {Paoluzzi}{P.}%
@@ -605,19 +615,23 @@
   \field{year}{2007}
 \endentry
 
-\entry{threejsinspector}{misc}{}
+\entry{threejsinspector}{online}{}
   \field{sortinit}{T}
-  \field{howpublished}{\url{http://zz85.github.io/zz85-bookmarklets/threelabs.html}}
   \field{title}{Threejs Inspector}
+  \verb{url}
+  \verb http://zz85.github.io/zz85-bookmarklets/threelabs.html
+  \endverb
 \endentry
 
-\entry{webglinspector}{misc}{}
+\entry{webglinspector}{online}{}
   \field{sortinit}{W}
-  \field{howpublished}{\url{http://benvanik.github.io/WebGL-Inspector/}}
   \field{title}{WebGL Inspector}
+  \verb{url}
+  \verb http://benvanik.github.io/WebGL-Inspector/
+  \endverb
 \endentry
 
-\entry{O3D}{misc}{}
+\entry{O3D}{online}{}
   \name{author}{1}{}{%
     {{}%
      {Wikipedia}{W.}%
@@ -628,11 +642,13 @@
   \strng{namehash}{W1}
   \strng{fullhash}{W1}
   \field{sortinit}{W}
-  \field{howpublished}{\url{https://en.wikipedia.org/wiki/O3D}}
   \field{title}{O3D}
+  \verb{url}
+  \verb https://en.wikipedia.org/wiki/O3D
+  \endverb
 \endentry
 
-\entry{unity}{misc}{}
+\entry{unity}{online}{}
   \name{author}{1}{}{%
     {{}%
      {Wikipedia}{W.}%
@@ -643,8 +659,10 @@
   \strng{namehash}{W1}
   \strng{fullhash}{W1}
   \field{sortinit}{W}
-  \field{howpublished}{\url{https://en.wikipedia.org/wiki/Unity_(game_engine)}}
   \field{title}{Unity}
+  \verb{url}
+  \verb https://en.wikipedia.org/wiki/Unity_(game_engine)
+  \endverb
 \endentry
 
 \lossort
