@@ -16,14 +16,16 @@ sostenute dalle API arricchite da HTML5, insieme a WebGL~\cite{webgl}
 L'obiettivo è stato la definizione di uno strumento di modellazione di edifici basato sul Web
 che supera le suddette difficoltà prestazionali e di sviluppo basandosi su un modello di progettazione del flusso di dati
 unidirezionale e su un'architettura serverless.
-Un'architettura serverless, al contrario di ciò che il nome può suggerire, in realtà si avvale di molti server specifici
-diversi, togliendo l'onere del funzionamento e della manutenzione allo sviluppatore del progetto.
-Questi diversi server possono essere visti come servizi di terze parti (tipicamente cloud-based) o funzioni eseguite
+Un'architettura serverless, al contrario di ciò che il nome può suggerire, in realtà si avvale di molti servizi remoti specifici
+diversi, togliendo l'onere del funzionamento e della manutenzione dei servizi stessi e dei server che li eseguono
+allo sviluppatore del progetto.
+Questi servizi di terze parti (tipicamente cloud-based) talvolta possono essere rappresentati da funzioni eseguite
 in contenitori effimeri (possono durare solo per una invocazione) per gestire lo stato interno e la logica server-side.
 L'interazione in realtime tra gli utenti che lavorano congiuntamente sullo stesso progetto di modellazione
 è ad esempio ottenuta tramite API di terze parti che rendono possibile la collaborazione tra utenti remoti.
-L'interfaccia utente, interamente basata sul modello a componenti Web, è stata mantenuta il più semplice possibile:
-è richiesto all'utente interagire principalmente con segnaposto simbolici bidimensionali, che rappresentano parti dell'edificio,
+L'interfaccia utente, interamente basata sul modello a componenti Web, è stata progettata in modo da ridurre il più possibile la complessità
+dell'interazione:
+è richiesto all'utente di interagire principalmente con segnaposto simbolici bidimensionali, che rappresentano parti dell'edificio,
 evitando così interazioni complesse in 3D.
 La complessità del modello è quindi spostata dal modellatore allo sviluppatore, il quale deve compilare un \emph{catalogo} di
 \emph{bulding elements} estendibile e personalizzabile. Il modellatore deve solo selezionare l'elemento richiesto,

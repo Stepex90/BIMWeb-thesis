@@ -30,14 +30,14 @@ di collaborare contemporaneamente su uno stesso progetto, ottimizzando i tempi d
 I software proposti per implementare questa funzionalità sono:
 \emph{Firebase} e \emph{jsondiff}.\\
 \emph{Firebase}~\cite{firebase} è una piattaforma mobile e per applicazioni web con strumenti e infrastrutture progettati
-per aiutare gli sviluppatori a creare applicazioni di alta qualità. Si è scelto di utilizzare
+per aiutare gli sviluppatori a creare applicazioni di alta qualità. Una possibile scelta è di utilizzare
 il Database Realtime di Firebase  il quale è un database cloud-hosted. I dati vengono memorizzati come JSON e
 sincronizzati in tempo reale ad ogni client connesso. Quando si crea applicazioni cross-platform con
 tecnologie Android, iOS SDK, e JavaScript, tutti i client condividono una istanza in tempo reale del
 database e ricevono automaticamente gli aggiornamenti con i dati più recenti.
-Esso è stato scelto per implementare un possibile sistema di autenticazione degli utenti,
-fare un controllo degli accessi e dei permessi sul progetto.\\
-Si è deciso inoltre di utilizzare il gestore di pacchetti e moduli \emph{npm}~\cite{npm} il quale rende facile agli sviluppatori
+Questo strumento potrebbe essere utilizzato per implementazione di un possibile sistema di autenticazione degli utenti,
+fare il controllo degli accessi e dei permessi sul progetto.\\
+L'altro strumento selezionato per lo sviluppo è il gestore di pacchetti e moduli \emph{npm}~\cite{npm} il quale rende facile agli sviluppatori
 JavaScript condividere e riutilizzare il codice e rendendolo facile da aggiornare.
 Un \emph{pacchetto} è un file o una directory con uno o più file in essa contenuti, che viene descritto tramite un file chiamato ``package.json''
 contenete i metadati del pacchetto stesso. Una tipica applicazione, ad esempio un sito web, può dipendere da decine o centinaia di pacchetti.
@@ -46,8 +46,8 @@ In questo modo è possibile risolvere un problema più grande, attraverso una co
 blocchi condivisi.
 \newpage
 
-Si è scelto il modulo \emph{jsondiff} fornito da \emph{npm}, il quale consente di confrontare nel contesto collaborativo
-i file JSON su cui lavorano gli utenti per trovare le modifiche apportate.\\
+Il gestore dei moduli \emph{npm} fornisce il pacchetto \emph{jsondiff}, il quale consente di confrontare nel contesto collaborativo
+i file JSON per trovare le modifiche tra due file.\\
 
 \noindent
 \begin{minipage}{.45\textwidth}

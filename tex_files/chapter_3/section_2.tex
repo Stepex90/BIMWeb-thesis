@@ -11,15 +11,15 @@ L'\emph{occupation type} può essere identificato da tre differenti tipi di Plug
 \end{itemize}
 I Plugin di tipo \emph{linear} si estende in una dimensione (a meno di uno spessore radiale) (e.g. linee idrauliche, cavi elettrici).
 Il Plugin \emph{area} si estende in due dimensioni (a meno di uno spessore lineare) (e.g. elementi di separazione).
-Si possono dividere in \emph{horizontal area} (e.g. pavimento e celle), e \emph{vertical area}, (e.g. muri).
-Il Plugin \emph{volume} si estende in tre dimensioni. Si possono avere \emph{fixed volume}, (e.g. un pezzo di arredo) e
-un \emph{scalable volume}, che può essere scalato proporzionalmente o no, (e.g. pilastri, scale).
+Si possono dividere in \emph{horizontal area} (e.g. pavimento e celle) e \emph{vertical area} (e.g. muri).
+Il Plugin \emph{volume} si estende in tre dimensioni. Si possono avere \emph{fixed volume} (e.g. un pezzo di arredo) e
+\emph{scalable volume} (e.g. pilastri, scale), che può essere scalato proporzionalmente o no.
 
 
 L'\emph{occupation type} determina un modo differente di instanziare e inserire i Plugin nel canvas.
 In particolare, nel \emph{2D-mode}, i Plugin \emph{linear} sono inseriti disegnando linee attraverso l'interazione drag\&drop;
-Il Plugin \emph{area} sono inseriti disegnando una bounding-box dell'elemento attraverso l'interazione drag\&drop;
-Il Plugin \emph{volume} sono inseriti scegliendo la posizione dell'elemento attraverso l'interazione point\&click,
+i Plugin \emph{area} sono inseriti disegnando una bounding-box dell'elemento attraverso l'interazione drag\&drop;
+i Plugin \emph{volume} sono inseriti scegliendo la posizione dell'elemento attraverso l'interazione point\&click,
 e sistemando la loro dimensione modificando la bounding-box attraverso il drag\&drop.
 
 
@@ -28,7 +28,7 @@ da altri elementi. In altre parole, esso determina la relazione tra una nuova in
 Plugin precedentemente aggiunti al modello. La relazione può essere di due tipi: \emph{inside} o \emph{over}.
 I Plugin appartenenti alla categoria \emph{inside} posso essere aggiunti solo all'interno di altri elementi (che possono essere
 \emph{linear}, \emph{area} o \emph{volume}); e.g., una ``finestra'' è un elemento ``volume inside vertical area'',
-mentre un ``linea idraulica'' \`e un elemento ``linear inside horizontal area''.
+mentre una ``linea idraulica'' \`e un elemento ``linear inside horizontal area''.
 I Plugin della categoria \emph{over} possono essere aggiunti solo sopra ad altri elementi (di qualsiasi tipo)
 e.g., un ``pilastro'' \`e un elemento ``volume over horizontal area'',
 mentre un ``pannello elettrico'' è un elemento``volume over vertical area''.
