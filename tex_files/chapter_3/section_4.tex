@@ -4,12 +4,13 @@
 \noindent
 La generazione dei modelli 3D e 2D è realizzata in modalità \emph{asynchronous}.
 Il ritorno dell'invocazione di una funzione generatrice non \`e il modello stesso,
-ma una \emph{promise}\footnote{\url{https://www.promisejs.org/}} che sarà risolta con l'output del rendering.
+ma una \emph{promise}~\cite{promisejs} che sarà risolta con l'output del rendering.
 Tale scelta progettuale \`e importante poich\'e il calcolo per la
 generazione di modello pu\`o richiedere una notevole quantità di tempo.
 Nel frattempo l'utente deve essere in grado di interagire con l'interfaccia, che a sua volta deve rimanere reattiva.
 Basandosi su questa architettura, la generazione dei modelli può essere facilmente delegata a un server,
-sollevando così il browser dall'onere di calcoli computazionalmente pesanti. Il server espone un API JSON REST-like.
+sollevando così il browser dall'onere di calcoli computazionalmente pesanti. Il server espone un API JSON REST-like
+che accetta in input i parametri di personalizzazione di un building element e ritorna al client il rendering (2D e 3D) della componente.
 
 % I plugin possono essere eseguiti si da un client che da server, dal momento che le funzioni generatrici 2D e 3D (\emph{2Dgf} e
 % \emph{3Dgf}) definite dai plugin possono essere eseguite dal server.(RIVEDERE ultima frase codice isomorfo)

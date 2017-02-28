@@ -19,9 +19,9 @@ implementate dal framework. L'area di lavoro (Figura~\ref{fig:interfaccia}) è s
 Dalla \emph{toolbar} l'utente pu\`o accedere alle funzionalit\`a relative a: ciclo di vita del progetto (new, save, load);
 switching modalità vista/interazione (2D, 3D); cambio di modalità di interazione (selecting, pan, zoom).
 \newpage
-La \emph{content-area} \`e un area nella quale l'utente pu\`o interagire con il modello attuale. Nella modalit\`a 2D
+La \emph{content-area} \`e l'area nella quale l'utente pu\`o interagire con il modello attuale. Nella modalit\`a 2D
 il modello \`e visualizzato come una proiezione 2D dall'alto e l'interazione consiste nell'inserimento, selezione e modifica
-dell'elemento (in accordo con le specifiche interattive del prototipo). Nella modalità 3D un modello 3D pu\`o essere
+dell'elemento (in accordo con le specifiche interattive del building element). Nella modalità 3D un modello 3D pu\`o essere
 ispezionato e navigato attraverso due modalità differenti: in prima persona usando il mouse e la tastiera ponendo la vista
 ad altezza uomo, o dall'alto cambiando la posizione della telecamera con il solo mouse. Anche in modalità 3D è possibile
 selezionare e modificare le proprietà degli oggetti.\\
@@ -35,10 +35,9 @@ Quest'ultima modalità di interazione consente al utente di associare annotazion
 Il \emph{2D-viewer} invoca la funzione \emph{2Dgf} dei \emph{building elements} aggiunti al modello e
 genera in output il modello renderizzato usando gli elementi SVG.
 Per far fronte ai frequenti aggiornamenti provenienti dall'interazione con il disegno da parte dell'utente,
-sfrutta la \emph{Virtual DOM}~\cite{vdom}, che permette di aggiornare solo la parte modificata evitando così
+sfrutta una \emph{Virtual DOM}~\cite{vdom}, che permette di aggiornare solo la parte modificata evitando così
 il completo rendering della scena. Per eseguire le operazioni di pan e zoom, tipicamente necessaria in questo
-tipo di strumento, è stato sviluppato un componente ad-hoc
-di React denominato \emph{ReactSVGPanZoom}\footnote{\url{https://github.com/chrvadala/react-svg-pan-zoom}}.\\
+tipo di strumento, è stato sviluppato un componente ad-hoc di React denominato \emph{ReactSVGPanZoom}~\cite{panzoom}.\\
 
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
@@ -52,7 +51,7 @@ di React denominato \emph{ReactSVGPanZoom}\footnote{\url{https://github.com/chrv
 
 \subsection{Viewer 3D}
 Il \emph{3D-viewer} invoca la funzione \emph{3Dgf} dei \emph{building elements} e aggiunge al modello una vista 3D usando
-le primitive WebGL\emph{Three.js}~\footnote{\url{https://threejs.org/}}.
+le primitive WebGL\emph{Three.js}~\cite{threejs-site}.
 In particolare durante l'interazione con la scena si dispone delle seguenti \textit{operazioni} sui \emph{Plugin}:
 \begin{itemize}
   \item \emph{add};
@@ -62,7 +61,7 @@ In particolare durante l'interazione con la scena si dispone delle seguenti \tex
 Per eseguire l'update è stato implementato un \emph{diff} e \emph{patch} di
 sistema, definite nel Jsonpatch~\cite{rfc6902}: gli oggetti Three.js sono associati con elementi costruttivi all'interno
 dello stato dell'applicazione, in modo che ogni volta che l'utente attiva un'azione che si traduce in una modifica dello stato,
-l'applicazione calcola la differenza tra il vecchio stato e quello nuovo e cambia solo l'oggetto interessato.\\
+l'applicazione calcola la differenza tra il vecchio stato e quello nuovo e aggiorna solo l'oggetto interessato.\\
 
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
@@ -79,20 +78,22 @@ l'applicazione calcola la differenza tra il vecchio stato e quello nuovo e cambi
 \noindent
  Il \emph{Plugin Catalog} \`e l'elemento centrale che fornisce all'utente un sistema con un ricco catalogo di \emph{Plugin},
  in cui ogni elemento presente \`e definito da un nome, una descrizione ed una
- immagine di anteprima del modello 3D (Figura~\ref{fig:figura1} (a)). Quando l'utente \`e al suo interno
+ immagine di anteprima del modello 3D (Figura~\ref{fig:catalogo} (a)). Quando l'utente \`e al suo interno
  sceglie il \emph{Plugin} che vuole inserire con un click.
  Dopo la selezione di un elemento del catalogo, il framework cambierà il suo stato portandosi nella modalit\`a 2D,
- dove l'utente potrà decidere il posizionato del \emph{Plugin} all'interno della scena (Figura~\ref{fig:figura1} (b)).
+ dove l'utente potrà decidere il posizionamento del \emph{Plugin} all'interno della scena.
+ La selezione di un \emph{Plugin} evidenzia l'oggetto con un colore diverso da quello di default ed una circonferenza sulla quale è presente un pallino
+ che consente la rotazione dell'oggetto (Figura~\ref{fig:catalogo} (b)).
 
 \begin{figure}[htbp]
 \begin{center}
 \begin{tabular}{c @{\hspace{1em}} c}
-\includegraphics[width=9cm]{images/figcatalog} \\
+\includegraphics[width=.6\linewidth]{images/figcatalog} \\
   (a) \\
-\includegraphics[width=9cm]{images/positioning} \\
+\includegraphics[width=.6\linewidth]{images/positioning} \\
   (b) \\
 \end{tabular}
 \end{center}
-\caption{Dettaglio Plugin: (a) Vista dei plugin nel catalogo, (b) inserimento oggetto dopo la selezione nel catalogo}\label{fig:figura1}
+\caption{Dettaglio Plugin: (a) Vista dei plugin nel catalogo, (b) inserimento oggetto dopo la selezione nel catalogo}\label{fig:catalogo}
 \end{figure}
 \newpage
