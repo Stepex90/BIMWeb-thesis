@@ -4,10 +4,10 @@
 La User Interface è stata sviluppata seguendo i \emph{Web Components pattern}~\cite{web_components},
 supportati dal framework \emph{React}.
 L'idea principale è definire un applicazione di frontend come una collezione di componenti indipendenti,
-ognuno dei quali si riferisce ad uno specifico sottoinsieme di stati centralizzati ed in grado
+ognuno dei quali si riferisce ad uno specifico sottoinsieme di stati centralizzati ed è in grado
 di fare il render in accordo con i valori effettivi di quella porzione dello stato.
-I Web Components sono la base per contenitori generici di alto livello, come la barra degli strumenti o il catalogo,
-a di quelli a grana molto fine, come ad esempio i pulsanti. I più interessanti sono i visualizzatori del
+I Web Components sono la base per contenitori generici di alto livello, come la barra degli strumenti o il catalogo
+e di quelli a grana molto fine, come ad esempio i pulsanti. I più interessanti sono i visualizzatori del
 modello di costruzione: il \emph{2D-viewer} e \emph{3D-viewer}.
 
 \subsection{React}
@@ -31,10 +31,10 @@ Un componente non pu\`o modificare direttamente le propriet\`a che gli sono stat
 callback le quali vanno a modificare i valori.
 
 \subsubsection{Virtual DOM}
-Un'altra caratteristica degna di nota è l'utilizzo di un "virtual Document Object Model", o "virtual DOM".
-React crea una struttura cache dei dati in memoria, calcola le differenze risultanti, e poi aggiorna
+Un'altra caratteristica degna di nota è l'utilizzo di un "Virtual Document Object Model" o "virtual DOM".
+React crea una struttura cache dei dati in memoria, calcola le differenze risultanti e poi aggiorna
 la DOM~\cite{reactdom} del browser visualizzandola in maniera efficiente.
-Questo permette al programmatore di scrivere codice come se
+Questo permette al programmatore di scrivere il codice come se
 l'intera pagina venisse cambiata, mentre le librerie React fanno il render delle sole sottocomponenti che in realtà cambiano.
 
 \subsubsection{JSX}
@@ -51,23 +51,23 @@ Three.js \`e una libreria cross-browser JavaScript utilizzata per creare e visua
 in un browser web. Three.js utilizza WebGL. Il codice sorgente è ospitato in un repository su GitHub~\cite{github}.
 
 \subsubsection{Overview}
-Three.js permette la creazione di animazioni 3D accelerate dalla GPU utilizzando il linguaggio JavaScript
+Three.js permette la creazione di animazioni 3D accelerate dalla GPU, utilizzando il linguaggio JavaScript
 come parte di un sito web senza fare affidamento su Plugin proprietari dei browser.~\cite{O3D}~\cite{unity}
- Questo è possibile grazie all'avvento delle specifiche WebGL.~\cite{khronos}
+Questo è possibile grazie all'avvento delle specifiche WebGL.~\cite{khronos}
 
 \subsubsection{Storia}
 Three.js è stato pubblicato da Riccardo Cabello su GitHub nel mese di aprile 2010.~\cite{Firstcommit}
-Le origini della libreria risalgono al coinvolgimento di Cabello con il demoscene nei primi anni 2000.
-Il codice \`e stato sviluppato originariamente in ActionScript, poi nel 2009 portato su JavaScript per l'ovvio vantaggio della
-portabilità si ogni piattaforma. Con l'avvento di WebGL, Paul Brunt è stato in grado di integrare il renderer
+Le origini della libreria risalgono al coinvolgimento di Cabello con il progetto demoscene nei primi anni 2000.
+Il codice \`e stato sviluppato originariamente in ActionScript poi, nel 2009, è stato portato su JavaScript per l'ovvio vantaggio della
+portabilità su ogni piattaforma. Con l'avvento di WebGL, Paul Brunt è stato in grado di integrare il renderer
 WebGL all'interno di Three.js creando un modulo di rendering appropriato.~\cite{develop}
-I contributi di Cabello comprendono la progettazione API, CanvasRenderer, SVGRenderer ed è il
+Cabello ha contribuito alla progettazione di API, CanvasRenderer, SVGRenderer ed egli è il
 responsabile per la gestione dei commit da parte dei vari collaboratori nel progetto.
 
 Il secondo contributo, in termini di commit, è di Branislav Ulicny che ha iniziato a lavorare su Three.js nel 2010
 dopo aver pubblicato una serie di demo WebGL sul proprio sito. Voleva che la capacit\`a di rendering di WebGL in Three.js
 fossero superiori a quelle di CanvasRenderer o SVGRenderer.~\cite{develop}\\
-I suoi maggiori contributi comportano migliorie nei moduli dei materiali, degli shaders e di post-processing.
+I suoi maggiori contributi comportano miglioriamenti nei moduli dei materiali, degli shaders e di post-processing.
 
 \subsubsection{Caratteristiche}
 Three.js include le seguenti caratteristiche:~\cite{mrdoob}
@@ -86,7 +86,7 @@ Three.js include le seguenti caratteristiche:~\cite{mrdoob}
 \item Utilities: set completo di funzioni matematiche in 3D tra cui troncoconiche, matrici, quaternion, UVs e molte altre
 \item Export and import: utilities per creare file JSON-Three.js compatibili con : Blender, openCTM, FBX, Max, e OBJ
 \item Supporto: documentazione delle API è in costruzione, forum pubblico e wikipedia;
-\item Esempi: Oltre 150 file di codice d'esempio con diversi tipi di carattere, modelli, texture, suoni e altri file di supporto:
+\item Esempi: oltre 150 file di codice con diversi tipi di carattere, modelli, texture, suoni e altri file di supporto:
 \item Debugging: Stats.js,~\cite{stats.js} WebGL Inspector,~\cite{webglinspector} Three.js Inspector~\cite{threejsinspector}.
 \end{itemize}
 

@@ -11,9 +11,9 @@ ed oggetti, ognuno dei quali è racchiuso in una struttura composta da:
 \end{itemize}
 
 La ridondanza delle informazioni viene sfruttata per ridurre i tempi di accesso. Collezioni di oggetti
-sono indicizzate da un identificativo univoco \texttt{id} che permette la ricerca in tempo costante e del
+sono indicizzate da un identificativo univoco \texttt{id} che permette la ricerca in tempo costante e dal
 campo \texttt{selected} in ogni layer che consente l'accesso diretto ad elementi selezionati senza cercare.
-Lo stato dell'applicazione può caricare i layer indipendentemente, anche uno alla volta, consentendo quindi
+Lo stato dell'applicazione può caricare i layer indipendentemente, anche uno alla volta, consentendo
 la visualizzazione dei soli layer selezionati, come può avvenire in un framework di modellazione Desktop.\\
 
 \newpage
@@ -94,22 +94,22 @@ la visualizzazione dei soli layer selezionati, come può avvenire in un framewor
 \subsubsection*{Flusso dati unidirezionale}
 \noindent
 La struttura dei dati descritta rappresenta lo stato centralizzato richiesto dal \emph{Unidirectional data flow pattern}
-~\cite{uniflow} sfruttato dall'applicazione tramite la libreria \emph{Redux.js}~\cite{redux},
+~\cite{uniflow}, sfruttato dall'applicazione tramite la libreria \emph{Redux.js}~\cite{redux},
 la quale è un contenitore di stato per le applicazioni JavaScript.
 Il modello prevede che lo stato possa essere modificato solo da attori specifici, chiamati \emph{reducers},
 le cui attività sono eseguite da specifiche \emph{actions} che contengono tutte le informazioni necessarie per
-ogni reducer per realizzare il cambiamento nello stato. Ogni caratteristica applicazione deve essere attuata di conseguenza
-come una porzione di codice a sé stanti (\emph{action}/\emph{reducer}).
+ogni reducer per realizzare il cambiamento nello stato. Ogni caratteristica applicazione deve essere attuata
+come una porzione di codice a sé stante (\emph{action}/\emph{reducer}).
 Degli esperimenti preliminari ~\cite{walle} su strumenti di disegno 2D
 hanno evidenziato la complessità di sviluppo di un'applicazione di questo tipo, in quanto
 lo stato interno dell'applicazione viene modificato da diverse interazioni dell'utente.
 \`E presente un'associazione tra l'evento scatenato dall'utente sull'interfaccia e la logica dell'applicazione.
 Nell'architettura del framework si definisce uno \emph{state engine}, che rappresenta la logica dell'applicazione,
-che comprende actions e reducers e ne incapsula lo stato in modo centralizzato.
+il quale comprende actions e reducers e ne incapsula lo stato in modo centralizzato.
 \newpage
 
 \subsubsection*{Immutability pattern}
-L'\emph{Immutability pattern}~\cite{immutability} si applica anche per evitare effetti collaterali sui cambiamenti di stato
+L'\emph{Immutability pattern}~\cite{immutability} si applica per evitare effetti collaterali sui cambiamenti di stato
 eseguiti dai reducers. Lo stato può essere visto come una struttura immutabile ad albero le cui modifiche vengono applicate come segue:
 \begin{itemize}
   \item clonazione dello stato precedente \texttt{s} per ottenere un nuovo stato \texttt{s'};
@@ -118,7 +118,7 @@ eseguiti dai reducers. Lo stato può essere visto come una struttura immutabile 
 \end{itemize}
 Vale la pena notare che questo approccio fornisce il supporto per operazioni out-of-the-box come undo/redo:
 un stato vecchio/recente può essere ripristinato mediante la sostituzione dello stato attuale con il precedente/successivo.
-Nonostante la sua semplicità, questo modello può tuttavia comportare sprechi di memoria, a causa delle diverse copie dello
+Nonostante la sua semplicità, questo modello può comportare sprechi di memoria, a causa delle diverse copie dello
 stato che è necessario mantenere in memoria. Questo problema è stato affrontato utilizzando \emph{Immutable.js}~\cite{immutable-js}, una libreria che sfrutta la condivisione strutturale tramite
 processi con mappe hash e vettoriali, riducendo al minimo la necessità di copiare o mettere i dati in una cache appositamente creata.
 \newpage

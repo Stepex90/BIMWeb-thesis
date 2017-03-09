@@ -4,15 +4,15 @@
 Con processo implementativo di un \emph{Plugin} si intende la formalizzazione delle fasi progettuali.
 La formalizzazione del procedimento traccia metodologicamente una sequenza di passi da seguire:
 (a) studio della geometria, (b) definizione della funzione di render 2D, (c) definizione della funzione di render 3D,
- (d) instanziazzione nel catalogo, (e) testing nella scena.
+ (d) instanziazione nel catalogo, (e) testing nella scena.
 
 
 \subsection{Studio della geometria}
-Nella prima fase implementativa dopo aver scelto quale oggetto andare a modellare all'interno del framework,
+Nella prima fase implementativa, dopo aver scelto quale oggetto andare a modellare all'interno del framework,
 si passa ad uno studio della geometria dell'oggetto reale (Figura \ref{fig:confronto} - a).
 In presenza di un modello complesso bisogna pensare a come realizzarlo cercando di scinderlo in parti geometriche semplici.
-Ad esempio analizzando l'oggetto estintore, esso è composto da una geometria complessa che è scindibile in parti geometriche
-semplici, come un cilindro più una semisfera per il corpo centrale (Figura \ref{fig:confronto} - b). Si segue questa procedura
+Ad esempio, analizzando l'oggetto estintore, esso è composto da una geometria complessa che è scindibile in parti geometriche
+semplici: un cilindro e una semisfera per il corpo centrale (Figura \ref{fig:confronto} - b). Si segue questa procedura
 per tutte le componenti fino alla realizzazione dell'intero modello virtuale (Figura \ref{fig:confronto} - c).\\
 
    \begin{figure}[htbp]
@@ -35,7 +35,7 @@ larghezza, profondità, altezza e altri dati utili alla modellazione.
 \subsection{Definizione funzione di render 2D}
 La funzione di render 2D, attraverso il linguaggio \emph{SVG} (Scalable Vector Graphics),
 consente di visualizzare oggetti di grafica vettoriale e, pertanto, di gestire immagini scalabili dimensionalmente.
-Questa definizione consente di inserire all'interno del Virtual DOM della content-area la rappresentazione 2D dell'oggetto
+Questa definizione consente di inserire, all'interno del Virtual DOM della content-area, la rappresentazione 2D dell'oggetto
 aggiornando l'area interessata del canvas.
 In questo modo il Plugin viene visualizzato all'interno di Metior durante la visualizzazione in 2D della scena.\\
 
@@ -89,9 +89,9 @@ render2D: function (element, layer, scene) {
 \newpage
 
 \subsection{Definizione funzione di render 3D}
-La funzione di render 3D definisce attraverso una porzione di codice scritto in Javascript ed utilizzando
+La funzione di render 3D definisce, attraverso una porzione di codice scritto in Javascript ed utilizzando
 la libreria open-source \emph{Threejs}, un modello 3D del Plugin;
-questa definizione ne consente pertanto la rappresentazione all'interno di Metior durante la visualizzazione in 3D della scena.\\
+questa definizione, pertanto, consente la rappresentazione all'interno di Metior durante la visualizzazione in 3D della scena.\\
 
 
 \begin{lstlisting}[
@@ -162,6 +162,6 @@ export default catalog;
 \end{lstlisting}
 
 \subsection{Testing nella scena}
-La fine del processo richiede il testing del nuovo \emph{Plugin} implementato, testandolo all'interno
-di una scena per verificare che le caratteristiche, geometriche e dimensionali corrispondano con quelle
+La fine del processo richiede il testing del nuovo \emph{Plugin} implementato all'interno
+di una scena, per verificare che le caratteristiche geometriche e dimensionali corrispondano con quelle
 del modello reale dal quale si è preso spunto per la realizzazione del modello virtuale.\\

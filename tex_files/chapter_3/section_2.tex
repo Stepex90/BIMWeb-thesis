@@ -20,16 +20,16 @@ L'\emph{occupation type} determina un modo differente di instanziare e inserire 
 In particolare, nel \emph{2D-mode}, i Plugin \emph{linear} sono inseriti disegnando linee attraverso l'interazione drag\&drop;
 i Plugin \emph{area} sono inseriti disegnando una bounding-box dell'elemento attraverso l'interazione drag\&drop;
 i Plugin \emph{volume} sono inseriti scegliendo la posizione dell'elemento attraverso l'interazione point\&click,
-e sistemando la loro dimensione modificando la bounding-box attraverso il drag\&drop.
+sistemando la loro dimensione e modificando la bounding-box attraverso il drag\&drop.
 
 
 Il \emph{placement type} determina se l'elemento può essere inserito all'interno del canvas in un specifico punto occupato o meno
 da altri elementi. In altre parole, esso determina la relazione tra una nuova instanza del Plugin e l'instanza di altri
 Plugin precedentemente aggiunti al modello. La relazione può essere di due tipi: \emph{inside} o \emph{over}.
-I Plugin appartenenti alla categoria \emph{inside} posso essere aggiunti solo all'interno di altri elementi (che possono essere
-\emph{linear}, \emph{area} o \emph{volume}); e.g., una ``finestra'' è un elemento ``volume inside vertical area'',
+I Plugin appartenenti alla categoria \emph{inside} possono essere aggiunti solo all'interno di altri elementi (del tipo
+\emph{linear}, \emph{area} o \emph{volume}): e.g., una ``finestra'' è un elemento ``volume inside vertical area'',
 mentre una ``linea idraulica'' \`e un elemento ``linear inside horizontal area''.
-I Plugin della categoria \emph{over} possono essere aggiunti solo sopra ad altri elementi (di qualsiasi tipo)
+I Plugin della categoria \emph{over} possono essere aggiunti solo sopra ad altri elementi (di qualsiasi tipo):
 e.g., un ``pilastro'' \`e un elemento ``volume over horizontal area'',
 mentre un ``pannello elettrico'' è un elemento``volume over vertical area''.
 In fase di progettazione, un elemento che non soddisfa i vincoli di posizionamento definiti dal \emph{placement type} \`e

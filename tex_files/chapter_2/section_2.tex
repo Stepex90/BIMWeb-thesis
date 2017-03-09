@@ -21,21 +21,21 @@ switching modalità vista/interazione (2D, 3D); cambio di modalità di interazio
 \newpage
 La \emph{content-area} \`e l'area nella quale l'utente pu\`o interagire con il modello attuale. Nella modalit\`a 2D
 il modello \`e visualizzato come una proiezione 2D dall'alto e l'interazione consiste nell'inserimento, selezione e modifica
-dell'elemento (in accordo con le specifiche interattive del building element). Nella modalità 3D un modello 3D pu\`o essere
-ispezionato e navigato attraverso due modalità differenti: in prima persona usando il mouse e la tastiera ponendo la vista
-ad altezza uomo, o dall'alto cambiando la posizione della telecamera con il solo mouse. Anche in modalità 3D è possibile
+dell'elemento (in accordo con le specifiche interattive del building element). Nella modalità 3D un modello pu\`o essere
+ispezionato e navigato attraverso due modalità differenti: in prima persona, usando il mouse e la tastiera e ponendo la vista della camera
+ad altezza uomo, o dall'alto cambiando la posizione della camera con il solo mouse. Anche in modalità 3D è possibile
 selezionare e modificare le proprietà degli oggetti.\\
 \indent
 La \emph{sidebar} visualizza le propriet\`a dell'elemento correntemente selezionato. Nel pannello delle propriet\`a \`e possibile
-vedere la descrizione dell'elemento, aggiungere/rimuovere metadati, e modificare qualsiasi propriet\`a.
-Quest'ultima modalità di interazione consente al utente di associare annotazioni semantiche su ogni parte del modello.
+vedere la descrizione dell'elemento, aggiungere/rimuovere metadati e modificare qualsiasi propriet\`a.
+Quest'ultima modalità di interazione consente all'utente di associare annotazioni semantiche su ogni parte del modello.
 \newpage
 
 \subsection{Viewer 2D}
 Il \emph{2D-viewer} invoca la funzione \emph{2Dgf} dei \emph{building elements} aggiunti al modello e
 genera in output il modello renderizzato usando gli elementi SVG.
 Per far fronte ai frequenti aggiornamenti provenienti dall'interazione con il disegno da parte dell'utente,
-sfrutta una \emph{Virtual DOM}~\cite{vdom}, che permette di aggiornare solo la parte modificata evitando così
+sfrutta una \emph{Virtual DOM}~\cite{vdom} che permette di aggiornare solo la parte modificata evitando così
 il completo rendering della scena. Per eseguire le operazioni di pan e zoom, tipicamente necessaria in questo
 tipo di strumento, è stato sviluppato un componente ad-hoc di React denominato \emph{ReactSVGPanZoom}~\cite{panzoom}.\\
 
@@ -59,7 +59,7 @@ In particolare durante l'interazione con la scena si dispone delle seguenti \tex
   \item \emph{remove};
 \end{itemize}
 Per eseguire l'update è stato implementato un \emph{diff} e \emph{patch} di
-sistema, definite nel Jsonpatch~\cite{rfc6902}: gli oggetti Three.js sono associati con elementi costruttivi all'interno
+sistema definite nel Jsonpatch~\cite{rfc6902}: gli oggetti Three.js sono associati con elementi costruttivi all'interno
 dello stato dell'applicazione, in modo che ogni volta che l'utente attiva un'azione che si traduce in una modifica dello stato,
 l'applicazione calcola la differenza tra il vecchio stato e quello nuovo e aggiorna solo l'oggetto interessato.\\
 
